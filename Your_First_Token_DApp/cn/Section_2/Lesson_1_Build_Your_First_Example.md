@@ -44,7 +44,7 @@ npx hardhat
 
 选择**Create a JavaScript project**的选项。对一切都选择yes。
 
-![npx hardhat result](https://i.imgur.com/j1e8vJT.png)
+![npx hardhat screenshot](../../images/npx-hardhat-screenshot.png)
 
 这个示例项目会要求你安装 hardhat-waffle 和 hardhat-ethers 。这些是我们以后会用到的其他好东西:)。
 
@@ -86,7 +86,7 @@ npx hardhat test
 
 你应该看到像这样的东西。
 
-![npx hardhat test result](https://i.imgur.com/OI9YKaU.png)
+![Lock.sol test result snapshot](../../images/test-lock-result-snapshot.png)
 
 让我们做一个小小的清理。现在在您最喜欢的代码编辑器中打开项目的代码。 我最喜欢 VSCode！ 我们想删除为我们生成的所有蹩脚的启动代码（我们不需要这些）。 我们是专业人士！
 
