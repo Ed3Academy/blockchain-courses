@@ -130,6 +130,7 @@ Deploying contracts with account:  0x9f773d11C3eABb67Bd1827a983641b37c6C6B0a5
 Account balance:  200000000000000000
 MyToken address:  0xe7eF8d5C50fD89AaFF85384D50774aB15f0652FC
 ```
+
 复制最后一行已部署合约的地址并将其保存在某处。 别弄丢了！ 稍后您将需要它作为前端:)。 你的会和我的不一样。
 
 **你刚刚部署了你的合约。哇塞。**
