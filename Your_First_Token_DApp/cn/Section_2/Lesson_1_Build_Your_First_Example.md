@@ -44,7 +44,7 @@ npx hardhat
 
 选择**Create a JavaScript project**的选项。对一切都选择yes。
 
-![npx hardhat screenshot](../../images/npx-hardhat-screenshot.png)
+![npx hardhat screenshot](https://github.com/Ed3Academy/blockchain-courses/blob/6bfb3d2e5f6882588451c437ad615d8ccf44e7a6/Your_First_Token_DApp/images/npx-hardhat-screenshot.png)
 
 这个示例项目会要求你安装 hardhat-waffle 和 hardhat-ethers 。这些是我们以后会用到的其他好东西:)。
 
@@ -91,5 +91,3 @@ npx hardhat test
 让我们做一个小小的清理。现在在您最喜欢的代码编辑器中打开项目的代码。 我最喜欢 VSCode！ 我们想删除为我们生成的所有蹩脚的启动代码（我们不需要这些）。 我们是专业人士！
 
 继续并删除 `test` 下的文件 `Lock.js`。 另外，删除 `scripts` 下的 `deploy.js`。 然后，删除 `contracts` 下的 `Lock.sol`文件。是删文件，不是删除文件夹！
-
-<!-- 🚨 在你点击 "下一课 "之前 -->
