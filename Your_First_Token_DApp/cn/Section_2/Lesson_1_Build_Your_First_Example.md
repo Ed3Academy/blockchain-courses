@@ -44,7 +44,7 @@ npx hardhat
 
 选择**Create a JavaScript project**的选项。对一切都选择yes。
 
-![npx hardhat screenshot](https://github.com/Ed3Academy/blockchain-courses/blob/6bfb3d2e5f6882588451c437ad615d8ccf44e7a6/Your_First_Token_DApp/images/npx-hardhat-screenshot.png)
+![npx hardhat screenshot](https://raw.githubusercontent.com/Ed3Academy/blockchain-courses/main/Your_First_Token_DApp/images/npx-hardhat-screenshot.png)
 
 这个示例项目会要求你安装 hardhat-waffle 和 hardhat-ethers 。这些是我们以后会用到的其他好东西:)。
 
