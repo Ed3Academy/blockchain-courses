@@ -120,5 +120,3 @@ export default Home;
 ```
 
 我们的修改非常简单。只是添加了一个 rainbowkit 的 `ConnectButton` 组件就完成了连接钱包按钮的创建。是不是很简单呢？
-
-<!-- 🚨 要求。在你点击 "下一课 "之前 -->

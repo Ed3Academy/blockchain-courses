@@ -138,5 +138,3 @@ MyToken address:  0xe7eF8d5C50fD89AaFF85384D50774aB15f0652FC
 实际上，您可以获取该地址，然后将其粘贴到 Polygonscan [此处](https://mumbai.polygonscan.com/)。 Polygonscan 是一个向我们展示区块链状态并帮助我们查看交易位置的地方。 你应该在这里看到你的交易:)。 可能需要一分钟才能出现！
 
 例如，[这里是](https://mumbai.polygonscan.com/address/0xe7eF8d5C50fD89AaFF85384D50774aB15f0652FC) 我的！
-
-<!-- 🚨 在你点击 "下一课 "之前 -->

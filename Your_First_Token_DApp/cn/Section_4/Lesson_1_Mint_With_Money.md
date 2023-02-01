@@ -158,4 +158,3 @@ Deploying contracts with account:  0x9f773d11C3eABb67Bd1827a983641b37c6C6B0a5
 Account balance:  199530244995302450
 MyToken address:  0x6494e0E82BB0D3aB1B11e80b3Bc2A4fC1dE247d7
 ```
-<!-- 🚨 在你点击 "下一课 "之前 -->

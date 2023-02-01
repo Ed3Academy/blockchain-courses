@@ -22,7 +22,7 @@ npx create-next-app@latest
 
 您可以使用像我一样的配置：
 
-![Next.js setup screenshot](../../images/nextjs_setup_screenshot.png)
+![Next.js setup screenshot](https://raw.githubusercontent.com/Ed3Academy/blockchain-courses/main/Your_First_Token_DApp/images/nextjs_setup_screenshot.png)
 
 设置好后，我们删除一些对我们不必要的文件 例如 `api` 文件夹以及`_document.tsx` 。
 
@@ -98,6 +98,7 @@ a {
 ```
 
 再更新一下 `styles/Home.module.css`
+
 ```css
 .container {
   padding: 0 2rem;

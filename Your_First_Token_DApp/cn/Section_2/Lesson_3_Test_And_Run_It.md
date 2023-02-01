@@ -79,7 +79,7 @@ npx hardhat test test/MyToken.test.js
 
 你应该看到你的 `console.log` 在合约中运行，然后你还应该看到合约地址打印出来！！！这是我得到的：
 
-![MyToken.sol log screenshot](../../images/test-log-screenshot.png)
+![MyToken.sol log screenshot](https://raw.githubusercontent.com/Ed3Academy/blockchain-courses/main/Your_First_Token_DApp/images/test-log-screenshot.png)
 
 ## 🎩 Hardhat & HRE
 
@@ -94,5 +94,3 @@ npx hardhat test test/MyToken.test.js
 `const hre = require("hardhat")`
 
 **TL;DR - 你会在我们的代码中看到很多 `hre`，但从未在任何地方导入！查看这个很酷的 [Hardhat 文档](https://hardhat.org/advanced/hardhat-runtime-environment.html) 以了解更多信息！**
-
-<!-- ## 🚨 在您点击“下一课”之前 -->

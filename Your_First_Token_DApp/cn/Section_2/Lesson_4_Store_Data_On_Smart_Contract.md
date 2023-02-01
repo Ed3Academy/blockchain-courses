@@ -104,7 +104,7 @@ npx hardhat test test/MyToken.test.js
 
 这是我的输出：
 
-![Simple Mint Test result screenshot](../../images/test-simple-mint-screenshot.png)
+![Simple Mint Test result screenshot](https://raw.githubusercontent.com/Ed3Academy/blockchain-courses/main/Your_First_Token_DApp/images/test-simple-mint-screenshot.png)
 
 非常棒，嗯:)？
 
@@ -116,5 +116,3 @@ npx hardhat test test/MyToken.test.js
 这几乎是大多数智能合约的基础。 读取函数。 编写函数。 并更改状态变量。 我们现在拥有继续开发史诗般的 代币网站 所需的构建块。
 
 很快，我们将能够从我们将要开发的 React 应用程序中调用这些函数 :)。
-
-<!-- ## 🚨 在您点击“下一课”之前 -->
