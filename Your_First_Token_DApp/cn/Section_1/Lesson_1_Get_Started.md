@@ -26,7 +26,7 @@
 
 ## 🛠️ 发现了一些问题？
 
-**[所有这些内容都是完全开源的](https://github.com/MetaAlchemy/blockchain-learning)**。
+**[所有这些内容都是完全开源的](https://github.com/Ed3Academy/blockchain-courses)**。
 
 1. 如果您发现问题、拼写错误等 - 您可以轻松地自行修复并进行 PR！
 2. 如果您发现一些建议可以帮助我们做得更好 - 您可以提 issue，我们将会定期回复！
