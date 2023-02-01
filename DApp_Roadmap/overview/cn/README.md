@@ -1,5 +1,3 @@
-中文 / [English](https://github.com/MetaAlchemy/blockchain-learning/blob/main/README.md)
-
 # blockchain-dapp-roadmap
 
 ## 概述
