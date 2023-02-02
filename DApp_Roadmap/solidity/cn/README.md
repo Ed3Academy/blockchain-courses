@@ -11,13 +11,13 @@
 ### 推荐学习资料
 > 了解Solidity合约基础，可选remix在线体验合约交互
 
-| 优先度 | 平台 | 类型 | 名称 | 链接 | 推荐指数 | 备注 |
-| --- | --- | --- | --- | --- | --- | --- |
-| 1 | 以太坊 | 在线文档 | 《智能合约简介》 -- 以太坊文档 | https://ethereum.org/zh/developers/docs/smart-contracts/ | 7.5 | 以太坊官网智能合约介绍，延伸阅读部分比较好，算进阶了。|
-| 1 | solidity | 在线文档 | 《solidity语言》 -- 官方文档 | https://docs.soliditylang.org/zh/latest/ | 9 | 官方solidity教程，建议学完。同时建议查看[solidity博客](https://blog.soliditylang.org/)中每年的调查问卷，了解主流工具等使用情况。|
-| 2 | bilibili | 在线视频课程 | 《智能合约编程》 | https://www.bilibili.com/video/BV1yD4y1C7we?p=13&vd_source=2a4014dc01345e3daf837989466323d0 | 7.5 | 火大联合开课吧出品，智能合约快速实战，也可直接在这里学完入门和实战。 |
-| 2 | solidity-by-example | 在线实例教程 | 《solidity-by-example》 | https://solidity-by-example.org/ | 9 | solidity-by-example 跟着示例代码一步步学，除了基础，还有应用，hack，测试和DeFi。 |
-| 2 | remix| 在线教程 | 《remix教程》 | https://remix-ide.readthedocs.io/en/latest/index.html | 8 | 在线的智能合约编辑器，英文版remix教程，如果不习惯，可以搜中文的remix教程。如果想直接在本地进行开发，可以跳过，本地目前建议使用hardhat开发框架 |
+| 优先度 | 平台 | 类型 | 名称 | 推荐指数 | 备注 |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 以太坊 | 在线文档 | [《智能合约简介》](https://ethereum.org/zh/developers/docs/smart-contracts/) -- 以太坊文档 | 7.5 | 以太坊官网智能合约介绍，延伸阅读部分比较好，算进阶了。|
+| 1 | solidity | 在线文档 | [《solidity语言》](https://docs.soliditylang.org/zh/latest/) -- 官方文档 | 9 | 官方solidity教程，建议学完。同时建议查看[solidity博客](https://blog.soliditylang.org/)中每年的调查问卷，了解主流工具等使用情况。|
+| 2 | bilibili | 在线视频课程 | [《智能合约编程》](https://www.bilibili.com/video/BV1yD4y1C7we?p=13&vd_source=2a4014dc01345e3daf837989466323d0) | 7.5 | 火大联合开课吧出品，智能合约快速实战，也可直接在这里学完入门和实战。 |
+| 2 | solidity-by-example | 在线实例教程 | [《solidity-by-example》](https://solidity-by-example.org/) | 9 | solidity-by-example 跟着示例代码一步步学，除了基础，还有应用，hack，测试和DeFi。 |
+| 2 | remix| 在线教程 | [《remix教程》](https://remix-ide.readthedocs.io/en/latest/index.html) | 8 | 在线的智能合约编辑器，英文版remix教程，如果不习惯，可以搜中文的remix教程。如果想直接在本地进行开发，可以跳过，本地目前建议使用hardhat开发框架 |
 
 ## 实战教程
 
@@ -27,13 +27,12 @@
 - ethers.js区块链客户端类库
 - OpenZeppelin 合约标准类库
 
-| 优先度 | 平台 | 类型 | 名称 | 链接 | 推荐指数 | 备注 |
-| --- | --- | --- | --- | --- | --- | --- |
-| 1 | hardhat | 官方在线文档 | 《hardhat官方文档》 | https://hardhat.org/docs | 9 | 建议阅读官方hardhat文档，英文但简单，可以保证最新release版本。第二选择[登链社区的hardhat翻译文档](https://learnblockchain.cn/manuals)，但是可能旧。|
-| 1 | ethers | 官方在线文档 | 《ethers官方文档》 | https://docs.ethers.org/v5/ | 9 | 建议阅读官方文档，英文但简单，可以保证最新。第二选择[登链社区的ethers翻译文档](https://learnblockchain.cn/manuals)，但是可能旧。|
-| 1 | OpenZeppelin | 官方在线文档 | 《OpenZeppelin官方文档》 | https://docs.openzeppelin.com/ | 9 | 建议阅读官方文档，英文但简单，看Contracts部分。|
-| 2 | github | hardhat脚手架模板 | hardhat-template | https://github.com/paulrberg/hardhat-template
- | 7.5 | hardhat脚手架推荐模板参考。|
+| 优先度 | 平台 | 类型 | 名称 | 推荐指数 | 备注 |
+| --- | --- | --- | --- | --- | --- |
+| 1 | hardhat | 官方在线文档 | [《hardhat官方文档》](https://hardhat.org/docs) |  | 9 | 建议阅读官方hardhat文档，英文但简单，可以保证最新release版本。第二选择[登链社区的hardhat翻译文档](https://learnblockchain.cn/manuals)，但是可能旧。|
+| 1 | ethers | 官方在线文档 | [《ethers官方文档》](https://docs.ethers.org/v5/) | 9 | 建议阅读官方文档，英文但简单，可以保证最新。第二选择[登链社区的ethers翻译文档](https://learnblockchain.cn/manuals)，但是可能旧。|
+| 1 | OpenZeppelin | 官方在线文档 | [《OpenZeppelin官方文档》](https://docs.openzeppelin.com/) | 9 | 建议阅读官方文档，英文但简单，看Contracts部分。|
+| 2 | github | hardhat脚手架模板 | [hardhat-template](https://github.com/paulrberg/hardhat-template) | 7.5 | hardhat脚手架推荐模板参考。|
 
 ## 建议完成作业
 

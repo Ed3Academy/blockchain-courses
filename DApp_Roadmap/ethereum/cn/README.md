@@ -34,11 +34,11 @@
 
 ## 推荐学习资料
 
-| 优先度 | 平台 | 类型 | 名称 | 链接 | 推荐指数 | 备注 |
-| --- | --- | --- | --- | --- | --- | --- |
-| 1 | 以太坊 | 官方在线教程 | 《以太坊开发文档》 | https://ethereum.org/zh/developers/ | 9 | 以太坊官方开发者资源教程，建议先了解核心概念， 即介绍、基础、堆栈部分，后面的其他是以太坊推荐的开发者课程及工具堆栈，比较有内容，质量也很高，如果学习无障碍，可以直接使用官方推荐学习。|
-| 2 | 以太坊 | 官方白皮书 | 《以太坊白皮书》 | https://ethereum.org/zh/whitepaper/ | 9 | 以太坊官方白皮书，作为基础的验证，了解及补充 |
-| 3 | 以太坊 | 英文pdf文档 | 《Ethereum EVM illustrated》 | https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf | 9 | 以太坊虚拟机图解，英文版，但是对区块链的一些基础介绍和EVM虚拟机图示介绍，非常经典，可以用于验证和补充自己的基础 |
+| 优先度 | 平台 | 类型 | 名称 | 推荐指数 | 备注 |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 以太坊 | 官方在线教程 | [《以太坊开发文档》](https://ethereum.org/zh/developers/) | 9 | 以太坊官方开发者资源教程，建议先了解核心概念， 即介绍、基础、堆栈部分，后面的其他是以太坊推荐的开发者课程及工具堆栈，比较有内容，质量也很高，如果学习无障碍，可以直接使用官方推荐学习。|
+| 2 | 以太坊 | 官方白皮书 | [《以太坊白皮书》](https://ethereum.org/zh/whitepaper/) | 9 | 以太坊官方白皮书，作为基础的验证，了解及补充 |
+| 3 | 以太坊 | 英文pdf文档 | [《Ethereum EVM illustrated》](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf) | 9 | 以太坊虚拟机图解，英文版，但是对区块链的一些基础介绍和EVM虚拟机图示介绍，非常经典，可以用于验证和补充自己的基础 |
 
 
 ## 其他
@@ -46,6 +46,6 @@
 
 | 书名 | 链接 |  简介 |
 | --- | --- | --- | 
-| 《精通以太坊》 | https://www.8btc.com/books/834/ethereum-book/_book/ | 《Mastering Ethereum》的中文译文教程。 |
-| 《以太坊的指南针》 | https://ethbook.abyteahead.com/ | 中文的开源以太坊入门书籍 |
+| [《精通以太坊》](https://www.8btc.com/books/834/ethereum-book/_book/) | 《Mastering Ethereum》的中文译文教程。 |
+| [《以太坊的指南针》](https://ethbook.abyteahead.com/) | 中文的开源以太坊入门书籍 |
 
