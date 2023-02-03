@@ -1,35 +1,74 @@
 {
-  "devtools": {
-    "label": "开发",
+  "smartContractLanguages": {
+    "label": "智能合约",
     "categories": [
       {
-        "label": "智能合约",
+        "label": "智能合约语言",
         "websites": [
           {
             "key": "solidity",
             "label": "Solidity",
-            "link": "https://docs.soliditylang.org/en/latest/",
+            "link": "https://docs.soliditylang.org/zh/latest/",
             "logo": "/third_party_logos/solidity.png",
             "description": ""
-          },
-          {
-            "key": "solidity-cn",
-            "label": "Solidity中文文档",
-            "link": "https://learnblockchain.cn/docs/solidity/",
-            "logo": "/third_party_logos/learnblockchain.jpg",
-            "description": ""
-          },
+          }
+        ]
+      },
+      {
+        "label": "智能合约标准库",
+        "websites": [
           {
             "key": "openzeppelin-contracts",
-            "label": "OpenZeppelin Contracts",
-            "link": "https://docs.openzeppelin.com/contracts/4.x/",
+            "label": "Openzeppelin Contracts",
+            "link": "https://docs.openzeppelin.com/contracts",
             "logo": "/third_party_logos/openzeppelin.png",
             "description": ""
           }
         ]
       },
       {
-        "label": "合约框架",
+        "label": "预言机合约",
+        "websites": [
+          {
+            "key": "chainlink",
+            "label": "Chainlink",
+            "link": "https://chain.link/",
+            "logo": "/third_party_logos/chainlink.png",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "label": "合约钱包",
+        "websites": [
+          {
+            "key": "gnosis-safe",
+            "label": "Gnosis Safe",
+            "link": "https://gnosis-safe.io/",
+            "logo": "/third_party_logos/gnosissafe.png",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  "contractFramework": {
+    "label": "合约开发框架",
+    "categories": [
+      {
+        "label": "在线开发工具",
+        "websites": [
+          {
+            "key": "remix",
+            "label": "Remix",
+            "link": "https://remix-project.org/",
+            "logo": "/third_party_logos/remix.png",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "label": "合约开发框架",
         "websites": [
           {
             "key": "hardhat",
@@ -55,7 +94,7 @@
         ]
       },
       {
-        "label": "合约项目模板",
+        "label": "合约项目脚手架",
         "websites": [
           {
             "key": "hardhat-template",
@@ -63,11 +102,168 @@
             "link": "https://github.com/PaulRBerg/hardhat-template",
             "logo": "",
             "description": ""
+          },
+          {
+            "key": "scaffold-eth",
+            "label": "scaffold-eth",
+            "link": "https://github.com/austintgriffith/scaffold-eth",
+            "logo": "/third_party_logos/scaffold-eth.jfif",
+            "description": ""
           }
         ]
       },
       {
-        "label": "SDK",
+        "label": "区块链客户端",
+        "websites": [
+          {
+            "key": "ganache",
+            "label": "Ganache",
+            "link": "https://trufflesuite.com/ganache/",
+            "logo": "/third_party_logos/Ganache.svg",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  "dappFrontEnd": {
+    "label": "DApp前端开发",
+    "categories": [
+      {
+        "label": "区块链客户端类库",
+        "websites": [
+          {
+            "key": "ethersjs",
+            "label": "ethers.js",
+            "link": "https://docs.ethers.org/v5/",
+            "logo": "/third_party_logos/ethersjs.png",
+            "description": ""
+          },
+          {
+            "key": "web3js",
+            "label": "web3.js",
+            "link": "https://web3js.readthedocs.io/en/v1.8.1/",
+            "logo": "",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "label": "区块链交互封装类库",
+        "websites": [
+          {
+            "key": "wagmi",
+            "label": "wagmi",
+            "link": "https://wagmi.sh/react/getting-started",
+            "logo": "/third_party_logos/wagmi.png",
+            "description": ""
+          },
+          {
+            "key": "web3-react",
+            "label": "Web3 React",
+            "link": "https://github.com/Uniswap/web3-react",
+            "logo": "",
+            "description": ""
+          },
+        ]
+      },
+      {
+        "label": "钱包连接插件",
+        "websites": [
+          {
+            "key": "web3modal",
+            "label": "Web3Modal",
+            "link": "https://docs.walletconnect.com/2.0/web3modal/about",
+            "logo": "/third_party_logos/walletconnect.png",
+            "description": ""
+          },
+          {
+            "key": "rainbowkit",
+            "label": "RainbowKit",
+            "link": "https://www.rainbowkit.com/docs/introduction",
+            "logo": "/third_party_logos/rainbowkit.svg",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "label": "托管钱包组件",
+        "websites": [
+          {
+            "key": "web3auth",
+            "label": "web3auth",
+            "link": "https://web3auth.io/",
+            "logo": "/third_party_logos/web3auth.png",
+            "description": ""
+          },
+          {
+            "key": "magic link",
+            "label": "magic link",
+            "link": "https://magic.link/",
+            "logo": "/third_party_logos/magic-link.jpg",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "label": "前端项目模板",
+        "websites": [
+          {
+            "key": "next-web3-boilerplate",
+            "label": "next-web3-boilerplate",
+            "link": "https://github.com/mirshko/next-web3-boilerplate",
+            "logo": "",
+            "description": ""
+          },
+          {
+            "key": "create-eth-app",
+            "label": "create-eth-app",
+            "link": "https://github.com/paulrberg/create-eth-app",
+            "logo": "",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  "dappTools": {
+    "label": "DApp开发配套",
+    "categories": [
+      {
+        "label": "区块链浏览器",
+        "websites": [
+          {
+            "key": "etherscan",
+            "label": "Etherscan",
+            "link": "https://etherscan.io/",
+            "logo": "/third_party_logos/etherscan.png",
+            "description": ""
+          },
+          {
+            "key": "polygonscan",
+            "label": "polygonscan",
+            "link": "https://polygonscan.com/",
+            "logo": "/third_party_logos/polygonscan.webp",
+            "description": ""
+          },
+          {
+            "key": "bscscan",
+            "label": "BscScan",
+            "link": "https://bscscan.com/",
+            "logo": "/third_party_logos/bnb.svg",
+            "description": ""
+          },
+          {
+            "key": "blockscout",
+            "label": "blockscout",
+            "link": "https://docs.blockscout.com/",
+            "logo": "",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "label": "Web3 SDK",
         "websites": [
           {
             "key": "thirdweb",
@@ -93,7 +289,7 @@
         ]
       },
       {
-        "label": "索引",
+        "label": "数据索引服务",
         "websites": [
           {
             "key": "thegraph",
@@ -105,7 +301,19 @@
         ]
       },
       {
-        "label": "测试模拟、监控",
+        "label": "debug跟踪",
+        "websites": [
+          {
+            "key": "tenderly",
+            "label": "Tenderly",
+            "link": "https://docs.tenderly.co/",
+            "logo": "/third_party_logos/tenderly.png",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "label": "监控维护",
         "websites": [
           {
             "key": "tenderly",
@@ -124,7 +332,7 @@
         ]
       },
       {
-        "label": "安全",
+        "label": "安全分析",
         "websites": [
           {
             "key": "echidna",
@@ -153,7 +361,12 @@
             "link": "https://github.com/ConsenSys/mythril",
             "logo": "",
             "description": ""
-          },
+          }
+        ]
+      },
+      {
+        "label": "漏洞赏金平台",
+        "websites": [
           {
             "key": "code4rena",
             "label": "code4rena",
@@ -171,136 +384,13 @@
         ]
       },
       {
-        "label": "分析",
+        "label": "数据分析",
         "websites": [
           {
             "key": "dune-analytics",
             "label": "Dune Analytics",
             "link": "https://dune.com/browse/dashboards",
             "logo": "/third_party_logos/dune-analytics.png",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "label": "浏览器",
-        "websites": [
-          {
-            "key": "etherscan",
-            "label": "Etherscan",
-            "link": "https://etherscan.io/",
-            "logo": "/third_party_logos/etherscan.png",
-            "description": ""
-          },
-          {
-            "key": "polygonscan",
-            "label": "polygonscan",
-            "link": "https://polygonscan.com/",
-            "logo": "/third_party_logos/polygonscan.webp",
-            "description": ""
-          },
-          {
-            "key": "bscscan",
-            "label": "BscScan",
-            "link": "https://bscscan.com/",
-            "logo": "/third_party_logos/bnb.svg",
-            "description": ""
-          },
-          {
-            "key": "solscan",
-            "label": "Solscan",
-            "link": "https://solscan.io/",
-            "logo": "/third_party_logos/solscan.svg",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "label": "前端开发类库",
-        "websites": [
-          {
-            "key": "wagmi",
-            "label": "wagmi",
-            "link": "https://wagmi.sh/react/getting-started",
-            "logo": "/third_party_logos/wagmi.png",
-            "description": ""
-          },
-          {
-            "key": "web3-react",
-            "label": "Web3 React",
-            "link": "https://github.com/Uniswap/web3-react",
-            "logo": "",
-            "description": ""
-          },
-          {
-            "key": "ethersjs",
-            "label": "ethers.js",
-            "link": "https://docs.ethers.org/v5/",
-            "logo": "/third_party_logos/ethersjs.png",
-            "description": ""
-          },
-          {
-            "key": "web3js",
-            "label": "web3.js",
-            "link": "https://web3js.readthedocs.io/en/v1.8.1/",
-            "logo": "",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "label": "钱包连接插件",
-        "websites": [
-          {
-            "key": "web3modal",
-            "label": "Web3Modal",
-            "link": "https://docs.walletconnect.com/2.0/web3modal/about",
-            "logo": "/third_party_logos/walletconnect.png",
-            "description": ""
-          },
-          {
-            "key": "rainbowkit",
-            "label": "RainbowKit",
-            "link": "https://www.rainbowkit.com/docs/introduction",
-            "logo": "/third_party_logos/rainbowkit.svg",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "label": "前端项目模板",
-        "websites": [
-          {
-            "key": "moralis-starters",
-            "label": "moralis-starters",
-            "link": "https://docs.moralis.io/moralis-server/getting-started/boilerplate-projects",
-            "logo": "/third_party_logos/moralis.png",
-            "description": ""
-          },
-          {
-            "key": "next-web3-boilerplate",
-            "label": "next-web3-boilerplate",
-            "link": "https://github.com/mirshko/next-web3-boilerplate",
-            "logo": "",
-            "description": ""
-          },
-          {
-            "key": "create-eth-app",
-            "label": "create-eth-app",
-            "link": "https://github.com/paulrberg/create-eth-app",
-            "logo": "",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "label": "黑客松常用脚手架",
-        "websites": [
-          {
-            "key": "scaffold-eth",
-            "label": "scaffold-eth",
-            "link": "https://github.com/austintgriffith/scaffold-eth",
-            "logo": "/third_party_logos/scaffold-eth.jfif",
             "description": ""
           }
         ]
@@ -342,15 +432,8 @@
         ]
       },
       {
-        "label": "钱包以及密钥管理",
+        "label": "钱包",
         "websites": [
-          {
-            "key": "coinbase-wallet",
-            "label": "coinbase WALLET",
-            "link": "https://www.coinbase.com/wallet",
-            "logo": "/third_party_logos/coinbase-wallet.png",
-            "description": ""
-          },
           {
             "key": "metamask",
             "label": "MetaMask",
@@ -359,31 +442,17 @@
             "description": ""
           },
           {
+            "key": "coinbase-wallet",
+            "label": "coinbase WALLET",
+            "link": "https://www.coinbase.com/wallet",
+            "logo": "/third_party_logos/coinbase-wallet.png",
+            "description": ""
+          },
+          {
             "key": "walletconnect",
             "label": "WalletConnect",
             "link": "https://walletconnect.com/",
             "logo": "/third_party_logos/walletconnect.png",
-            "description": ""
-          },
-          {
-            "key": "web3auth",
-            "label": "web3auth",
-            "link": "https://web3auth.io/",
-            "logo": "/third_party_logos/web3auth.png",
-            "description": ""
-          },
-          {
-            "key": "web3auth",
-            "label": "magic link",
-            "link": "https://magic.link/",
-            "logo": "/third_party_logos/magic-link.jpg",
-            "description": ""
-          },
-          {
-            "key": "gnosis-safe",
-            "label": "Gnosis Safe",
-            "link": "https://gnosis-safe.io/",
-            "logo": "/third_party_logos/gnosissafe.png",
             "description": ""
           }
         ]
@@ -425,24 +494,12 @@
             "description": ""
           }
         ]
-      },
-      {
-        "label": "预言机",
-        "websites": [
-          {
-            "key": "chainlink",
-            "label": "Chainlink",
-            "link": "https://chain.link/",
-            "logo": "/third_party_logos/chainlink.png",
-            "description": ""
-          }
-        ]
       }
     ]
   },
   "faucet": {
     "icon": "",
-    "label": "水龙头",
+    "label": "测试网充值",
     "categories": [
       {
         "label": "水龙头",
@@ -494,7 +551,7 @@
     ]
   },
   "dappData": {
-    "label": "DApp",
+    "label": "DApp应用浏览",
     "categories": [
       {
         "label": "DApp数据查看",
@@ -553,10 +610,10 @@
             "description": ""
           },
           {
-            "key": "rebase",
-            "label": "Rebase Network",
-            "link": "https://rebase.network/",
-            "logo": "",
+            "key": "alchemyUniversity",
+            "label": "Alchemy University",
+            "link": "https://university.alchemy.com/",
+            "logo": "/third_party_logos/Alchemy_University.jpeg",
             "description": ""
           }
         ]
@@ -654,20 +711,6 @@
         "label": "Web 3.0",
         "websites": [
           {
-            "key": "web3.0funeng",
-            "label": "WEB3.0：赋能数字经济新时代",
-            "link": "https://weread.qq.com/web/bookDetail/697322a0813ab6ebeg019425",
-            "logo": "",
-            "description": ""
-          },
-          {
-            "key": "web3.0funeng",
-            "label": "Web3.0：下一代互联网的变革与挑战",
-            "link": "https://weread.qq.com/web/bookDetail/bd9324b072afa35fbd916bb",
-            "logo": "",
-            "description": ""
-          },
-          {
             "key": "yibenshududong",
             "label": "一本书读懂Web3.0：区块链、NFT、元宇宙和DAO",
             "link": "https://weread.qq.com/web/bookDetail/3df32d10813ab6e8eg0105dd",
@@ -715,13 +758,6 @@
       {
         "label": "求职招聘",
         "websites": [
-          {
-            "key": "linkedin",
-            "label": "LinkedIn",
-            "link": "http://linkedin.com/",
-            "logo": "/third_party_logos/linkedin.png",
-            "description": "建立你的职业关系网并与之沟通"
-          },
           {
             "key": "web3career",
             "label": "Web3Career",
