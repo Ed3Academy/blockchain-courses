@@ -7,7 +7,7 @@
 </p>
   <br />
   <p>
-    <a href="https://github.com/Dapp-Learning-DAO/Dapp-Learning/tree/main/docs/imgs/wechat-group-helper.png"><img alt="Wechat group helper" src="https://img.shields.io/static/v1?&label=&logo=wechat&message=wechat group&color=brightgreen&logoColor=white"></a>
+    <a href="https://github.com/Ed3Academy/blockchain-courses/blob/feature/add-readme/docs/image/wechat_invite.png"><img alt="Wechat group helper" src="https://img.shields.io/static/v1?&label=&logo=wechat&message=wechat group&color=brightgreen&logoColor=white"></a>
     <a href="https://discord.com/invite/Y3NJHRrEg4"><img src="https://img.shields.io/discord/1069083554656555098?color=5865F2&logo=discord&logoColor=white&label=discord" alt="Discord server" /></a>
   </p>
 </div>
