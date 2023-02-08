@@ -576,10 +576,10 @@
   },
   "knowledge": {
     "icon": "",
-    "label": "学习社区",
+    "label": "学习资源",
     "categories": [
       {
-        "label": "学习社区",
+        "label": "社区教程",
         "websites": [
           {
             "key": "buildspace",
@@ -615,6 +615,58 @@
             "link": "https://university.alchemy.com/",
             "logo": "/third_party_logos/Alchemy_University.jpeg",
             "description": ""
+          }
+        ]
+      },
+      {
+        "label": "优秀免费课程",
+        "websites": [
+          {
+            "key": "xiaozhenCourse",
+            "label": "《区块链技术与应用》 - 北京大学肖臻老师",
+            "link": "https://www.bilibili.com/video/BV1Vt411X7JF/",
+            "logo": "",
+            "description": "北京大学肖臻老师，讲清楚区块链基础原理技术"
+          },
+          {
+            "key": "antchainCourse",
+            "label": "《区块链系统开发与应用》- 蚂蚁链认证课程",
+            "link": "https://antchain.antgroup.com/activity/certification",
+            "logo": "",
+            "description": "蚂蚁链官方入门教程，认证收费"
+          },
+          {
+            "key": "huodaCourse",
+            "label": "《Web3.0应用工程师培养计划2022年》- 火大开课吧",
+            "link": "https://www.bilibili.com/video/BV1yD4y1C7we/",
+            "logo": "",
+            "description": "火大Web3.0应用实战课程"
+          },
+          {
+            "key": "chainlinkCourse",
+            "label": "《区块链，智能合约 & 全栈 Web3 开发》- chainlink",
+            "link": "https://www.bilibili.com/video/BV1Ca411n7ta/",
+            "logo": "",
+            "description": "Chainlink Web3.0应用实战课程"
+          }
+        ]
+      },
+      {
+        "label": "最佳实践文章",
+        "websites": [
+          {
+            "key": "guoyuBestPractice",
+            "label": "《Web3 DApp 最佳编程实践指南》 - 郭宇",
+            "link": "https://learnblockchain.cn/article/4072",
+            "logo": "",
+            "description": "著名前字节员工 郭宇的WEB3应用最佳实践"
+          },
+          {
+            "key": "guoyuBestPractice",
+            "label": "《智能合约开发最佳实践》",
+            "link": "https://yos.io/2019/11/10/smart-contract-development-best-practices/",
+            "logo": "",
+            "description": "Yos Riady出品经典，有中文翻译版本，但是时间较早，工具栈实际应该有更新"
           }
         ]
       }
@@ -759,11 +811,61 @@
         "label": "求职招聘",
         "websites": [
           {
+            "key": "CryptojobsList",
+            "label": "CryptojobsList",
+            "link": "https://cryptojobslist.com/",
+            "logo": "",
+            "description": "号称是全网最大的加密货币工作、Web3 工作和区块链工作的招聘网站"
+          },
+          {
             "key": "web3career",
             "label": "Web3Career",
             "link": "https://web3.career/",
             "logo": "",
             "description": "23000+ 区块链开发者、Web3开发者、智能合约开发者等Web3工作"
+          },
+          {
+            "key": "nomadlist",
+            "label": "Go nomad" ,
+            "link": "https://nomadlist.com/",
+            "logo": "",
+            "description": "加入由在世界各地生活和旅行的远程工作者组成的全球社区"
+          }
+        ]
+      }
+    ]
+  },
+  "other-tools": {
+    "label": "第三方聚合导航",
+    "categories": [
+      {
+        "label": "开发工具聚合",
+        "websites": [
+          {
+            "key": "AlchemyDappStore",
+            "label": "Alchemy Dapp Store",
+            "link": "https://www.alchemy.com/dapps",
+            "logo": "",
+            "description": "找到完美的 web3 开发者工具或 dapp"
+          },
+          {
+            "key": "web3-tools",
+            "label": "web3-tools",
+            "link": "https://web3-tools.xyz/",
+            "logo": "",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "label": "行业分析工具聚合",
+        "websites": [
+          {
+            "key": "foresightnews-tools",
+            "label": "区块链工具 - foresightnews",
+            "link": "https://foresightnews.pro/tools",
+            "logo": "",
+            "description": ""
           }
         ]
       }
