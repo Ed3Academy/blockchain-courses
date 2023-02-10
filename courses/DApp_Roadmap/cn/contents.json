@@ -3,7 +3,7 @@
   "description": {
     "cn": "本项目适合小白零基础快速入门区块链应用DApp开发，提供最新、最佳的学习路径。"
   },
-  "section": {
+  "sections": {
     "Section_1": {
       "title": { "cn": "概述" },
       "lessons": [{ "title": { "cn": "概述" }, "file": "overview.md" }]
