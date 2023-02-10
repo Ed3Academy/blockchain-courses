@@ -1,0 +1,77 @@
+{
+  "title": { "cn": "第一课：创建第一个DApp" },
+  "description": {
+    "cn": "该项目适用于想要更多地了解加密技术的开发人员。在这过程中你会学习使用一些新技能。"
+  },
+  "section": {
+    "Section_1": {
+      "title": { "cn": "准备开始" },
+      "lessons": [
+        { "title": { "cn": "准备开始" }, "file": "Lesson_1_Get_Started.md" }
+      ]
+    },
+    "Section_2": {
+      "title": { "cn": "开发合约并发布测试网" },
+      "lessons": [
+        {
+          "title": { "cn": "搭建第一个示例项目" },
+          "file": "Lesson_1_Build_Your_First_Example.md"
+        },
+        {
+          "title": { "cn": "编写第一个合约" },
+          "file": "Lesson_2_Write_Your_First_Smart_Contract.md"
+        },
+        {
+          "title": { "cn": "测试并运行" },
+          "file": "Lesson_3_Test_And_Run_It.md"
+        },
+        {
+          "title": { "cn": "存储数据在智能合约中" },
+          "file": "Lesson_4_Store_Data_On_Smart_Contract.md"
+        },
+        {
+          "title": { "cn": "本地部署" },
+          "file": "Lesson_5_Deploy_Locally.md"
+        }
+      ]
+    },
+    "Section_3": {
+      "title": { "cn": "连接到钱包" },
+      "lessons": [
+        {
+          "title": { "cn": "设置基础的Next项目" },
+          "file": "Lesson_1_Setup_Basic_Next_Program.md"
+        },
+        {
+          "title": { "cn": "设置你的钱包" },
+          "file": "Lesson_2_Setup_Metamask.md"
+        },
+        {
+          "title": { "cn": "部署到测试网" },
+          "file": "Lesson_3_Deploy_To_Testnet.md"
+        },
+        {
+          "title": { "cn": "连接钱包" },
+          "file": "Lesson_4_Connect_Wallet.md"
+        },
+        {
+          "title": { "cn": "和你的代币交互" },
+          "file": "Lesson_5_Interact_With_Your_Token.md"
+        }
+      ]
+    },
+    "Section_4": {
+      "title": { "cn": "和合约交互" },
+      "lessons": [
+        {
+          "title": { "cn": "花钱 Mint" },
+          "file": "Lesson_1_Mint_With_Money.md"
+        },
+        {
+          "title": { "cn": "升级你的门户网站" },
+          "file": "Lesson_2_Upgrade_Your_Portal.md"
+        }
+      ]
+    }
+  }
+}
