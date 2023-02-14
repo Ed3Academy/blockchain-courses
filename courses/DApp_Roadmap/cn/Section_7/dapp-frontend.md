@@ -22,6 +22,6 @@
   - [Web3Modal](https://github.com/WalletConnect/web3modal)
   - [RainbowKit](https://github.com/rainbow-me/rainbowkit)
 - DApp入门教程：
-  - Web3-react：https://dev.to/yakult/tutorial-build-dapp-with-web3-react-and-swr-1fb0
-  - Web3Modal： https://igor.technology/building-web3-frontend-for-your-dapp/
-  - Rainbowkit: https://learnblockchain.cn/article/4624
+  - Web3-react：<https://dev.to/yakult/tutorial-build-dapp-with-web3-react-and-swr-1fb0>
+  - Web3Modal：<https://igor.technology/building-web3-frontend-for-your-dapp/>
+  - Rainbowkit: <https://learnblockchain.cn/article/4624>
