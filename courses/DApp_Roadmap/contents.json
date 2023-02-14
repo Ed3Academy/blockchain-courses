@@ -1,54 +1,54 @@
 {
-  "title": { "cn": "开发者路线图" },
+  "title": { "zh": "开发者路线图" },
   "description": {
-    "cn": "本项目适合小白零基础快速入门区块链应用DApp开发，提供最新、最佳的学习路径。"
+    "zh": "本项目适合小白零基础快速入门区块链应用DApp开发，提供最新、最佳的学习路径。"
   },
   "sections": {
     "Section_1": {
-      "title": { "cn": "概述" },
-      "lessons": [{ "title": { "cn": "概述" }, "file": "overview.md" }]
+      "title": { "zh": "概述" },
+      "lessons": [{ "title": { "zh": "概述" }, "file": "overview.md" }]
     },
     "Section_2": {
-      "title": { "cn": "区块链基础" },
-      "lessons": [{ "title": { "cn": "区块链基础" }, "file": "blockchain.md" }]
+      "title": { "zh": "区块链基础" },
+      "lessons": [{ "title": { "zh": "区块链基础" }, "file": "blockchain.md" }]
     },
     "Section_3": {
-      "title": { "cn": "以太坊基础" },
-      "lessons": [{ "title": { "cn": "以太坊基础" }, "file": "ethereum.md" }]
+      "title": { "zh": "以太坊基础" },
+      "lessons": [{ "title": { "zh": "以太坊基础" }, "file": "ethereum.md" }]
     },
     "Section_4": {
-      "title": { "cn": "Web3.0" },
-      "lessons": [{ "title": { "cn": "Web3.0" }, "file": "web3.0.md" }]
+      "title": { "zh": "Web3.0" },
+      "lessons": [{ "title": { "zh": "Web3.0" }, "file": "web3.0.md" }]
     },
     "Section_5": {
-      "title": { "cn": "DApp概述" },
-      "lessons": [{ "title": { "cn": "DApp概述" }, "file": "dapp-overview.md" }]
+      "title": { "zh": "DApp概述" },
+      "lessons": [{ "title": { "zh": "DApp概述" }, "file": "dapp-overview.md" }]
     },
     "Section_6": {
-      "title": { "cn": "智能合约solidity" },
+      "title": { "zh": "智能合约solidity" },
       "lessons": [
-        { "title": { "cn": "智能合约solidity" }, "file": "solidity.md" }
+        { "title": { "zh": "智能合约solidity" }, "file": "solidity.md" }
       ]
     },
     "Section_7": {
-      "title": { "cn": "DApp前端" },
-      "lessons": [{ "title": { "cn": "DApp前端" }, "file": "dapp-frontend.md" }]
+      "title": { "zh": "DApp前端" },
+      "lessons": [{ "title": { "zh": "DApp前端" }, "file": "dapp-frontend.md" }]
     },
     "Section_8": {
-      "title": { "cn": "联盟链" },
-      "lessons": [{ "title": { "cn": "联盟链" }, "file": "alliance-chain.md" }]
+      "title": { "zh": "联盟链" },
+      "lessons": [{ "title": { "zh": "联盟链" }, "file": "alliance-chain.md" }]
     },
     "Section_9": {
-      "title": { "cn": "NFT" },
-      "lessons": [{ "title": { "cn": "NFT" }, "file": "NFT.md" }]
+      "title": { "zh": "NFT" },
+      "lessons": [{ "title": { "zh": "NFT" }, "file": "NFT.md" }]
     },
     "Section_10": {
-      "title": { "cn": "DeFi" },
-      "lessons": [{ "title": { "cn": "DeFi" }, "file": "DeFi.md" }]
+      "title": { "zh": "DeFi" },
+      "lessons": [{ "title": { "zh": "DeFi" }, "file": "DeFi.md" }]
     },
     "Section_11": {
-      "title": { "cn": "DAO" },
-      "lessons": [{ "title": { "cn": "DAO" }, "file": "DAO.md" }]
+      "title": { "zh": "DAO" },
+      "lessons": [{ "title": { "zh": "DAO" }, "file": "DAO.md" }]
     }
   }
 }
