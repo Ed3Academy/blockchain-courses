@@ -206,6 +206,18 @@
         ]
       },
       {
+        "label": "前端UI组件库",
+        "websites": [
+          {
+            "key": "web3uikit",
+            "label": "web3uikit",
+            "link": "https://github.com/web3ui/web3uikit",
+            "logo": "",
+            "description": "适用于 dapps 开发人员的轻量级可重用 Web3 UI 组件。Web3UIKit 加速您的 dapp 开发并使您能够构建漂亮的 dapp。"
+          }
+        ]
+      },
+      {
         "label": "前端项目模板",
         "websites": [
           {
