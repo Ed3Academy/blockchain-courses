@@ -1,5 +1,6 @@
 {
   "title": { "zh": "开发者路线图" },
+  "coverUrl": "/cover-roadmap.png",
   "description": {
     "zh": "本项目适合小白零基础快速入门区块链应用DApp开发，提供最新、最佳的学习路径。"
   },
