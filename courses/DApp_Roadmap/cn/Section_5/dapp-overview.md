@@ -27,5 +27,5 @@
 
 | 平台 | 链接 |
 | --- | --- | 
-| DappRadar | https://dappradar.com/ | 
-| DApp.com | http://www.dapp.com/ | 
+| DappRadar | <https://dappradar.com/> | 
+| DApp.com | <http://www.dapp.com/> | 
