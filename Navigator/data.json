@@ -164,6 +164,13 @@
             "link": "https://github.com/Uniswap/web3-react",
             "logo": "",
             "description": "React 和 Ethereum 的连接框架"
+          },
+          {
+            "key": "react-moralis",
+            "label": "react-moralis",
+            "link": "https://github.com/MoralisWeb3/react-moralis",
+            "logo": "",
+            "description": "在 React 应用程序中使用 基于 Moralis 的钩子和组件"
           }
         ]
       },
