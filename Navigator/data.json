@@ -123,6 +123,32 @@
             "description": "开发测试用区块链模拟客户端，新手可以通过Ganache，对区块链交互，有个初步印象"
           }
         ]
+      },
+      {
+        "label": "智能合约自动化",
+        "websites": [
+          {
+            "key": "openzeppelin-defender",
+            "label": "Openzeppelin Defender",
+            "link": "https://www.openzeppelin.com/defender",
+            "logo": "/third_party_logos/defender-bw.svg",
+            "description": "提供了一组扩展的功能，自动化智能合约操作，以更低的风险交付高质量的产品。"
+          },
+          {
+            "key": "chainlink-keeper",
+            "label": "Chainlink Keeper",
+            "link": "https://chain.link/automation",
+            "logo": "/third_party_logos/chainlink.png",
+            "description": "可靠、高性能的智能合约自动化，使 Web3 开发人员能够以去中心化的方式无缝地自动化关键智能合约功能。"
+          },
+          {
+            "key": "gelato-network",
+            "label": "gelato network",
+            "link": "https://www.gelato.network/automate",
+            "logo": "/third_party_logos/gelato.svg",
+            "description": "可靠、对开发人员友好和去中心化的智能合约自动化。"
+          }
+        ]
       }
     ]
   },
