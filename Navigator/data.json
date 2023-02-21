@@ -482,14 +482,14 @@
           {
             "key": "nft-storage",
             "label": "nft.storage",
-            "link": "https://ens.domains/",
+            "link": "https://nft.storage/",
             "logo": "",
             "description": ""
           },
           {
             "key": "web3-storage",
             "label": "web3.storage",
-            "link": "https://ens.domains/",
+            "link": "https://web3.storage/",
             "logo": "/third_party_logos/web3storage.png",
             "description": ""
           }
