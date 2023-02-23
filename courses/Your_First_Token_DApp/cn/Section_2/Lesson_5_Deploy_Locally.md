@@ -72,7 +72,7 @@ npx hardhat run scripts/deploy.js --network localhost
 
 好的，所以一旦我运行，这就是我得到的：
 
-![Deploy MyToken snapshot](https://raw.githubusercontent.com/Ed3Academy/blockchain-courses/main/Your_First_Token_DApp/images/deploy_MyToken_1_screenshot.png)
+![Deploy MyToken snapshot](https://raw.githubusercontent.com/Ed3Academy/blockchain-courses/main/courses/Your_First_Token_DApp/images/deploy_MyToken_1_screenshot.png)
 
 太棒了。
 
@@ -80,6 +80,6 @@ npx hardhat run scripts/deploy.js --network localhost
 
 在本地以太坊网络保持活跃的终端窗口中，您会看到一些新东西！
 
-![Deploy MyToken Chain log snapshot](https://raw.githubusercontent.com/Ed3Academy/blockchain-courses/main/Your_First_Token_DApp/images/deploy_1_chain_log_sceenshot.png)
+![Deploy MyToken Chain log snapshot](https://raw.githubusercontent.com/Ed3Academy/blockchain-courses/main/courses/Your_First_Token_DApp/images/deploy_1_chain_log_sceenshot.png)
 
 有趣的。但是……什么是 gas？Block #1 是什么意思？ “Transaction”旁边的大段代码是什么？我想让你尝试 google 这些东西。
