@@ -123,6 +123,32 @@
             "description": "开发测试用区块链模拟客户端，新手可以通过Ganache，对区块链交互，有个初步印象"
           }
         ]
+      },
+      {
+        "label": "智能合约自动化",
+        "websites": [
+          {
+            "key": "openzeppelin-defender",
+            "label": "Openzeppelin Defender",
+            "link": "https://www.openzeppelin.com/defender",
+            "logo": "/third_party_logos/defender-bw.svg",
+            "description": "提供了一组扩展的功能，自动化智能合约操作，以更低的风险交付高质量的产品。"
+          },
+          {
+            "key": "chainlink-keeper",
+            "label": "Chainlink Keeper",
+            "link": "https://chain.link/automation",
+            "logo": "/third_party_logos/chainlink.png",
+            "description": "可靠、高性能的智能合约自动化，使 Web3 开发人员能够以去中心化的方式无缝地自动化关键智能合约功能。"
+          },
+          {
+            "key": "gelato-network",
+            "label": "gelato network",
+            "link": "https://www.gelato.network/automate",
+            "logo": "/third_party_logos/gelato.svg",
+            "description": "可靠、对开发人员友好和去中心化的智能合约自动化。"
+          }
+        ]
       }
     ]
   },
@@ -164,6 +190,13 @@
             "link": "https://github.com/Uniswap/web3-react",
             "logo": "",
             "description": "React 和 Ethereum 的连接框架"
+          },
+          {
+            "key": "react-moralis",
+            "label": "react-moralis",
+            "link": "https://github.com/MoralisWeb3/react-moralis",
+            "logo": "",
+            "description": "在 React 应用程序中使用 基于 Moralis 的钩子和组件"
           }
         ]
       },
@@ -202,6 +235,18 @@
             "link": "https://magic.link/",
             "logo": "/third_party_logos/magic-link.jpg",
             "description": "一个支持电子邮件和社交登录的无助记词钱包。"
+          }
+        ]
+      },
+      {
+        "label": "前端UI组件库",
+        "websites": [
+          {
+            "key": "web3uikit",
+            "label": "web3uikit",
+            "link": "https://github.com/web3ui/web3uikit",
+            "logo": "",
+            "description": "适用于 dapps 开发人员的轻量级可重用 Web3 UI 组件。Web3UIKit 加速您的 dapp 开发并使您能够构建漂亮的 dapp。"
           }
         ]
       },
@@ -482,14 +527,14 @@
           {
             "key": "nft-storage",
             "label": "nft.storage",
-            "link": "https://ens.domains/",
+            "link": "https://nft.storage/",
             "logo": "",
             "description": ""
           },
           {
             "key": "web3-storage",
             "label": "web3.storage",
-            "link": "https://ens.domains/",
+            "link": "https://web3.storage/",
             "logo": "/third_party_logos/web3storage.png",
             "description": ""
           }

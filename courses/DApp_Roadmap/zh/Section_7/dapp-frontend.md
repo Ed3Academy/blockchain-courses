@@ -17,11 +17,16 @@
 
 - 选择的前端开发框架教程，例如：create-react-APP、Vue、Next.js等
     - [Next.js](https://nextjs.org/)，建议使用脚手架起步
-- 区块链辅助类库[wagmi](https://wagmi.sh/zh-CN)
+- 区块链辅助类库
+  - [wagmi](https://wagmi.sh/zh-CN)
+  - [web3-react](https://github.com/Uniswap/web3-react)
+  - [react-moralis](https://github.com/MoralisWeb3/react-moralis)
 - 钱包连接插件
   - [Web3Modal](https://github.com/WalletConnect/web3modal)
   - [RainbowKit](https://github.com/rainbow-me/rainbowkit)
+- webUi组件库
+  - [web3uikit](https://web3uikit.com/)
 - DApp入门教程：
-  - Web3-react：https://dev.to/yakult/tutorial-build-dapp-with-web3-react-and-swr-1fb0
-  - Web3Modal： https://igor.technology/building-web3-frontend-for-your-dapp/
-  - Rainbowkit: https://learnblockchain.cn/article/4624
+  - Web3-react：<https://dev.to/yakult/tutorial-build-dapp-with-web3-react-and-swr-1fb0>
+  - Web3Modal：<https://igor.technology/building-web3-frontend-for-your-dapp/>
+  - Rainbowkit: <https://learnblockchain.cn/article/4624>
