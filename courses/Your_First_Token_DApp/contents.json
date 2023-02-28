@@ -4,6 +4,9 @@
   "description": {
     "zh": "该项目适用于想要更多地了解加密技术的开发人员。在这过程中你会学习使用一些新技能。"
   },
+  "permission": {
+    "roles": ["User"]
+  },
   "sections": {
     "Section_1": {
       "title": { "zh": "准备开始" },
