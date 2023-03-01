@@ -60,9 +60,9 @@
         "websites": [
           {
             "key": "remix",
-            "label": "Remix",
+            "label": "",
             "link": "https://remix-project.org/",
-            "logo": "/third_party_logos/remix.png",
+            "logo": "/third_party_logos/remix.svg",
             "description": "在线合约编辑器，入门便捷编辑时用"
           }
         ]
@@ -143,7 +143,7 @@
           },
           {
             "key": "gelato-network",
-            "label": "gelato network",
+            "label": "",
             "link": "https://www.gelato.network/automate",
             "logo": "/third_party_logos/gelato.svg",
             "description": "可靠、对开发人员友好和去中心化的智能合约自动化。"
@@ -169,7 +169,7 @@
             "key": "web3js",
             "label": "web3.js",
             "link": "https://web3js.readthedocs.io/en/v1.8.1/",
-            "logo": "",
+            "logo": "/third_party_logos/web3js.png",
             "description": "最早的区块链交互的JS SDK"
           }
         ]
@@ -231,9 +231,9 @@
           },
           {
             "key": "magic link",
-            "label": "magic link",
+            "label": "Magic",
             "link": "https://magic.link/",
-            "logo": "/third_party_logos/magic-link.jpg",
+            "logo": "/third_party_logos/magic-link.svg",
             "description": "一个支持电子邮件和社交登录的无助记词钱包。"
           }
         ]
@@ -288,7 +288,7 @@
             "key": "polygonscan",
             "label": "polygonscan",
             "link": "https://polygonscan.com/",
-            "logo": "/third_party_logos/polygonscan.webp",
+            "logo": "/third_party_logos/polygon.svg",
             "description": "Polygon链的最主要区块链浏览器"
           },
           {
@@ -300,9 +300,9 @@
           },
           {
             "key": "blockscout",
-            "label": "blockscout",
+            "label": "",
             "link": "https://docs.blockscout.com/",
-            "logo": "",
+            "logo": "/third_party_logos/blockscout.svg",
             "description": "EVM链的可以私有部署的区块链浏览器"
           }
         ]
@@ -319,14 +319,14 @@
           },
           {
             "key": "moralis",
-            "label": "moralis",
+            "label": "Moralis",
             "link": "https://docs.moralis.io/web3-data-api/moralis-sdk",
-            "logo": "/third_party_logos/moralis.png",
+            "logo": "/third_party_logos/moralis.svg",
             "description": "供完整的端到端区块链应用程序开发平台，支持去中心化应用程序（dApp）"
           },
           {
             "key": "tatum",
-            "label": "tatum",
+            "label": "Tatum",
             "link": "https://docs.tatum.io/",
             "logo": "/third_party_logos/tatum.png",
             "description": "提供了世界上第一个区块链开发平台，以加速区块链应用程序的创建，并实现更大的功能和更高的质量。"
@@ -421,9 +421,9 @@
           },
           {
             "key": "immunefi",
-            "label": "immunefi",
+            "label": "",
             "link": "https://immunefi.com/",
-            "logo": "/third_party_logos/immunefi.avif",
+            "logo": "/third_party_logos/immunefi.svg",
             "description": ""
           }
         ]
@@ -452,7 +452,7 @@
             "key": "chainlist",
             "label": "ChainList",
             "link": "https://chainlist.org/",
-            "logo": "/third_party_logos/defillama.jpeg",
+            "logo": "/third_party_logos/chainlist.svg",
             "description": ""
           }
         ]
@@ -488,7 +488,7 @@
           },
           {
             "key": "coinbase-wallet",
-            "label": "coinbase WALLET",
+            "label": "Coinbase Wallet",
             "link": "https://www.coinbase.com/wallet",
             "logo": "/third_party_logos/coinbase-wallet.png",
             "description": ""
@@ -526,9 +526,9 @@
         "websites": [
           {
             "key": "nft-storage",
-            "label": "nft.storage",
+            "label": "",
             "link": "https://nft.storage/",
-            "logo": "",
+            "logo": "/third_party_logos/nftstorage.svg",
             "description": ""
           },
           {
@@ -567,7 +567,7 @@
             "key": "polygon-faucet",
             "label": "Polygon Faucet",
             "link": "https://faucet.polygon.technology/",
-            "logo": "/third_party_logos/polygonscan.webp",
+            "logo": "/third_party_logos/polygon.svg",
             "description": "Polygon官方水龙头，支持 Goerli/Mumbai/Avail，无需认证"
           },
           {
@@ -586,7 +586,7 @@
           },
           {
             "key": "sol-faucet",
-            "label": "Sol Faucet",
+            "label": "💦Sol Faucet",
             "link": "https://solfaucet.com/",
             "logo": "",
             "description": "支持 Solana Testnet/Devnet网络，无需认证"
@@ -733,7 +733,7 @@
           },
           {
             "key": "8btc",
-            "label": "",
+            "label": "巴比特",
             "link": "https://www.8btc.com/",
             "logo": "/third_party_logos/8btc.svg",
             "description": ""
@@ -747,7 +747,7 @@
           },
           {
             "key": "foresightnews",
-            "label": "",
+            "label": "Foresight News",
             "link": "https://foresightnews.pro/article",
             "logo": "/third_party_logos/foresightnews.png",
             "description": ""
@@ -761,9 +761,9 @@
           },
           {
             "key": "panewslab",
-            "label": "PANews",
+            "label": "",
             "link": "https://www.panewslab.com/",
-            "logo": "/third_party_logos/panews.png",
+            "logo": "/third_party_logos/panews.svg",
             "description": ""
           }
         ]
@@ -773,7 +773,7 @@
         "websites": [
           {
             "key": "coindesk",
-            "label": "",
+            "label": "CoinDesk",
             "link": "https://www.coindesk.com/",
             "logo": "/third_party_logos/coindesk.svg",
             "description": ""
@@ -857,16 +857,16 @@
         "websites": [
           {
             "key": "cryptocurrencyjobs",
-            "label": "cryptocurrencyjobs",
+            "label": "Cryptocurrency Jobs",
             "link": "https://cryptocurrencyjobs.co/",
-            "logo": "",
+            "logo": "/third_party_logos/cryptocurrencyjobs.svg",
             "description": "区块链工作和加密货币工作的领先岗位平台"
           },
           {
             "key": "CryptojobsList",
-            "label": "CryptojobsList",
+            "label": "",
             "link": "https://cryptojobslist.com/",
-            "logo": "",
+            "logo": "/third_party_logos/cryptojobslist.svg",
             "description": "号称是全网最大的加密货币工作、Web3 工作和区块链工作的招聘网站"
           },
           {
@@ -880,7 +880,7 @@
             "key": "nomadlist",
             "label": "Go nomad" ,
             "link": "https://nomadlist.com/",
-            "logo": "",
+            "logo": "/third_party_logos/gonomad.svg",
             "description": "加入由在世界各地生活和旅行的远程工作者组成的全球社区"
           }
         ]
@@ -897,12 +897,12 @@
             "key": "AlchemyDappStore",
             "label": "Alchemy Dapp Store",
             "link": "https://www.alchemy.com/dapps",
-            "logo": "",
+            "logo": "/third_party_logos/alchemy.png",
             "description": "找到完美的 web3 开发者工具或 dapp"
           },
           {
             "key": "web3-tools",
-            "label": "web3-tools",
+            "label": "🧰web3-tools",
             "link": "https://web3-tools.xyz/",
             "logo": "",
             "description": ""
@@ -916,7 +916,7 @@
             "key": "foresightnews-tools",
             "label": "区块链工具 - foresightnews",
             "link": "https://foresightnews.pro/tools",
-            "logo": "",
+            "logo": "/third_party_logos/foresightnews.png",
             "description": ""
           }
         ]
