@@ -15,14 +15,14 @@
 ![切换网络到Goerli测试网络](https://live.staticflickr.com/65535/52710914125_31a9d6a4fb_h.jpg)
 #### 2.3 连接Metamask钱包
 在chainlink的水龙头网站上，点击`Connect wallet`按钮，就类似于点击了传统网站中的登录按钮。
-![chainlink网站连接钱包](https://live.staticflickr.com/65535/52710756849_b9ce445caa_h.jpg)
+![chainlink网站连接钱包](https://live.staticflickr.com/65535/52710756849_b9ce445caa_h.jpg)  
 而不同的是，在区块链世界的应用里，不用输入用户名密码，而是连接钱包。
 可以看到点击后，钱包插件弹出了连接提示框，完成连接。
-![连接Metamask钱包](https://live.staticflickr.com/65535/52710914030_1828fc5c41_z.jpg)
+![连接Metamask钱包](https://live.staticflickr.com/65535/52710914030_1828fc5c41_z.jpg)  
 开始输入你的钱包账户地址，通过人机验证，点击发送`LINK`资产的按钮
-![开始充值LINK](https://live.staticflickr.com/65535/52710499491_9af4dbf61b_h.jpg)
+![开始充值LINK](https://live.staticflickr.com/65535/52710499491_9af4dbf61b_h.jpg)  
 等待资产发送交易完成
-![等待资产发送交易完成](https://live.staticflickr.com/65535/52710499436_59d3cf0c62_c.jpg)
+![等待资产发送交易完成](https://live.staticflickr.com/65535/52710499436_59d3cf0c62_c.jpg)  
 交易完成后，可以点击交易链接，跳转到区块链浏览器的交易详情。
 我们这里就不扩展延伸了，直接到钱包查看，到账的`LINK`资产。
 ### 3. 添加资产显示
@@ -30,7 +30,7 @@
 - 点击钱包主页面的`添加资产`
 - 在弹出的页面的代币合约地址里面输入`LINK`代币的合约地址：`0x326C977E6efc84E512bB9C30f76E30c160eD06FB`
 - 其他信息会自动进行显示
-![添加LINK资产类别](https://live.staticflickr.com/65535/52710756679_79592267ba_h.jpg)
+![添加LINK资产类别](https://live.staticflickr.com/65535/52710756679_79592267ba_h.jpg)  
 可以看到，我们的钱包账户里面，已经多了10个`LINK`代币。
 ### 4. 用水龙头给账户充值Goerli ETH
 #### 4.1 打开Alchemy水龙头网站
@@ -38,11 +38,11 @@
 还没有Alchemy注册登录账号的，可以先进行注册登录，因为后续学习区块链开发，实际也会用到Alchemy。
 #### 4.2 输入账户地址，进行充值
 可以看到Tab页是Goerli，无需切换，直接输入你的账户地址，点击`Send Me ETH`按钮
-![充值ETH](https://live.staticflickr.com/65535/52710913895_9911db548c_k.jpg)
+![充值ETH](https://live.staticflickr.com/65535/52710913895_9911db548c_k.jpg)  
 在弹出的页面中，等待交易完成，也可以点击交易的链接，查看交易的详情：
-![等待交易完成](https://live.staticflickr.com/65535/52710499361_1d17857518_h.jpg)
+![等待交易完成](https://live.staticflickr.com/65535/52710499361_1d17857518_h.jpg)  
 如果点击了查看交易的详情，会跳出区块链的浏览器，显示交易情况：
-![显示交易情况](https://live.staticflickr.com/65535/52709975747_6953a47e2e_h.jpg)
+![显示交易情况](https://live.staticflickr.com/65535/52709975747_6953a47e2e_h.jpg)  
 交易完成后，查看钱包Goerli ETH增加了：
 ![查看ETH](https://live.staticflickr.com/65535/52710976298_f5b5bd8a14.jpg)
 ### 5. 自己给自己ETH转账
