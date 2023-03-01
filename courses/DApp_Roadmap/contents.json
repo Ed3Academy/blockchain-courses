@@ -1,0 +1,55 @@
+{
+  "title": { "zh": "开发者路线图" },
+  "coverUrl": "/cover-roadmap.png",
+  "description": {
+    "zh": "本项目适合小白零基础快速入门区块链应用DApp开发，提供最新、最佳的学习路径。"
+  },
+  "sections": {
+    "Section_1": {
+      "title": { "zh": "概述" },
+      "lessons": [{ "title": { "zh": "概述" }, "file": "overview.md" }]
+    },
+    "Section_2": {
+      "title": { "zh": "区块链基础" },
+      "lessons": [{ "title": { "zh": "区块链基础" }, "file": "blockchain.md" }]
+    },
+    "Section_3": {
+      "title": { "zh": "以太坊基础" },
+      "lessons": [{ "title": { "zh": "以太坊基础" }, "file": "ethereum.md" }]
+    },
+    "Section_4": {
+      "title": { "zh": "Web3.0" },
+      "lessons": [{ "title": { "zh": "Web3.0" }, "file": "web3.0.md" }]
+    },
+    "Section_5": {
+      "title": { "zh": "DApp概述" },
+      "lessons": [{ "title": { "zh": "DApp概述" }, "file": "dapp-overview.md" }]
+    },
+    "Section_6": {
+      "title": { "zh": "智能合约solidity" },
+      "lessons": [
+        { "title": { "zh": "智能合约solidity" }, "file": "solidity.md" }
+      ]
+    },
+    "Section_7": {
+      "title": { "zh": "DApp前端" },
+      "lessons": [{ "title": { "zh": "DApp前端" }, "file": "dapp-frontend.md" }]
+    },
+    "Section_8": {
+      "title": { "zh": "联盟链" },
+      "lessons": [{ "title": { "zh": "联盟链" }, "file": "alliance-chain.md" }]
+    },
+    "Section_9": {
+      "title": { "zh": "NFT" },
+      "lessons": [{ "title": { "zh": "NFT" }, "file": "NFT.md" }]
+    },
+    "Section_10": {
+      "title": { "zh": "DeFi" },
+      "lessons": [{ "title": { "zh": "DeFi" }, "file": "DeFi.md" }]
+    },
+    "Section_11": {
+      "title": { "zh": "DAO" },
+      "lessons": [{ "title": { "zh": "DAO" }, "file": "DAO.md" }]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": { "zh": "如何使用钱包" },
+  "coverUrl": "/cover-wallet.webp",
+  "description": {
+    "zh": "进入区块链或者Web3.0世界的第一步，你需要一个钱包。"
+  },
+  "sections": {
+    "Section_1": {
+      "title": { "zh": "欢迎" },
+      "lessons": [{ "title": { "zh": "欢迎" }, "file": "Lesson_1_Welcome.md" }]
+    },
+    "Section_2": {
+      "title": { "zh": "创建钱包" },
+      "lessons": [{ "title": { "zh": "创建钱包" }, "file": "Lesson_1_create_wallet.md" }]
+    },
+    "Section_3": {
+      "title": { "zh": "使用钱包" },
+      "lessons": [{ "title": { "zh": "使用钱包" }, "file": "Lesson_1_use_wallet.md" }]
+    }
+  }
+}
