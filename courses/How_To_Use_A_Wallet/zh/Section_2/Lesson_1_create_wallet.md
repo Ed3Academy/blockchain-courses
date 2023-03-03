@@ -2,7 +2,13 @@
 ----------------------------------
 目前来说，新手的第一站，通常是使用MetaMask钱包。
 在这里，我们将以chrome浏览器插件版本的MetaMask，进行下一步的示例。
-所以，如果你没有MetaMask钱包，请从MetaMask的官网进行安装下载，链接：<https://metamask.io/download/>。
+所以，如果你没有MetaMask钱包，请从MetaMask的官网进行安装下载，链接：<https://metamask.io/download/>。  
+
+没有VPN的，安装方式：
+ - 可以通过MetaMask的[github仓库](https://github.com/MetaMask/metamask-extension/releases)下载安装包，进行手动安装
+ - 使用Windows系统上的浏览器Microsoft Edge扩展，安装MetaMask钱包插件  
+  
+
 **注意：不要从非官方途径获取和使用钱包软件，不要使用预设了账户的钱包**
 
 **警告：第一次创建钱包，请注意创建钱包过程中的提示和协议，你在区块链上的所有资产都是挂在账户上的，而账户是通过钱包管控的**
