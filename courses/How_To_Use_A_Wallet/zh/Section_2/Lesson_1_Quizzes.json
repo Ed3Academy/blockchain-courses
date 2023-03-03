@@ -1,0 +1,28 @@
+[
+  {
+    "type": "Judgement",
+    "question": {
+      "zh": "🤔我们一般通过钱包操作账户？"
+    },
+    "options": [],
+    "answer": [0]
+  },
+  {
+    "type": "Multiple",
+    "question": {
+      "zh": "🤔学习这章后，我对助记词有了一些了解，麻烦帮我判断一下哪些是正确的？"
+    },
+    "options": [
+      {
+        "content": "MetaMask的助记词由12个单词组成。"
+      },
+      {
+        "content": "离线保管账户助记词和私钥是避免泄露最好的方法。"
+      },
+      {
+        "content": "切勿和任何人分享助记词！"
+      }
+    ],
+    "answer": [0, 1, 2]
+  }
+]
