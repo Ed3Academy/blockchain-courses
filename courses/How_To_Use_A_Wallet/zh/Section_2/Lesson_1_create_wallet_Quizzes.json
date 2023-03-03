@@ -1,17 +1,13 @@
 [
   {
     "type": "Judgement",
-    "question": {
-      "zh": "🤔我们一般通过钱包操作账户？"
-    },
+    "question": "🤔我们一般通过钱包操作账户？",
     "options": [],
     "answer": [0]
   },
   {
     "type": "Multiple",
-    "question": {
-      "zh": "🤔学习这章后，我对助记词有了一些了解，麻烦帮我判断一下哪些是正确的？"
-    },
+    "question": "🤔学习这章后，我对助记词有了一些了解，麻烦帮我判断一下哪些是正确的？",
     "options": [
       {
         "content": "MetaMask的助记词由12个单词组成。"
