@@ -4,6 +4,7 @@
   "description": {
     "zh": "本项目适合小白零基础快速入门区块链应用DApp开发，提供最新、最佳的学习路径。"
   },
+  "discussionUrl": "https://github.com/orgs/Ed3Academy/discussions/11",
   "sections": {
     "Section_1": {
       "title": { "zh": "概述" },
