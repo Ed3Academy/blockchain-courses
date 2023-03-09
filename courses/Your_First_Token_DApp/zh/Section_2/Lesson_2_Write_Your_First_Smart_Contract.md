@@ -34,7 +34,7 @@ contract MyToken {
 pragma solidity ^0.8.17;
 ```
 
-这是我们希望合约使用的 Solidity 编译器的版本。基本意思是 “当运行合约的时候，我只想要使用 0.8.17 版本的 Solidity 编译器，低一点都不行。” 注意，要确保编译器的版本在 `hardhat.config.js` 中是一样的。
+这是我们希望合约使用的 Solidity 编译器的版本。基本意思是 “当运行合约的时候，我要使用 大于等于 0.8.17 版本且小于0.9.0版本的 Solidity 编译器。” 注意，要确保编译器的版本在 `hardhat.config.js` 中是一样的。
 
 ```solidity
 import "hardhat/console.sol";
