@@ -1,0 +1,18 @@
+[
+  {
+    "type": "Exclusive",
+    "question": "🤔Rainbowkit 是什么？",
+    "options": [
+      {
+        "content": "封装了 metamask、coinbase 等钱包连接交互的类库"
+      },
+      {
+        "content": "Solidity中提供的工具类库"
+      },
+      {
+        "content": "Hardhat框架提供的钱包交互类"
+      }
+    ],
+    "answer": [0]
+  }
+]

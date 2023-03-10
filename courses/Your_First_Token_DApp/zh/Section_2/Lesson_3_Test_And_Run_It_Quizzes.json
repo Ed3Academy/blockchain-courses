@@ -1,0 +1,18 @@
+[
+  {
+    "type": "Exclusive",
+    "question": "🤔HRE是什么？",
+    "options": [
+      {
+        "content": "区块链对象"
+      },
+      {
+        "content": "Solidity 提供的全局变量"
+      },
+      {
+        "content": "Hardhat 运行时环境"
+      }
+    ],
+    "answer": [2]
+  }
+]
