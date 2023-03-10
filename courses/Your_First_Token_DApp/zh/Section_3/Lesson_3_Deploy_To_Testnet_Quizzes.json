@@ -1,0 +1,10 @@
+
+[
+  {
+    "type": "GapFilling",
+    "question": "请输入你的合约地址",
+    "validation": {
+      "methods": ["symbol", "decimals", "balanceOf"]
+    } 
+  }
+]
