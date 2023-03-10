@@ -3,6 +3,7 @@
     "type": "GapFilling",
     "question": "请输入你的合约地址",
     "validation": {
+      "hint": "请输入你实践的合约地址",
       "methods": ["symbol", "decimals", "totalSupply"],
       "abi": [
         {
