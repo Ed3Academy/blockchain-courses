@@ -1,7 +1,7 @@
 [
   {
     "type": "Exclusive",
-    "question": "🤔我们利用hardhat 提供的哪个函数保证我们每一个场景跑完后，我们的链都是“干净”的？",
+    "question": "🤔我们利用hardhat提供的哪个函数保证我们每一个场景跑完后，我们的链都是“干净”的？",
     "options": [
       {
         "content": "blockCapture()"

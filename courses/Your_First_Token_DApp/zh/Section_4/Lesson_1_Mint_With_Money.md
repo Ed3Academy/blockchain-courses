@@ -86,7 +86,7 @@ contract MyToken is ERC20, Ownable {
     }
 ```
 
-控制权限需要做的第二件事就是在函数参数列表后加上`onlyOwner` ，这也叫做 `modifier` ，在 solidity 中它帮助我们做一些函数执行前后的校验
+控制权限需要做的第二件事就是在函数参数列表后加上 `onlyOwner` ，这也叫做 `modifier` ，在 solidity 中它帮助我们做一些函数执行前后的校验
 
 记住，转账给其他用户时需要将address用 `payable(...)` 进行转换哦~ 之后调用 `transfer`方法 即可
 
@@ -149,7 +149,7 @@ describe("MyToken", function () {
 });
 ```
 
-我们可能要测试部署、领取等很多的测试场景，所以这里我们利用hardhat 提供的 `loadFixtrue` 函数保证我们每一个场景跑完后，我们的链都是“干净”的。
+我们可能要测试部署、领取等很多的测试场景，所以这里我们利用hardhat 提供的 `loadFixture` 函数保证我们每一个场景跑完后，我们的链都是“干净”的。
 
 别忘了重新部署我们的合约更新到 Mumbai 测试网上☺️
 
