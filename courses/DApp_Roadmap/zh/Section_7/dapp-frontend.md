@@ -16,7 +16,7 @@
 
 ## 实战教程
 
-- 选择的前端开发框架教程，例如：create-react-APP、Vue、Next.js等
+- 选择的前端开发框架教程，例如：create-react-app、Vue、Next.js等
   - [Next.js](https://nextjs.org/)，建议使用脚手架起步
 - 区块链辅助类库
   - [wagmi](https://wagmi.sh/zh-CN)
