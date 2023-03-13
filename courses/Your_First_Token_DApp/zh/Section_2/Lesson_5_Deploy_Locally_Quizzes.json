@@ -1,0 +1,18 @@
+[
+  {
+    "type": "Exclusive",
+    "question": "🤔本地部署的命令是什么？",
+    "options": [
+      {
+        "content": "npx hardhat test test/MyToken.test.js"
+      },
+      {
+        "content": "npx hardhat run scripts/deploy.js --network localhost"
+      },
+      {
+        "content": "npx hardhat node"
+      }
+    ],
+    "answer": [1]
+  }
+]

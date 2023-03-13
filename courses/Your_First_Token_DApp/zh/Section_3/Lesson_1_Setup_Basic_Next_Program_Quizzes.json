@@ -1,0 +1,18 @@
+[
+  {
+    "type": "Exclusive",
+    "question": "🤔Next.js是基于什么的开发框架？",
+    "options": [
+      {
+        "content": "Vue"
+      },
+      {
+        "content": "React"
+      },
+      {
+        "content": "Angular"
+      }
+    ],
+    "answer": [1]
+  }
+]
