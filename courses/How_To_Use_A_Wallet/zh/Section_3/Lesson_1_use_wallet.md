@@ -11,7 +11,7 @@
 我们到预言机chainlink官方提供的水龙头网站，给自己的账户充值Chainlink官方的LINK代币（一种数字代币资产）。
 #### 2.1 打开Chainlink水龙头网站
 水龙头网址：<https://faucets.chain.link/>
-#### 2.2 切换网络到Goerli测试网络
+#### 2.2 切换网络到Goerli测试网络（2023年3月，建议将Goerli网络切换为Sepolia网络，下面都是）
 ![切换网络到Goerli测试网络](https://live.staticflickr.com/65535/52710914125_31a9d6a4fb_h.jpg)
 #### 2.3 连接Metamask钱包
 在chainlink的水龙头网站上，点击`Connect wallet`按钮，就类似于点击了传统网站中的登录按钮。
@@ -32,8 +32,8 @@
 - 其他信息会自动进行显示
 ![添加LINK资产类别](https://live.staticflickr.com/65535/52710756679_79592267ba_h.jpg)  
 可以看到，我们的钱包账户里面，已经多了10个`LINK`代币。
-### 4. 用水龙头给账户充值Goerli ETH
-#### 4.1 打开Alchemy水龙头网站
+### 4. 用水龙头给账户充值Goerli ETH（2023年3月，建议将Goerli网络切换为Sepolia网络，ETH也一样）
+#### 4.1 打开Alchemy水龙头网站（没有VPN的，可以切换到第5章节 使用POW水龙头，为自己赚取测试网络ETH）
 水龙头网址：<https://goerlifaucet.com/>
 还没有Alchemy注册登录账号的，可以先进行注册登录，因为后续学习区块链开发，实际也会用到Alchemy。
 #### 4.2 输入账户地址，进行充值
@@ -45,7 +45,15 @@
 ![显示交易情况](https://live.staticflickr.com/65535/52709975747_6953a47e2e_h.jpg)  
 交易完成后，查看钱包Goerli ETH增加了：
 ![查看ETH](https://live.staticflickr.com/65535/52710976298_f5b5bd8a14.jpg)
-### 5. 自己给自己ETH转账
+### 5. 用POW水龙头给账户充值Sepolia ETH
+#### 5.1 打开[POW水龙头网站](https://sepolia-faucet.pk910.de/)
+水龙头网址：<https://sepolia-faucet.pk910.de/>
+#### 5.2 输入你的账户地址，开始挖矿，等待至少达到0.05ETH的最低提现额度，停止挖矿，开始提现ETH
+![POW挖矿币](https://live.staticflickr.com/65535/52747526229_f74dcd240b_b.jpg)  
+#### 5.3 提现ETH
+![POW挖矿提现](https://live.staticflickr.com/65535/52747526139_daf6e99f3a_h.jpg)
+#### 5.4 查看钱包，Sepolia网络的ETH增加了
+### 6. 自己给自己ETH转账
 现在我们有ETH了，可以进行交易了，因为区块链上交易需要花手续费，在以太坊链上，交易手续费是消耗原生代币ETH。
 我们先进行一个转移ETH的交易，熟悉交易的钱包操作。
 - 点击钱包主页面上的`发送`按钮
