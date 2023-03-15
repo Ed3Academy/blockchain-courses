@@ -550,6 +550,13 @@
         "label": "水龙头",
         "websites": [
           {
+            "key": "moralisFaucets",
+            "label": "Moralis Faucet List",
+            "link": "https://moralis.io/faucets/",
+            "logo": "/third_party_logos/moralis.svg",
+            "description": "Moralis聚合了免费的测试网络充值水龙头"
+          },
+          {
             "key": "quickNode",
             "label": "QuickNode",
             "link": "https://faucet.quicknode.com/",
