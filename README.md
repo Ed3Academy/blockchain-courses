@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./docs/image/logo.svg" style="margin: 0 auto 40px;" width="380" />
+  <img src="https://avatars.githubusercontent.com/u/122348853" style="margin: 0 auto 40px;" width="380" />
   <h4 align="center">
     构建下一代区块链学习平台
   </h4>
