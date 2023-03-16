@@ -104,7 +104,7 @@ npx hardhat test test/MyToken.test.js
 
 这是我的输出：
 
-![Simple Mint Test result screenshot](https://raw.githubusercontent.com/Ed3Academy/blockchain-courses/main/courses/Your_First_Token_DApp/images/test-simple-mint-screenshot.png)
+![Simple Mint Test result screenshot](https://live.staticflickr.com/65535/52750339711_45796a4c24_h.jpg)
 
 非常棒，嗯:)？
 

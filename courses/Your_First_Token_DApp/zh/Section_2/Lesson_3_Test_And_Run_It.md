@@ -79,7 +79,7 @@ npx hardhat test test/MyToken.test.js
 
 你应该看到你的 `console.log` 在合约中运行，然后你还应该看到合约地址打印出来！！！这是我得到的：
 
-![MyToken.sol log screenshot](https://raw.githubusercontent.com/Ed3Academy/blockchain-courses/main/courses/Your_First_Token_DApp/images/test-log-screenshot.png)
+![MyToken.sol log screenshot](https://live.staticflickr.com/65535/52750582479_47232a92e0.jpg)
 
 ## 🎩 Hardhat & HRE
 
