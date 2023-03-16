@@ -5,7 +5,7 @@
     "validation": {
       "network": "mumbai",
       "methods": ["symbol", "decimals", "totalSupply"],
-      "validDeployer": true,
+      "validDeployer": false,
       "hint": "请输入你实践的合约地址",
       "abi": [
         {
