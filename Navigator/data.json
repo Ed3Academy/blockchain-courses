@@ -105,9 +105,8 @@
           },
           {
             "key": "scaffold-eth",
-            "label": "scaffold-eth",
+            "label": "🏗 Scaffold-ETH",
             "link": "https://github.com/austintgriffith/scaffold-eth",
-            "logo": "/third_party_logos/scaffold-eth.jfif",
             "description": "黑客松常用脚手架，包含DApp前后端，启动就能用"
           }
         ]
@@ -243,9 +242,9 @@
         "websites": [
           {
             "key": "web3uikit",
-            "label": "web3uikit",
+            "label": "Web3UIKit",
             "link": "https://github.com/web3ui/web3uikit",
-            "logo": "",
+            "logo": "/third_party_logos/web3uikit.svg",
             "description": "适用于 dapps 开发人员的轻量级可重用 Web3 UI 组件。Web3UIKit 加速您的 dapp 开发并使您能够构建漂亮的 dapp。"
           }
         ]
@@ -397,14 +396,14 @@
             "key": "slither",
             "label": "Slither",
             "link": "https://github.com/crytic/slither",
-            "logo": "",
+            "logo": "/third_party_logos/slither.png",
             "description": ""
           },
           {
             "key": "mythril",
             "label": "Mythril",
             "link": "https://github.com/ConsenSys/mythril",
-            "logo": "",
+            "logo": "/third_party_logos/mythril.png",
             "description": ""
           }
         ]
