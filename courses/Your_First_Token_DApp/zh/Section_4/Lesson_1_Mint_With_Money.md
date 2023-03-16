@@ -151,7 +151,7 @@ describe("MyToken", function () {
 
 我们可能要测试部署、领取等很多的测试场景，所以这里我们利用hardhat 提供的 `loadFixture` 函数保证我们每一个场景跑完后，我们的链都是“干净”的。
 
-别忘了重新部署我们的合约更新到 Mumbai 测试网上☺️
+别忘了重新部署我们的合约更新到 Mumbai 测试网上😀
 
 ```none
 Deploying contracts with account:  0x9f773d11C3eABb67Bd1827a983641b37c6C6B0a5
