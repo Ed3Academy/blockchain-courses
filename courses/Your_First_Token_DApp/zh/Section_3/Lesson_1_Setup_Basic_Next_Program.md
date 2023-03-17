@@ -24,7 +24,7 @@ npx create-next-app@latest
 
 ![Next.js setup screenshot](https://live.staticflickr.com/65535/52750582579_d6dd808167_o.png)
 
-设置好后，我们删除一些对我们不必要的文件 例如 `api` 文件夹以及`_document.tsx` 。
+设置好后，我们删除一些对我们不必要的文件 例如 `pages/api` 文件夹以及 `pages/_document.tsx` 。
 
 接下来，我们将 `index.tsx` 中的内容替换一下
 
@@ -114,58 +114,6 @@ a {
   align-items: center;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0d76fc;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 3rem 0;
-  line-height: 1;
-  font-size: 2.5rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 0 0 2rem;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
 .card {
   margin: 1rem;
   padding: 1.5rem;
@@ -179,3 +127,7 @@ a {
   font-weight: bold;
 }
 ```
+
+这样我们的页面就有了雏形
+
+![screenshot](https://live.staticflickr.com/65535/52752355351_59a1abd8f1.jpg)

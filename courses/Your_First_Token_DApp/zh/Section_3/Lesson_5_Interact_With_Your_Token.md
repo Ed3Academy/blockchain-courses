@@ -130,6 +130,9 @@ const Home = () => {
 
 export default Home;
 ```
+这样一来我们的页面就显示出了Balance和Total Supply
+
+![screenshot](https://live.staticflickr.com/65535/52752408831_9857174404.jpg)
 
 ## 📝 写入数据
 
