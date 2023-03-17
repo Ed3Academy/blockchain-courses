@@ -68,6 +68,7 @@ import { ConnectButton } from "@rainbow-me/rainbowkit";
 import MyTokenABI from "../abi/MyToken.json";
 import { useContractRead, useAccount } from "wagmi";
 import { useState, useEffect } from "react";
+import { BigNumber } from "ethers";
 
 const abi = MyTokenABI.abi;
 const contractAddress = "0xe7eF8d5C50fD89AaFF85384D50774aB15f0652FC";
@@ -76,14 +77,22 @@ const Home = () => {
   const { address } = useAccount();
   const [mounted, setMounted] = useState(false);
 
-  const { data: balance } = useContractRead({
+  const { data: balance } = useContractRead<
+    typeof abi,
+    "balanceOf",
+    number | BigNumber | undefined
+  >({
     address: contractAddress,
     abi,
     functionName: "balanceOf",
     args: [address],
   });
 
-  const { data: totalSupply } = useContractRead({
+  const { data: totalSupply } = useContractRead<
+    typeof abi,
+    "totalSupply",
+    number | BigNumber | undefined
+  >({
     address: contractAddress,
     abi,
     functionName: "totalSupply",
@@ -113,11 +122,11 @@ const Home = () => {
         <h2>My Token</h2>
         <div className={styles.card}>
           <div>Balance</div>
-          {balance && <div>{Number(balance)}</div>}
+          {balance && <div>{balance.toString()}</div>}
         </div>
         <div className={styles.card}>
           <div>Total Supply</div>
-          {totalSupply && <div>{Number(totalSupply)}</div>}
+          {totalSupply && <div>{totalSupply.toString()}</div>}
         </div>
         <div className={styles.card}>
           <div>Mint</div>
@@ -130,6 +139,8 @@ const Home = () => {
 
 export default Home;
 ```
+
+在 `useContractRead` 后的 `<>` 中我们指定了一些类型（包括返回值）
 
 ## 📝 写入数据
 
