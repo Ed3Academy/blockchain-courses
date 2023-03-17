@@ -42,10 +42,17 @@ Cool！我们完成了合约的部署，但千万不要忘记更新我们portal�
           <div>Mint</div>
           <div>
             <input
+	      value={mintTo}
               onChange={(e) => setMintTo(e.target.value)}
             />
           </div>
           <div>
+```
+
+同时声明一个state
+
+```tsx
+  const [mintTo, setMintTo] = useState("");
 ```
 
 此外，我们需要在调用 `mint` 方法时 发送一些 Ether 到合约
