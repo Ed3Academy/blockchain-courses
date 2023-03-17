@@ -7,11 +7,11 @@ Cool！我们完成了合约的部署，但千万不要忘记更新我们portal�
 我们可以添加一个卡片用来展示我们领取的花费
 
 ```tsx
-          {totalSupply && <div>{Number(totalSupply)}</div>}
+          {totalSupply && <div>{totalSupply.toString()}</div>}
         </div>
         <div className={styles.card}>
           <div>mintPrice</div>
-          {mintPrice && <div>{Number(mintPrice)}</div>}
+          {mintPrice && <div>{mintPrice.toString()}</div>}
         </div>
         <div className={styles.card}>
           <div>Mint</div>
@@ -23,7 +23,11 @@ Cool！我们完成了合约的部署，但千万不要忘记更新我们portal�
     functionName: "totalSupply",
   });
 
-  const { data: mintPrice } = useContractRead({
+  const { data: mintPrice } = useContractRead<
+    typeof abi,
+    "mintPrice",
+    number | BigNumber | undefined
+  >({
     address: contractAddress,
     abi,
     functionName: "mintPrice",

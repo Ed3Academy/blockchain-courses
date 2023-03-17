@@ -6,10 +6,10 @@
 
 Rainbowkit 是一个很便捷的工具，它封装了 metamask、coinbase 等钱包的交互，帮助我们一次接入多种钱包！
 
-我们先来安装一下 rainbowkit
+我们先来安装一下 rainbowkit 以及相关依赖
 
 ```bash
-npm install @rainbow-me/rainbowkit
+npm install @rainbow-me/rainbowkit ethers@5.7.2
 ```
 
 ## ⚙️ 完成相关配置

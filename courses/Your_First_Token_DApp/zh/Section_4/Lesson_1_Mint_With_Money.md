@@ -102,11 +102,8 @@ const { expect } = require("chai");
 
 describe("MyToken", function () {
   async function deployFixture() {
-    let mintPrice = ethers.utils.parseEther("0.001");
-
-    let mintTokenNumber = ethers.constants.WeiPerEther.mul(
-      ethers.BigNumber.from(100)
-    );
+    let mintTokenNumber = 10;
+    let mintPrice = 1000;
 
     // Contracts are deployed using the first signer/account by default
     const [owner, otherAccount] = await ethers.getSigners();
@@ -149,9 +146,51 @@ describe("MyToken", function () {
 });
 ```
 
-我们可能要测试部署、领取等很多的测试场景，所以这里我们利用hardhat 提供的 `loadFixture` 函数保证我们每一个场景跑完后，我们的链都是“干净”的。
+我们可能要测试部署、领取等很多的测试场景，所以这里我们利用 hardhat 提供的 `loadFixture` 函数保证我们每一个场景跑完后，我们的链都是“干净”的。
 
-别忘了重新部署我们的合约更新到 Mumbai 测试网上😀
+别忘了重新部署我们的合约更新到 Mumbai 测试网上 😀
+
+执行部署前，请仔细观察 👀 我们的测试脚本！构造函数新增了一个参数，测试脚本中多了一个传参。同样地，部署合约前，我们需要更新一下 `deploy.js`：
+
+```js
+const main = async () => {
+  const [deployer] = await hre.ethers.getSigners();
+  const accountBalance = await deployer.getBalance();
+
+  console.log("Deploying contracts with account: ", deployer.address);
+  console.log("Account balance: ", accountBalance.toString());
+
+  let mintTokenNumber = 10;
+  let mintPrice = 1000;
+
+  const myTokenContractFactory = await hre.ethers.getContractFactory("MyToken");
+  const myTokenContract = await myTokenContractFactory.deploy(
+    mintTokenNumber,
+    mintPrice
+  );
+  await myTokenContract.deployed();
+
+  console.log("MyToken address: ", myTokenContract.address);
+};
+
+const runMain = async () => {
+  try {
+    await main();
+    process.exit(0);
+  } catch (error) {
+    console.log(error);
+    process.exit(1);
+  }
+};
+
+runMain();
+```
+
+OK！我们再试试之前的部署命令吧！
+
+```bash
+npx hardhat run scripts/deploy.js --network mumbai
+```
 
 ```none
 Deploying contracts with account:  0x9f773d11C3eABb67Bd1827a983641b37c6C6B0a5
