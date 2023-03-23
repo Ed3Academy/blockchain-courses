@@ -1,6 +1,6 @@
 {
   "smartContractLanguages": {
-    "label": "🚀智能合约",
+    "label": "🚀 智能合约",
     "categories": [
       {
         "label": "智能合约语言",
@@ -53,7 +53,7 @@
     ]
   },
   "contractFramework": {
-    "label": "🌲合约开发框架",
+    "label": "🌲 合约开发框架",
     "categories": [
       {
         "label": "在线开发工具",
@@ -152,7 +152,7 @@
     ]
   },
   "dappFrontEnd": {
-    "label": "🍀DApp前端开发",
+    "label": "🍀 DApp前端开发",
     "categories": [
       {
         "label": "区块链客户端类库",
@@ -271,7 +271,7 @@
     ]
   },
   "dappTools": {
-    "label": "👓DApp开发配套",
+    "label": "👓 DApp开发配套",
     "categories": [
       {
         "label": "区块链浏览器",
@@ -442,7 +442,7 @@
     ]
   },
   "infrastructure": {
-    "label": "🏗基础设施",
+    "label": "🏗 基础设施",
     "categories": [
       {
         "label": "节点服务索引",
@@ -542,7 +542,7 @@
     ]
   },
   "faucet": {
-    "label": "💰测试网充值",
+    "label": "💰 测试网充值",
     "categories": [
       {
         "label": "水龙头",
@@ -601,7 +601,7 @@
     ]
   },
   "dappData": {
-    "label": "📱DApp应用浏览",
+    "label": "📱 DApp应用浏览",
     "categories": [
       {
         "label": "DApp数据查看",
@@ -625,7 +625,7 @@
     ]
   },
   "knowledge": {
-    "label": "👩‍🎓学习资源",
+    "label": "👩‍🎓 学习资源",
     "categories": [
       {
         "label": "社区教程",
@@ -674,7 +674,7 @@
             "key": "xiaozhenCourse",
             "label": "《区块链技术与应用》 - 北京大学肖臻老师",
             "link": "https://www.bilibili.com/video/BV1Vt411X7JF/",
-            "logo": "",
+            "logo": "/third_party_logos/bilibili.svg",
             "description": "北京大学肖臻老师，讲清楚区块链基础原理技术"
           },
           {
@@ -688,14 +688,14 @@
             "key": "huodaCourse",
             "label": "《Web3.0应用工程师培养计划2022年》- 火大开课吧",
             "link": "https://www.bilibili.com/video/BV1yD4y1C7we/",
-            "logo": "",
+            "logo": "/third_party_logos/bilibili.svg",
             "description": "火大Web3.0应用实战课程"
           },
           {
             "key": "chainlinkCourse",
             "label": "《区块链，智能合约 & 全栈 Web3 开发》- chainlink",
             "link": "https://www.bilibili.com/video/BV1Ca411n7ta/",
-            "logo": "",
+            "logo": "/third_party_logos/bilibili.svg",
             "description": "Chainlink Web3.0应用实战课程"
           }
         ]
@@ -722,7 +722,7 @@
     ]
   },
   "news": {
-    "label": "📰新闻资讯",
+    "label": "📰 新闻资讯",
     "categories": [
       {
         "label": "中文",
@@ -786,7 +786,7 @@
     ]
   },
   "books": {
-    "label": "📚推荐书籍",
+    "label": "📚 推荐书籍",
     "categories": [
       {
         "label": "区块链",
@@ -795,14 +795,14 @@
             "key": "dahuaqukuailian",
             "label": "大话区块链",
             "link": "https://weread.qq.com/web/bookDetail/a0532bc07207bc9fa0540e0",
-            "logo": "",
+            "logo": "/third_party_logos/wechat_read.png",
             "description": "区块链入门书籍"
           },
           {
             "key": "tushuoqukuailian",
             "label": "图说区块链",
             "link": "https://weread.qq.com/web/bookDetail/92832aa05df4c692819fd83",
-            "logo": "",
+            "logo": "/third_party_logos/wechat_read.png",
             "description": "区块链入门书籍"
           }
         ]
@@ -814,7 +814,7 @@
             "key": "yibenshududong",
             "label": "一本书读懂Web3.0：区块链、NFT、元宇宙和DAO",
             "link": "https://weread.qq.com/web/bookDetail/3df32d10813ab6e8eg0105dd",
-            "logo": "",
+            "logo": "/third_party_logos/wechat_read.png",
             "description": "Web3.0通识课程，了解Web3.0生态历史"
           }
         ]
@@ -853,7 +853,7 @@
     ]
   },
   "job": {
-    "label": "👨‍💼求职招聘",
+    "label": "👨‍💼 求职招聘",
     "categories": [
       {
         "label": "求职招聘",
@@ -891,7 +891,7 @@
     ]
   },
   "other-tools": {
-    "label": "🛠️第三方聚合导航",
+    "label": "🛠️ 第三方聚合导航",
     "categories": [
       {
         "label": "开发工具聚合",
