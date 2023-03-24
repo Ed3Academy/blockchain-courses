@@ -1,10 +1,8 @@
 # 通过nvm安装
 
-上节说到对 Node.js 有多版本要求的问题，那么 nvm 应运而生。
-
 ![Node.js](https://live.staticflickr.com/65535/52767790633_4341c827d0_z.jpg)
 
-[nvm](https://github.com/nvm-sh/nvm) 即Node版本管理器（Node Version Manager）。它支持通过命令行安装和切换不同版本的Node.js。
+相较于 nvm-windows，[nvm](https://github.com/nvm-sh/nvm) 通过命令行安装，过程稍微复杂一些。
 
 安装 nvm 首先需要创建以下文件中的一个：
 

@@ -34,9 +34,9 @@
       "lessons": [
         {
           "title": {
-            "zh": "官网下载安装"
+            "zh": "通过nvm-windows安装"
           },
-          "file": "Lesson_1_official.md"
+          "file": "Lesson_1_nvm_windows.md"
         },
         {
           "title": {
@@ -46,9 +46,9 @@
         },
         {
           "title": {
-            "zh": "nvm-windows"
+            "zh": "官网下载安装"
           },
-          "file": "Lesson_3_nvm_windows.md"
+          "file": "Lesson_3_official.md"
         }
       ]
     },
