@@ -17,9 +17,11 @@
 1. 我们将经常使用一个叫Hardhat的工具。这将让我们轻松地启动一个本地以太坊网络，并给我们提供假的测试以太币（用于支付本地以太坊网络费用）和假的测试账户来工作。记住，这就像一个本地服务器。
 2. 快速编译智能合约，并在我们的本地区块链上测试它们。
 
-首先，您需要安装 Node/NPM。 如果没有，请前往 [此处](https://hardhat.org/tutorial/setting-up-the-environment.html) 。
+首先，您需要安装 Node/NPM，如果没有安装过Node：
+- 我们推荐按照[NodeJs安装教程](https://ed3academy.xyz/course/641d600bcd16f48af929a1af)里面推荐的方式安装，以支持多版本，快速的镜像。
+- 或者按照[Hardhat教程](https://hardhat.org/tutorial/setting-up-the-environment.html) 步骤安装。
 
-我们建议使用当前的 LTS Node.js 版本运行 Hardhat，否则您可能会遇到一些问题！ 您可以在 [此处](https://nodejs.org/en/about/releases/) 找到当前版本。 **确保您的 NodeJs 版本正确，否则您会遇到问题！** 我们现在推荐版本 16。
+如果安装过，我们建议使用当前的 LTS Node.js 版本运行 Hardhat，否则您可能会遇到一些问题！ 您可以在 [此处](https://nodejs.org/en/about/releases/) 找到当前版本。 **确保您的 NodeJs 版本正确，否则您会遇到问题！** 
 
 接下来，让我们前往(CMD)终端（Git Bash 将无法运行）。 继续并 cd 到你想要工作的目录。而后在那里运行这些命令：
 
