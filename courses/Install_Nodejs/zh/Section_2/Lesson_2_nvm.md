@@ -1,7 +1,5 @@
 # 通过nvm安装
 
-## nvm
-
 上节说到对 Node.js 有多版本要求的问题，那么 nvm 应运而生。
 
 ![Node.js](https://live.staticflickr.com/65535/52767790633_4341c827d0_z.jpg)
