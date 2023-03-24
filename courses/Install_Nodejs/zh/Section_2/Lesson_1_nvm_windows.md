@@ -28,6 +28,12 @@ nvm install 18.15.0
 nvm list
 ```
 
+使用最新稳定版的 Node.js ：
+
+```shell
+nvm use lts
+```
+
 使用指定版本的 Node.js ：
 
 ```shell
