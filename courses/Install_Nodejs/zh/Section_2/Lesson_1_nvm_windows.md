@@ -10,6 +10,12 @@
 
 之后就是傻瓜式安装了，安装成功后就能在控制台使用一系列 nvm 命令：
 
+安装最新稳定版的 Node.js ：
+
+```shell
+nvm install lts
+```
+
 安装指定版本的 Node.js ：
 
 ```shell
@@ -20,6 +26,12 @@ nvm install 18.15.0
 
 ```shell
 nvm list
+```
+
+使用最新稳定版的 Node.js ：
+
+```shell
+nvm use lts
 ```
 
 使用指定版本的 Node.js ：
