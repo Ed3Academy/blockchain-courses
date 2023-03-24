@@ -1,0 +1,75 @@
+{
+  "title": {
+    "zh": "Node.js安装教程"
+  },
+  "coverUrl": "/cover-nodejs.png",
+  "description": {
+    "zh": "Node.js是一个开源的、跨平台的JavaScript运行时环境。"
+  },
+  "discussionUrl": "https://github.com/orgs/Ed3Academy/discussions/12",
+  "sections": {
+    "Section_1": {
+      "title": {
+        "zh": "Node.js简介"
+      },
+      "lessons": [
+        {
+          "title": {
+            "zh": "Node.js是什么"
+          },
+          "file": "Lesson_1_Nodejs.md"
+        },
+        {
+          "title": {
+            "zh": "什么是npm和npx"
+          },
+          "file": "Lesson_2_npm_npx.md"
+        }
+      ]
+    },
+    "Section_2": {
+      "title": {
+        "zh": "安装Node.js（三选一）"
+      },
+      "lessons": [
+        {
+          "title": {
+            "zh": "通过nvm-windows安装（推荐）"
+          },
+          "file": "Lesson_1_nvm_windows.md"
+        },
+        {
+          "title": {
+            "zh": "通过nvm安装"
+          },
+          "file": "Lesson_2_nvm.md"
+        },
+        {
+          "title": {
+            "zh": "官网下载安装"
+          },
+          "file": "Lesson_3_official.md"
+        }
+      ]
+    },
+    "Section_3": {
+      "title": {
+        "zh": "切换npm源（二选一）"
+      },
+      "lessons": [
+        {
+          "title": {
+            "zh": "nrm（推荐）"
+          },
+          "file": "Lesson_1_nrm.md"
+        },
+        {
+          "title": {
+            "zh": "npm命令"
+          },
+          "file": "Lesson_2_npm.md"
+        }
+      ]
+    }
+  }
+}
