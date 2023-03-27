@@ -24,33 +24,7 @@ Ed3Academy是一个构建下一代区块链的学习平台。
 
 ## 📚全部课程
 
-### 😄引言：开发者路线图
-
-这是初学者进行区块链应用开发，Ed3Academy建议您按如下顺序进行学习：
-
-[✂️区块链基础](https://ed3academy.xyz/course/roadmap/section/blockchain)
-
-[📎以太坊基础](https://ed3academy.xyz/course/roadmap/section/ethereum)
-
-[📏Web3.0](https://ed3academy.xyz/course/roadmap/section/web3.0)
-
-[✏️DApp概述](https://ed3academy.xyz/course/roadmap/section/dapp-overview)
-
-[📐智能合约Solidity](https://ed3academy.xyz/course/roadmap/section/solidity)
-
-[📕DApp前端](https://ed3academy.xyz/course/roadmap/section/dapp-frontend)
-
-[📗联盟链](https://ed3academy.xyz/course/roadmap/section/alliance-chain)
-
-[📘NFT](https://ed3academy.xyz/course/roadmap/section/NFT)
-
-[📙DeFi](https://ed3academy.xyz/course/roadmap/section/DeFi)
-
-[📒DAO](https://ed3academy.xyz/course/roadmap/section/DeFi)
-
-### 🏀第一课：创建第一个DApp
-
-在[这门课程](https://ed3academy.xyz/course/Your_First_Token_DApp/section/Section_1_Lesson_1_Get_Started)中，您将打造一个 **您自己的第一个代币** 网站！您将编写 + 部署智能合约，您还将构建网站，让人们连接他们的钱包并与您的智能合约进行交互！听起来是不是让人很兴奋呢？
+前往[官网](https://ed3academy.xyz/course)参加这些独立课程开始您的Web3之旅。
 
 ## 📁百宝箱
 
@@ -60,27 +34,27 @@ Ed3Academy是一个构建下一代区块链的学习平台。
 
 ### 🎉功能分类
 
-✂智能合约  
+✂智能合约
 
-📎合约开发框架  
+📎合约开发框架
 
-📏DApp前端开发  
+📏DApp前端开发
 
-✏️DApp开发配套  
+✏️DApp开发配套
 
-📐基础设施  
+📐基础设施
 
-📕测试网充值  
+📕测试网充值
 
-📗DApp应用浏览  
+📗DApp应用浏览
 
-📘学习社区  
+📘学习社区
 
-📙新闻资讯  
+📙新闻资讯
 
-📓推荐书籍  
+📓推荐书籍
 
-📒求职招聘  
+📒求职招聘
 
 ## 👪社区共建
 
