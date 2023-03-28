@@ -1,6 +1,6 @@
 {
   "title": {
-    "zh": "Node.js安装教程"
+    "zh": "Node.js 安装教程"
   },
   "coverUrl": "/cover-nodejs.png",
   "description": {
@@ -10,18 +10,18 @@
   "sections": {
     "Section_1": {
       "title": {
-        "zh": "Node.js简介"
+        "zh": "Node.js 简介"
       },
       "lessons": [
         {
           "title": {
-            "zh": "Node.js是什么"
+            "zh": "Node.js 是什么"
           },
           "file": "Lesson_1_Nodejs.md"
         },
         {
           "title": {
-            "zh": "什么是npm和npx"
+            "zh": "什么是 npm 和 npx"
           },
           "file": "Lesson_2_npm_npx.md"
         }
@@ -29,18 +29,18 @@
     },
     "Section_2": {
       "title": {
-        "zh": "安装Node.js（三选一）"
+        "zh": "安装 Node.js（三选一）"
       },
       "lessons": [
         {
           "title": {
-            "zh": "通过nvm-windows安装（推荐）"
+            "zh": "nvm-windows 安装（推荐）"
           },
           "file": "Lesson_1_nvm_windows.md"
         },
         {
           "title": {
-            "zh": "通过nvm安装"
+            "zh": "nvm 安装"
           },
           "file": "Lesson_2_nvm.md"
         },
@@ -54,7 +54,7 @@
     },
     "Section_3": {
       "title": {
-        "zh": "切换npm源（二选一）"
+        "zh": "切换 npm 源（二选一）"
       },
       "lessons": [
         {
@@ -65,7 +65,7 @@
         },
         {
           "title": {
-            "zh": "npm命令"
+            "zh": "npm 命令"
           },
           "file": "Lesson_2_npm.md"
         }
