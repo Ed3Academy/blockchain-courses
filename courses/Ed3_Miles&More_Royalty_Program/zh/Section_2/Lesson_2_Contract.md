@@ -10,7 +10,5 @@ ERC721标准定义了一组规则和接口，用于实现NFTs的创建、转移�
 
 ERC721代币的主要特点是每个代币都是独一无二的，每个代币都有自己的唯一标识符（Token ID）。所有的代币都存储在智能合约中，每个代币都可以被单独转移或交易。代币的拥有者可以随时将代币转移给其他人，而代币的属性和价值将保持不变。
 
-
-
 1. Ed3AirlineGate 服务窗口将机票 Ed3AirTicketNFT 和积分 Ed3LoyaltyPoints 发放给 User；
-5. User 使用 Ed3LoyaltyPoints 积分兑换 Ed3Coupon 优惠券；
+2. User 使用 Ed3LoyaltyPoints 积分兑换 Ed3Coupon 优惠券；

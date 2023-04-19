@@ -1,0 +1,42 @@
+{
+    "title": { "zh": "Ed3 Miles&More royalty program" },
+    "coverUrl": "/cover-lesson-2.png",
+    "description": {
+      "zh": "该项目适用于想要更多地了解加密技术的开发人员。在这过程中你会学习使用一些新技能。"
+    },
+    "discussionUrl": "https://github.com/orgs/Ed3Academy/discussions/13",
+    "posterUrl": "https://live.staticflickr.com/65535/52743597517_4972209c83_h.jpg",
+    "permission": {
+      "roles": ["User"]
+    },
+    "sections": {
+      "Section_1": {
+        "title": { "zh": "准备开始" },
+        "lessons": [
+          { 
+            "title": { "zh": "准备开始" }, 
+            "file": "Lesson_1_Get_Started.md" 
+          }
+        ]
+      },
+      "Section_2": {
+        "title": { "zh": "合约开发" },
+        "lessons": [
+          {
+            "title": { "zh": "合约开发" },
+            "file": "Lesson_2_Contract.md"
+          }
+        ]
+      },
+      "Section_3": {
+        "title": { "zh": "前端开发" },
+        "lessons": [
+          {
+            "title": { "zh": "前端开发" },
+            "file": "Lesson_3_frontend.md"
+          }
+        ]
+      }
+    }
+  }
+  
