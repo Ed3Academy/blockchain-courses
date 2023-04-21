@@ -31,11 +31,11 @@ npm install
 
 ### 🖼️生成NFT元数据
 
-首先，选择一张你喜欢的图片作为NFT的image，这里我们选择的是机票，需要放在nfts/images/ticket路径下，或者配置到你喜欢的路径😄。
+选择一张你喜欢的图片作为NFT的image，这里我们选择的是机票，需要放在nfts/images/ticket路径下，或者配置到你喜欢的路径😄，如果这么做，你也需要在代码中更改对应的路径。
 
 ![airticket](https://live.staticflickr.com/65535/52831366119_3cb5727f5a_b.jpg)
 
-生成NFT元数据脚本，你可以从[这里](https://github.com/Ed3Academy/ed3-hardhat-template/blob/main/scripts/upload-nfts.js)找到这份脚本，执行 `npx hardhat run ./scripts/upload-nfts.js` 就可以生成NFT元数据了。主要过程为：
+你可以从[这里](https://github.com/Ed3Academy/ed3-hardhat-template/blob/main/scripts/upload-nfts.js)找到这份生成NFT元数据脚本，执行 `npx hardhat run ./scripts/upload-nfts.js` 就可以生成NFT元数据了。脚本主要过程为：
 
 - 将图片上传到ipfs上
 - 将NFT元数据上传到ipfs上
@@ -81,6 +81,18 @@ async function main() {
   );
 }
 ```
+
+发布成功后，我们可以在ipfs上查看我们的元数据！你可以从[这里](https://ipfs.io/ipfs/bafybeibuvuunohdpdknchojvwdbcfcdgjwlt6qznacjyxpfqficab24ng4/0.json)访问到元数据。
+
+```json
+{
+  "name": "Ed3Coupon",
+  "description": "Ed3Coupon",
+  "image": "ipfs://bafybeifajmlobagdmv3dwa3dy4vn3w5jp55vzg346jsuaepd5w6pnid4x4/0.jpg"
+}
+```
+
+
 
 ### 📒合约代码
 
@@ -200,6 +212,20 @@ Ed3AirlineGate是我们的服务窗口，这里是买机票以及发放积分的
 
 - 在构造函数中需要指明积分合约地址、机票地址以及购买一张机票可以获取多少积分；
 - mint()函数中需要使用原生币购买机票，同时返回积分给用户；
+- 这里我们集成了两个第三方合约Ed3AirTicketNFT和Ed3LoyaltyPoints，我们可以先声明这些接口有哪些方法，然后通过接口的方式直接调用它们。
+
+```solidity
+interface IEd3AirTicketNFT {
+    function mint(address _to) external payable;
+    function maxSupply() external view returns (uint256);
+    function totalSupply() external view returns (uint256);
+    function mintPrice() external view returns (uint256);
+}
+
+interface IEd3LoyaltyPoints {
+    function mint(address _to, uint256 _mintTokenNumber) external;
+}
+```
 
 你可以从[这里](https://github.com/Ed3Academy/ed3-hardhat-template/blob/main/contracts/Ed3AirlineGate.sol)找到这份合约，关键代码如下：
 
@@ -249,7 +275,9 @@ Ed3Coupon是我们的优惠券合约，它基本和机票合约大同小异：Ed
 
 ### 🖼️生成NFT元数据
 
-可以参见Ed3AirTicket部分是如何生成NFT元数据的，只是脚本中需要更改Ed3Coupon图片路径😝。
+可以参见Ed3AirTicket部分是如何生成NFT元数据的，只是脚本中需要更改Ed3Coupon图片路径😝。这是我们选用的Coupon图片
+
+![coupon](https://live.staticflickr.com/65535/52833694844_978c3904f9_b.jpg)
 
 ### 📒合约代码
 
