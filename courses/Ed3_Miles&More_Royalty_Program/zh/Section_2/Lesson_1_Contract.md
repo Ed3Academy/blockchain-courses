@@ -82,7 +82,6 @@ async function main() {
 }
 ```
 
-
 ### 📒合约代码
 
 ERC721是以太坊上用于实现非同质化代币（Non-Fungible Tokens，NFTs）的一种标准。ERC721代币每个代币都是独一无二的，每个代币都有自己的唯一标识符（Token ID）。
@@ -107,7 +106,6 @@ ERC721是以太坊上用于实现非同质化代币（Non-Fungible Tokens，NFTs
         tokenIdCounter.increment();
     }
 ```
-
 
 ### 📜合约部署脚本
 
@@ -159,19 +157,16 @@ async function main() {
 
 ## ⏳Ed3LoyaltyPoints
 
-Ed3LoyaltyPoints是积分合约🥰，我们选用ERC20标准来实现它。
+Ed3LoyaltyPoints是积分合约🥰，我们选用ERC20标准来实现它。合约的主要内容包括：
+
+- 继承ERC20Capped，限制积分供应量上限；ERC20Capped 是 ERC20 代币标准的一个扩展，它增加了一个代币总供应量的上限限制，同时在发行新代币时检查供应量是否已经达到了上限。
+- 将积分精度设置为1
+
+你可以从[这里](https://github.com/Ed3Academy/ed3-hardhat-template/blob/main/contracts/Ed3LoyaltyPoints.sol)找到这份合约，关键代码如下：
 
 ### 📒合约代码
 
 ```solidity
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.9;
-
-import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Capped.sol";
-import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
-
 /*
  * 合约积分
  * ERC20 是以太坊上最常用的代币标准之一，规定了代币的基本功能，包括转账、余额查询、授权转移等。
@@ -201,17 +196,16 @@ contract Ed3LoyaltyPoints is ERC20, ERC20Capped, ERC20Burnable, Ownable {
 
 ## 🚪Ed3AirlineGate
 
-Ed3AirlineGate是我们的服务窗口，这里是买机票以及发放积分的统一入口☺️。
+Ed3AirlineGate是我们的服务窗口，这里是买机票以及发放积分的统一入口☺️。合约的主要内容包括：
+
+- 在构造函数中需要指明积分合约地址、机票地址以及购买一张机票可以获取多少积分；
+- mint()函数中需要使用原生币购买机票，同时返回积分给用户；
+
+你可以从[这里](https://github.com/Ed3Academy/ed3-hardhat-template/blob/main/contracts/Ed3AirlineGate.sol)找到这份合约，关键代码如下：
 
 ### 📒合约代码
 
 ```solidity
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.9;
-
-import "./IEd3LoyaltyPoints.sol";
-import "./IEd3AirTicketNFT.sol";
-
 // @title Ed3航空公司服务窗口，用于用于购买机票并发放积分，同时提供接口让管理员可以转移购买机票的资金。
 contract Ed3AirlineGate {
     address payable public ed3TicketNFTAddress;
@@ -251,7 +245,7 @@ contract Ed3AirlineGate {
 
 ## 🎟️Ed3Coupon
 
-Ed3Coupon是我们的优惠券合约，它基本和机票合约只有一小部分差异：Ed3Airticket机票是使用原生币来购买，而Ed3Coupon优惠券是需要消耗Ed3LoyaltyPoints来兑换。
+Ed3Coupon是我们的优惠券合约，它基本和机票合约大同小异：Ed3Airticket机票是使用原生币来购买，而Ed3Coupon优惠券是需要消耗Ed3LoyaltyPoints来兑换。
 
 ### 🖼️生成NFT元数据
 
@@ -259,9 +253,34 @@ Ed3Coupon是我们的优惠券合约，它基本和机票合约只有一小部�
 
 ### 📒合约代码
 
-与Ed3Airticket不同的是，兑换处Ed3Coupon需要的是Ed3LoyaltyPoints，mint()方法中校验的就是Ed3LoyaltyPoints余额是否足够而非原生币。
+与Ed3Airticket不同的是，兑换处Ed3Coupon需要的是Ed3LoyaltyPoints，mint()方法中校验的就是Ed3LoyaltyPoints余额是否足够而非原生币☺️。合约的主要内容包括：
+
+- 在构造函数中需要指明积分合约地址用来校验用户提供的积分是否足够；
+- mint()函数中需要使用积分兑换优惠券；
+
+你可以从[这里](https://github.com/Ed3Academy/ed3-hardhat-template/blob/main/contracts/Ed3Coupon.sol)找到这份合约，关键代码如下：
 
 ```solidity
+
+    // 在构造函数中需要指明积分合约地址用来校验用户提供的积分是否足够；
+    constructor(
+        address _tokenAddress,
+        string memory _name,
+        string memory _symbol,
+        string memory _baseUri,
+        uint256 _mintPrice,
+        uint256 _maxSupply,
+        uint256 _launchDate,
+        address _paymentAddress
+    ) ERC721(_name, _symbol) {
+        baseUri = _baseUri;
+        mintPrice = _mintPrice;
+        maxSupply = _maxSupply;
+        launchDate = _launchDate;
+        paymentAddress = payable(_paymentAddress);
+        tokenAddress = _tokenAddress;
+    }
+
     // 将优惠券mint给指定用户，这是使用指定的token才能兑换优惠券，以物易物。指定的token以及兑换数值比例在构造函数中做了指定
     function mint(address _to) public {
         require(block.timestamp >= launchDate, "minting not enabled yet, please wait");
@@ -275,22 +294,27 @@ Ed3Coupon是我们的优惠券合约，它基本和机票合约只有一小部�
     }
 ```
 
-
 # 🔭集成测试脚本
 
-```javascript
-const { loadFixture } = require("@nomicfoundation/hardhat-network-helpers");
-const { expect } = require("chai");
-const { ethers } = require("hardhat");
-const moment = require("moment");
-const ticketNFTLocation = require("../nfts/location/ticket/location.json");
-const couponNFTLocation = require("../nfts/location/coupon/location.json");
+当完成上述几个合约的编写后，接下来我们需要对这些合约做一次集成测试🥳！主要内容包括：
 
+- 前置内容包括
+  - 部署机票
+  - 部署积分
+  - 部署服务窗口
+  - 部署优惠券
+- 用户携带ticketMintPrice资金通过服务窗口购买机票
+- 授权积分合约给优惠券合约
+- 完成积分的兑换
+- 校验优惠券的数量为1
+
+你可以通过命令 `npx hardhat test ./test/testDeployLoyaltyProgram.js`完成测试，从[这里](https://github.com/Ed3Academy/ed3-hardhat-template/blob/main/test/testDeployLoyaltyProgram.js)找到这份测试脚本，关键代码如下：
+
+```javascript
 // npx hardhat test ./test/testDeployLoyaltyProgram.js
 describe("Ed3Coupon mint test", function () {
   async function deployFixture() {
     const [owner] = await ethers.getSigners();
-
     // 部署机票
     const ticketNFTName = "Ed3AirTicket";
     const ticketNFTSymbol = "Ed3AirTicket";
@@ -346,33 +370,7 @@ describe("Ed3Coupon mint test", function () {
       Math.round(couponLaunchDate.valueOf() / 1000),
       owner.address,
     );
-
-    return {
-      ticketMintPrice,
-      ticketCount,
-      ed3AirTicketNFT,
-      ed3AirlineGate,
-      ed3LoyaltyPoints,
-      pointTotalSupply,
-      pointsPerTicket,
-      ed3Coupon,
-      owner,
-    };
   }
-
-  describe("Deployment", function () {
-    it("Should set the right owner", async function () {
-      const { ed3Coupon, owner } = await loadFixture(deployFixture);
-      console.log("ed3Coupon.address", ed3Coupon.address);
-      expect(await ed3Coupon.owner()).to.equal(owner.address);
-    });
-
-    it("ed3Coupon should set the right mintPrice", async function () {
-      const { ed3Coupon, pointsPerTicket } = await loadFixture(deployFixture);
-      expect(await ed3Coupon.mintPrice()).to.equal(pointsPerTicket);
-    });
-  });
-
   describe("Mint", function () {
     describe("exchange coupon", function () {
       it("Should mint the NFT to mint account", async function () {
@@ -406,18 +404,21 @@ describe("Ed3Coupon mint test", function () {
 });
 ```
 
+如果看到下方截图，那么恭喜你，测试通过🉑~
 
+![test_result](https://live.staticflickr.com/65535/52833446366_b44b325618_b.jpg)
 
 # ♾️集成部署脚本
 
+经过以上代码开发和集成测试，恭喜你到最后一步，我们可以发布上链了！部署脚本和集成测试脚本大同小异。关于机票，你可以使用自己部署的机票或者使用Ed3提供的机票，这在脚本中选择屏蔽即可！
+
+你可以通过命令 `npx hardhat node` 在本地起fork测试链，然后通过命令 `npx hardhat run ./scripts/deployLoyaltyProgram.js --network localhost` 在本地进行合约部署。
+
+最终我们指定网络地址为PolygonMumbai，即可上公共测试链了。 `npx hardhat run ./scripts/deployLoyaltyProgram.js --network PolygonMumbai`
+
+从[这里](https://github.com/Ed3Academy/ed3-hardhat-template/blob/main/scripts/deployLoyaltyProgram.js)找到这份集成部署脚本，关键代码如下：
 
 ```JavaScript
-const hre = require("hardhat");
-const { ethers, upgrades } = require("hardhat");
-const ticketNFTLocation = require("../nfts/location/ticket/location.json");
-const couponNFTLocation = require("../nfts/location/coupon/location.json");
-const moment = require("moment");
-
 // npx hardhat run ./scripts/deployLoyaltyProgram.js --network PolygonMumbai
 // npx hardhat run ./scripts/deployLoyaltyProgram.js --network localhost
 async function main() {
@@ -442,18 +443,12 @@ async function main() {
   const pointSymbol = "ELP";
   const Ed3LoyaltyPoints = await ethers.getContractFactory("Ed3LoyaltyPoints");
   const ed3LoyaltyPoints = await Ed3LoyaltyPoints.deploy(pointName, pointSymbol, pointTotalSupply);
-  console.log(
-    `npx hardhat verify --network PolygonMumbai "${ed3LoyaltyPoints.address}" ${pointName} ${pointSymbol} ${pointTotalSupply}`,
-  );
 
   // 部署服务窗口 GateV2
   const pointsPerTicket = 1000;
   const Ed3AirlineGate = await ethers.getContractFactory("Ed3AirlineGate");
   const ed3AirlineGate = await Ed3AirlineGate.deploy(ed3LoyaltyPoints.address, ed3AirTicketNFT, pointsPerTicket);
   await ed3LoyaltyPoints.transferOwnership(ed3AirlineGate.address);
-  console.log(
-    `npx hardhat verify --network PolygonMumbai "${ed3AirlineGate.address}" ${ed3LoyaltyPoints.address} ${ed3AirTicketNFT} ${pointsPerTicket}`,
-  );
 
   // 部署优惠券 Coupon
   const couponName = "Ed3Coupon";
@@ -473,21 +468,18 @@ async function main() {
     Math.round(couponLaunchDate.valueOf() / 1000),
     owner.address,
   );
-
-  console.log(
-    `npx hardhat verify --network PolygonMumbai "${ed3Coupon.address}" ${
-      ed3LoyaltyPoints.address
-    } ${couponName} ${couponSymbol} ipfs://${couponMetadata}/ ${pointsPerTicket} ${couponCount} ${Math.round(
-      couponLaunchDate.valueOf() / 1000,
-    )} ${owner.address}`,
-  );
 }
 
-// We recommend this pattern to be able to use async/await everywhere
-// and properly handle errors.
-main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
-
 ```
+
+当成功部署合约之后，你应该可以看到以下截图输出：
+
+![deploy_result](https://live.staticflickr.com/65535/52833919323_ae561f629f_b.jpg)
+
+接下来我们可以对合约进行开源，这样所有人都可以在网络上看到合约的代码！我们复制对应verify语句在命令行执行后应该看到如下截图：
+
+![verify_result](https://live.staticflickr.com/65535/52832907237_a6a387f775_b.jpg)
+
+访问 [https://mumbai.polygonscan.com](https://mumbai.polygonscan.com/address/0x56676b6D007Acb62b59C19Fe53d7d94Ed9A23ae1#code) 可以看到，示例中的Ed3Coupon合约已经成功上链并完成开源！
+
+![verify_scan](https://live.staticflickr.com/65535/52833926068_9df57f7909_b.jpg)
