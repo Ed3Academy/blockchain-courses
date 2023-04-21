@@ -53,15 +53,27 @@
         ]
       },
       "Section_3": {
-        "title": { "zh": "前端界面" },
+        "title": { "zh": "前端项目开发" },
         "lessons": [
           {
             "title": { "zh": "搭建基础的前端项目" },
-            "file": "Lesson_1_Setup_Basic_Next_Program.md"
+            "file": "Lesson_1_Setup_Basic_Program.md"
           },
           {
-            "title": { "zh": "和你的合约交互" },
-            "file": "Lesson_2_Interact_With_Contract.md"
+            "title": { "zh": "一些准备工作" },
+            "file": "Lesson_2_Prepare.md"
+          },
+          {
+            "title": { "zh": "从合约读取数据" },
+            "file": "Lesson_3_Read_Contract.md"
+          },
+          {
+            "title": { "zh": "向合约写入数据" },
+            "file": "Lesson_4_Write_Contract.md"
+          },
+          {
+            "title": { "zh": "显示机票和优惠券" },
+            "file": "Lesson_5_Nft_Metadata.md"
           }
         ]
       }
