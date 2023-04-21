@@ -25,9 +25,9 @@ NFT_STORAGE_API_KEY="zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
 npm install
 ```
 
-## 🎫Ed3Airticket
+## 🎫Ed3AirTicketNFT
 
-我们先说说依赖的Ed3AirTicket。这是一个机票合约，我们采用ERC721标准实现🥰。而发布ERC721代币，我们还需要有NFT的元数据，让我们先上传一张喜欢的图片！😘
+我们先说说依赖的Ed3AirTicketNFT。这是一个机票合约，我们采用ERC721标准实现🥰。而发布ERC721代币，我们还需要有NFT的元数据，让我们先上传一张喜欢的图片！😘
 
 ### 🖼️生成NFT元数据
 
