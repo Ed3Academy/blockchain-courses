@@ -6,7 +6,7 @@
 
 [RainbowKit](https://www.rainbowkit.com/docs/installation) 是一款钱包连接插件，官方推出的 RainbowKit + [wagmi](https://wagmi.sh/) + [Next.js](https://www.nextjs.cn/) 模板，可以帮助我们轻松地构建 DApp 应用。
 
-你也可以直接使用我们为你准备的 [基础项目](https://github.com/Ed3Academy/miles-more-we) 直接开始后面的课程，这是最方便快捷的。
+你也可以直接使用我们为你准备的 [基础项目](https://github.com/Ed3Academy/miles-more-web) 直接开始后面的课程，这是最方便快捷的。
 
 那我们赶快开始吧😃
 
