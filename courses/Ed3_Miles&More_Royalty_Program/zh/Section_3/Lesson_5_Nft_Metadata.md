@@ -20,8 +20,8 @@ export const formatIpfsUrl = ipfsUrl => {
 // 获取IPFS元数据
 export const getIpfs = async ipfsUrl => {
   const uri = formatIpfsUrl(ipfsUrl)
-  const { data } = await fetch.get(uri)
-  return data
+  const data = await fetch(uri)
+  return data.json()
 }
 
 ```

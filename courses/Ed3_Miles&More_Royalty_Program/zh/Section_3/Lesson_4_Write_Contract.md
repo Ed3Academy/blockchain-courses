@@ -77,15 +77,9 @@ const Home = () => {
 
 因此在我们的前端代码中，需要先调用 `Ed3LoyaltyPoints` 的 `approve` 方法，再调用 `Ed3Coupon` 的 `mint` 方法。
 
-首先引入 @wagmi/core：
+这里我们要引入 @wagmi/core，这是 wagmi 的核心模块，支持在事件方法中直接与区块链交互（而不是通过 hook 的方式）。
 
-```shell
-npm install @wagmi/core
-```
-
-@wagmi/core 是 wagmi 的核心模块，支持在 js 中直接与区块链交互（而不是通过 hook 的方式）。
-
-然后修改 `index.jsx`：
+让我们修改 `index.jsx`：
 
 ```jsx
 // ...
@@ -155,4 +149,4 @@ const Home = () => {
 
 第二次是批准积分最大额度，第三次是真正的兑换操作。
 
-Cooool🎊我们实现了兑换优惠券的操作。学到这里，恭喜你基本掌握了如何使用 wagmi 完成与区块链交互😍
+Cooool🎊我们实现了兑换优惠券的操作。学到这里，恭喜你基本掌握了如何使用 wagmi 与区块链交互😍
