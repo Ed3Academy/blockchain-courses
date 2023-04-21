@@ -1,0 +1,493 @@
+# 📑智能合约开发
+
+![ed3_miles&more_flow_chart](https://live.staticflickr.com/65535/52831401433_c11d1cfd9b_b.jpg)
+
+通过流程图可以看到，我们需要开发以下智能合约：Ed3AirlineGate、Ed3AirTicketNFT、Ed3LoyaltyPoints、Ed3Coupon（NFT）。
+
+合约部分的仓库可以从[这里](git@github.com:Ed3Academy/ed3-hardhat-template.git)找到。您需要复制.env.example 并改名为.env，填充.env 中账号信息。
+
+账号信息需要填充以下内容
+
+```javascript
+// rpc提供商的apiKey，从这里申请获取：https://app.infura.io/login，需要科学上网，或者可以使用这个账号，不过可能会有限速问题：56375da21c3b4229b525bb8b0d0dfd57
+INFURA_API_KEY="zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+// 钱包的私钥，获取钱包可以参照教程 https://ed3academy.xyz/course/63fdc8a6220f4ff4b42ced94 
+PRIVATE_KEY="zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+// NMUMBAI网络的apiKey，可以从这里申请获取：https://polygonscan.com/myapikey
+POLYGONMUMBAI_SCAN_API_KEY="zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+// NFT_STORAGE的apiKey，可以从这里申请获取：https://nft.storage/，需要科学上网，或者可以使用这个账号，不过可能会有限速问题：eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDU0N0FERDFFZmFGMzU2YTFCMDk2NzU4YjAwZDAyNjUzZGY0OGEwRjUiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTY3Njg3NjE5NjcwNCwibmFtZSI6Ind0Zi1uZnQifQ.kI8fwg9Ulm3OgdAp3RrNJtGclpCqXGdntReUp-ZDZFI
+NFT_STORAGE_API_KEY="zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+```
+
+然后通过以下命令安装项目依赖。
+
+```powershell
+npm install
+```
+
+## 🎫Ed3Airticket
+
+我们先说说依赖的Ed3AirTicket。这是一个机票合约，我们采用ERC721标准实现🥰。而发布ERC721代币，我们还需要有NFT的元数据，让我们先上传一张喜欢的图片！😘
+
+### 🖼️生成NFT元数据
+
+首先，选择一张你喜欢的图片作为NFT的image，这里我们选择的是机票，需要放在nfts/images/ticket路径下，或者配置到你喜欢的路径😄。
+
+![airticket](https://live.staticflickr.com/65535/52831366119_3cb5727f5a_b.jpg)
+
+生成NFT元数据脚本，你可以从[这里](https://github.com/Ed3Academy/ed3-hardhat-template/blob/main/scripts/upload-nfts.js)找到这份脚本，执行 `npx hardhat run ./scripts/upload-nfts.js` 就可以生成NFT元数据了。主要过程为：
+
+- 将图片上传到ipfs上
+- 将NFT元数据上传到ipfs上
+- 将NFT元数据保存到本地，供后续部署合约时初始化使用
+
+关键代码如下：
+
+```javascript
+// npx hardhat run ./scripts/upload-nfts.js
+async function main() {
+  // ticket和coupon都是使用相同的上传脚本，我们在这里切换想要上传的NFT图片是ticket还是coupon
+  const pathName = "ticket";
+  // const pathName = "coupon";
+  const images = readDirectory(path.join(__dirname, "../nfts/images/" + pathName));
+  // 将图片上传到ipfs上
+  const imageMetadata = await client.storeDirectory(images);
+  console.log("Images uploaded to: ", imageMetadata);
+  const nftFiles = readDirectory(path.join(__dirname, "../nfts/metadata/" + pathName));
+  const nftFilesModified = await Promise.all(
+    nftFiles.map(async (file) => {
+      const obj = JSON.parse(await file.text());
+      obj;
+      obj.image = `ipfs://${imageMetadata.toString()}/${obj.image}`;
+      return new File([JSON.stringify(obj)], file.name);
+    }),
+  );
+  // 将元数据上传到ipfs上
+  const fileMetadata = await client.storeDirectory(nftFilesModified);
+  console.log("Metadata uploaded to: https://ipfs.io/ipfs/", fileMetadata);
+  // 将元数据保存到本地
+  const locationPath = path.join(__dirname, "../nfts/location/" + pathName + "/location.json");
+  fs.writeFileSync(
+    locationPath,
+    JSON.stringify(
+      {
+        images: imageMetadata.toString(),
+        metadata: fileMetadata.toString(),
+        count: nftFiles.length,
+      },
+      null,
+      2,
+    ),
+  );
+}
+```
+
+
+### 📒合约代码
+
+ERC721是以太坊上用于实现非同质化代币（Non-Fungible Tokens，NFTs）的一种标准。ERC721代币每个代币都是独一无二的，每个代币都有自己的唯一标识符（Token ID）。
+
+合约主要的mint()方法需要完成购买资金校验、将机票发放到购买者账户里，同时保证下一张机票id唯一。你可以从[这里](https://github.com/Ed3Academy/ed3-hardhat-template/blob/main/contracts/Ed3AirTicketNFT.sol)找到这份合约，关键代码如下：
+
+```solidity
+
+    // 将机票mint给指定用户
+    function mint(address _to) external payable {
+        // 校验当前区块时间是否在首发时间之后
+        require(block.timestamp >= launchDate, "minting not enabled yet, please wait");
+        // 校验当前代币供应量是否达到上限
+        require(tokenIdCounter.current() < maxSupply, "Maximum supply reached");
+        // 校验用户用于mint的资金是否足够
+        require(msg.value >= mintPrice, "Insufficient funds");
+        // 获取代币ID
+        uint256 tokenId = tokenIdCounter.current();
+        // 将指定tokenid的代币mint给用户
+        _mint(_to, tokenId);
+        // 代币id自增
+        tokenIdCounter.increment();
+    }
+```
+
+
+### 📜合约部署脚本
+
+当然，在部署到polygonMumbai网络上，需要有polygonMumbai上的原生代币，您可以从[这里](https://faucet.polygon.technology/)获取。
+
+您可以通过 `npx hardhat run ./scripts/deployTicket.js  --network PolygonMumbai`完成部署。脚本的主要内容包括：
+
+- 获取机票合约对象；
+- 指定元数据信息完成部署动作；
+- 别忘记最后将合约开源
+
+你可以从[这里](https://github.com/Ed3Academy/ed3-hardhat-template/blob/main/scripts/deployTicket.js)找到这份脚本，关键代码如下：
+
+```javascript
+// npx hardhat run ./scripts/deployTicket.js  --network PolygonMumbai
+const { ethers } = require("hardhat");
+const moment = require("moment");
+// 在这里获取元数据地址
+const NFTLocation = require("../nfts/location/ticket/location.json");
+// 设置机票名称
+const NFTName = "Ed3AirTicket";
+// 设置机票标识符
+const NFTSymbol = "Ed3AirTicket";
+// 设置机票发行上限 10w张
+const count = 100000;
+const mintPrice = 10 ** 14;
+async function main() {
+  const [deployer] = await ethers.getSigners();
+  console.log("Deploying contracts with the account: " + deployer.address);
+  const { metadata } = NFTLocation;
+  const Ed3AirTicketNFT = await ethers.getContractFactory("Ed3AirTicketNFT");
+  const launchDate = moment("2023-03-12 00:00");
+  const ed3AirTicketNFT = await Ed3AirTicketNFT.deploy(
+    NFTName,
+    NFTSymbol,
+    `ipfs://${metadata}/`,
+    mintPrice,
+    count,
+    Math.round(launchDate.valueOf() / 1000),
+    deployer.address,
+  );
+}
+
+```
+
+😆 到这里机票终于发布成功了！恭喜你㊗️。
+
+或者你也可以直接用Ed3提供的[机票合约😀](https://mumbai.polygonscan.com/address/0x0305462813Bf77F0F87A09036879c808d03846ED#readContract)，限量10w张，童叟无欺，先到先得。
+
+## ⏳Ed3LoyaltyPoints
+
+Ed3LoyaltyPoints是积分合约🥰，我们选用ERC20标准来实现它。
+
+### 📒合约代码
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Capped.sol";
+import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+
+/*
+ * 合约积分
+ * ERC20 是以太坊上最常用的代币标准之一，规定了代币的基本功能，包括转账、余额查询、授权转移等。
+ * ERC20Capped 是 ERC20 代币标准的一个扩展，它增加了一个代币总供应量的上限限制，同时在发行新代币时检查供应量是否已经达到了上限。
+ * ERC20Burnable 是 ERC20 代币标准的一个扩展，它增加了代币的销毁功能，允许代币持有者销毁自己的代币。
+ * Ownable 是一个基础合约，它提供了一个拥有者（owner）的概念，允许合约的拥有者执行一些关键操作，例如更改合约状态、转移合约所有权等。
+ */
+contract Ed3LoyaltyPoints is ERC20, ERC20Capped, ERC20Burnable, Ownable {
+    // Ed3积分合约构造函数，在部署脚本中传入name、symbol和发行上限
+    constructor(string memory name, string memory symbol, uint256 cap) ERC20(name, symbol) ERC20Capped(cap) {}
+
+    function mint(address _to, uint256 _mintTokenNumber) external onlyOwner {
+        _mint(_to, _mintTokenNumber);
+    }
+
+    // 重写父类的_mint方法，指明使用的mint方法是 ERC20Capped提供的
+    function _mint(address account, uint256 amount) internal virtual override(ERC20, ERC20Capped) {
+        ERC20Capped._mint(account, amount);
+    }
+    // 设定代币精度为1
+    function decimals() public view virtual override returns (uint8) {
+        return 1;
+    }
+}
+
+```
+
+## 🚪Ed3AirlineGate
+
+Ed3AirlineGate是我们的服务窗口，这里是买机票以及发放积分的统一入口☺️。
+
+### 📒合约代码
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
+
+import "./IEd3LoyaltyPoints.sol";
+import "./IEd3AirTicketNFT.sol";
+
+// @title Ed3航空公司服务窗口，用于用于购买机票并发放积分，同时提供接口让管理员可以转移购买机票的资金。
+contract Ed3AirlineGate {
+    address payable public ed3TicketNFTAddress;
+    address public ed3LoyaltyPointsAddress;
+    uint256 public immutable POINTS_PER_TICKET;
+
+    /**
+     * @notice 航空公司服务窗口构造函数
+     * @param _ed3LoyaltyPointsAddress 积分地址
+     * @param _ed3TicketNFTAddress NFT机票地址
+     * @param _pointsPerTicket 设置积分兑换优惠券比例
+     */
+    constructor(address _ed3LoyaltyPointsAddress, address payable _ed3TicketNFTAddress, uint256 _pointsPerTicket) {
+        ed3LoyaltyPointsAddress = _ed3LoyaltyPointsAddress;
+        ed3TicketNFTAddress = _ed3TicketNFTAddress;
+        POINTS_PER_TICKET = _pointsPerTicket;
+    }
+
+    /**
+     * @notice 购买机票、获取积分的函数
+     * @param _to 获得机票和积分的地址
+     */
+    function mint(address _to) external payable {
+        uint256 mintPrice = IEd3AirTicketNFT(ed3TicketNFTAddress).mintPrice();
+        require(msg.value >= mintPrice, "Insufficient funds");
+        uint256 maxSupply = IEd3AirTicketNFT(ed3TicketNFTAddress).maxSupply();
+        uint256 totalSupply = IEd3AirTicketNFT(ed3TicketNFTAddress).totalSupply();
+        require(maxSupply > totalSupply, "air ticket sold out");
+        // 购买机票NFT
+        IEd3AirTicketNFT(ed3TicketNFTAddress).mint{ value: msg.value }(_to);
+        // 每次购买机票后可以得到 POINTS_PER_TICKET 积分
+        IEd3LoyaltyPoints(ed3LoyaltyPointsAddress).mint(_to, POINTS_PER_TICKET);
+    }
+}
+
+```
+
+## 🎟️Ed3Coupon
+
+Ed3Coupon是我们的优惠券合约，它基本和机票合约只有一小部分差异：Ed3Airticket机票是使用原生币来购买，而Ed3Coupon优惠券是需要消耗Ed3LoyaltyPoints来兑换。
+
+### 🖼️生成NFT元数据
+
+可以参见Ed3AirTicket部分是如何生成NFT元数据的，只是脚本中需要更改Ed3Coupon图片路径😝。
+
+### 📒合约代码
+
+与Ed3Airticket不同的是，兑换处Ed3Coupon需要的是Ed3LoyaltyPoints，mint()方法中校验的就是Ed3LoyaltyPoints余额是否足够而非原生币。
+
+```solidity
+    // 将优惠券mint给指定用户，这是使用指定的token才能兑换优惠券，以物易物。指定的token以及兑换数值比例在构造函数中做了指定
+    function mint(address _to) public {
+        require(block.timestamp >= launchDate, "minting not enabled yet, please wait");
+        require(tokenIdCounter.current() < maxSupply, "Maximum supply reached");
+        // 校验是否有足够的积分用于兑换
+        require(ERC20(tokenAddress).balanceOf(msg.sender) >= mintPrice, "Insufficient funds");
+        ERC20(tokenAddress).transferFrom(msg.sender, address(this), mintPrice);
+        uint256 tokenId = tokenIdCounter.current();
+        _mint(_to, tokenId);
+        tokenIdCounter.increment();
+    }
+```
+
+
+# 🔭集成测试脚本
+
+```javascript
+const { loadFixture } = require("@nomicfoundation/hardhat-network-helpers");
+const { expect } = require("chai");
+const { ethers } = require("hardhat");
+const moment = require("moment");
+const ticketNFTLocation = require("../nfts/location/ticket/location.json");
+const couponNFTLocation = require("../nfts/location/coupon/location.json");
+
+// npx hardhat test ./test/testDeployLoyaltyProgram.js
+describe("Ed3Coupon mint test", function () {
+  async function deployFixture() {
+    const [owner] = await ethers.getSigners();
+
+    // 部署机票
+    const ticketNFTName = "Ed3AirTicket";
+    const ticketNFTSymbol = "Ed3AirTicket";
+    const ticketMintPrice = 10 ** 14;
+    const [deployer] = await ethers.getSigners();
+    const ticketMetadata = ticketNFTLocation.metadata;
+    const ticketCount = ticketNFTLocation.count;
+    // 获取合约对象
+    const Ed3AirTicketNFT = await ethers.getContractFactory("Ed3AirTicketNFT");
+    // 设置ERC721开始发售时间
+    const ticketLaunchDate = moment("2023-03-12 00:00");
+    // 部署合约
+    const ed3AirTicketNFT = await Ed3AirTicketNFT.deploy(
+      ticketNFTName,
+      ticketNFTSymbol,
+      `ipfs://${ticketMetadata}/`,
+      ticketMintPrice,
+      ticketCount,
+      Math.round(ticketLaunchDate.valueOf() / 1000),
+      deployer.address,
+    );
+
+    // 部署积分
+    const pointTotalSupply = 10000;
+    const Ed3LoyaltyPoints = await ethers.getContractFactory("Ed3LoyaltyPoints");
+    const ed3LoyaltyPoints = await Ed3LoyaltyPoints.deploy("Ed3LoyaltyPoints", "ELP", pointTotalSupply);
+
+    // 部署服务窗口 GateV2
+    const pointsPerTicket = 1000;
+    const Ed3AirlineGate = await ethers.getContractFactory("Ed3AirlineGate");
+    const ed3AirlineGate = await Ed3AirlineGate.deploy(
+      ed3LoyaltyPoints.address,
+      ed3AirTicketNFT.address,
+      pointsPerTicket,
+    );
+    await ed3LoyaltyPoints.transferOwnership(ed3AirlineGate.address);
+
+    // 部署优惠券 Coupon
+    const couponName = "Ed3Coupon";
+    const couponSymbol = "Ed3Coupon";
+    const couponMetadata = couponNFTLocation.metadata;
+    const couponMintPrice = 1000;
+    const couponCount = couponNFTLocation.count;
+    const Ed3Coupon = await ethers.getContractFactory("Ed3Coupon");
+    const couponLaunchDate = moment("2023-03-12 00:00");
+    const ed3Coupon = await Ed3Coupon.deploy(
+      ed3LoyaltyPoints.address,
+      couponName,
+      couponSymbol,
+      `ipfs://${couponMetadata}/`,
+      couponMintPrice,
+      couponCount,
+      Math.round(couponLaunchDate.valueOf() / 1000),
+      owner.address,
+    );
+
+    return {
+      ticketMintPrice,
+      ticketCount,
+      ed3AirTicketNFT,
+      ed3AirlineGate,
+      ed3LoyaltyPoints,
+      pointTotalSupply,
+      pointsPerTicket,
+      ed3Coupon,
+      owner,
+    };
+  }
+
+  describe("Deployment", function () {
+    it("Should set the right owner", async function () {
+      const { ed3Coupon, owner } = await loadFixture(deployFixture);
+      console.log("ed3Coupon.address", ed3Coupon.address);
+      expect(await ed3Coupon.owner()).to.equal(owner.address);
+    });
+
+    it("ed3Coupon should set the right mintPrice", async function () {
+      const { ed3Coupon, pointsPerTicket } = await loadFixture(deployFixture);
+      expect(await ed3Coupon.mintPrice()).to.equal(pointsPerTicket);
+    });
+  });
+
+  describe("Mint", function () {
+    describe("exchange coupon", function () {
+      it("Should mint the NFT to mint account", async function () {
+        const {
+          ticketMintPrice,
+          ed3AirTicketNFT,
+          ed3AirlineGate,
+          ed3LoyaltyPoints,
+          ed3Coupon,
+          owner,
+        } = await loadFixture(deployFixture);
+        // 用户通过服务窗口购买机票，带上的资金是ticketMintPrice
+        await ed3AirlineGate.connect(owner).mint(owner.address, { value: ticketMintPrice });
+        const ed3AirlineTicketBalance = await ed3AirTicketNFT.balanceOf(owner.address);
+        const ed3LoyaltyPointsBalance = await ed3LoyaltyPoints.balanceOf(owner.address);
+        console.log("ed3AirlineGate ticket balance:", ed3AirlineTicketBalance);
+        console.log("ed3LoyaltyPoints balance:", ed3LoyaltyPointsBalance);
+        console.log("ed3LoyaltyPoints approve address:", ed3Coupon.address);
+        // 授权积分合约给优惠券合约，如此做才能让优惠券合约收走对应的积分完成兑换
+        await ed3LoyaltyPoints.connect(owner).approve(ed3Coupon.address, 0);
+        await ed3LoyaltyPoints.connect(owner).approve(ed3Coupon.address, ed3LoyaltyPointsBalance);
+        console.log("ed3Coupon balance before:", await ed3Coupon.balanceOf(owner.address));
+        // 完成积分的兑换
+        await ed3Coupon.connect(owner).mint(owner.address);
+        // 校验优惠券的数量为1
+        expect(await ed3Coupon.balanceOf(owner.address)).to.equal(1);
+        console.log("ed3Coupon token balance after:", await ed3Coupon.balanceOf(owner.address));
+      });
+    });
+  });
+});
+```
+
+
+
+# ♾️集成部署脚本
+
+
+```JavaScript
+const hre = require("hardhat");
+const { ethers, upgrades } = require("hardhat");
+const ticketNFTLocation = require("../nfts/location/ticket/location.json");
+const couponNFTLocation = require("../nfts/location/coupon/location.json");
+const moment = require("moment");
+
+// npx hardhat run ./scripts/deployLoyaltyProgram.js --network PolygonMumbai
+// npx hardhat run ./scripts/deployLoyaltyProgram.js --network localhost
+async function main() {
+  const [owner] = await ethers.getSigners();
+
+  // 部署机票
+  // const ticketNFTName = "Ed3AirTicket";
+  // const ticketNFTSymbol = "Ed3AirTicket";
+  // const ticketMintPrice = 10 ** 14;
+  // const [deployer] = await ethers.getSigners();
+  // const ticketMetadata = ticketNFTLocation.metadata;
+  // const ticketCount = ticketNFTLocation.count;
+  // const Ed3AirTicketNFT = await ethers.getContractFactory("Ed3AirTicketNFT");
+  // const ticketLaunchDate = moment("2023-03-12 00:00");
+  // const ed3AirTicketNFT = await Ed3AirTicketNFT.deploy(ticketNFTName, ticketNFTSymbol, `ipfs://${ticketMetadata}/`, ticketMintPrice, ticketCount, Math.round(ticketLaunchDate.valueOf () / 1000), deployer.address);
+  // console.log( `npx hardhat verify --network PolygonMumbai "${ed3AirTicketNFT.address}" ${ticketNFTName} ${ticketNFTSymbol} ipfs://${ticketMetadata}/ ${ticketMintPrice} ${ticketCount} ${Math.round(ticketLaunchDate.valueOf() / 1000)} ${deployer.address}`);
+  const ed3AirTicketNFT = "0x8B939b4469BC384e841afE4d809D95F1373e81cF";
+
+  // 部署积分
+  const pointTotalSupply = 10000;
+  const pointName = "Ed3LoyaltyPoints";
+  const pointSymbol = "ELP";
+  const Ed3LoyaltyPoints = await ethers.getContractFactory("Ed3LoyaltyPoints");
+  const ed3LoyaltyPoints = await Ed3LoyaltyPoints.deploy(pointName, pointSymbol, pointTotalSupply);
+  console.log(
+    `npx hardhat verify --network PolygonMumbai "${ed3LoyaltyPoints.address}" ${pointName} ${pointSymbol} ${pointTotalSupply}`,
+  );
+
+  // 部署服务窗口 GateV2
+  const pointsPerTicket = 1000;
+  const Ed3AirlineGate = await ethers.getContractFactory("Ed3AirlineGate");
+  const ed3AirlineGate = await Ed3AirlineGate.deploy(ed3LoyaltyPoints.address, ed3AirTicketNFT, pointsPerTicket);
+  await ed3LoyaltyPoints.transferOwnership(ed3AirlineGate.address);
+  console.log(
+    `npx hardhat verify --network PolygonMumbai "${ed3AirlineGate.address}" ${ed3LoyaltyPoints.address} ${ed3AirTicketNFT} ${pointsPerTicket}`,
+  );
+
+  // 部署优惠券 Coupon
+  const couponName = "Ed3Coupon";
+  const couponSymbol = "Ed3Coupon";
+  const couponMetadata = couponNFTLocation.metadata;
+  const couponMintPrice = 1000;
+  const couponCount = 1000;
+  const Ed3Coupon = await ethers.getContractFactory("Ed3Coupon");
+  const couponLaunchDate = moment("2023-03-12 00:00");
+  const ed3Coupon = await Ed3Coupon.deploy(
+    ed3LoyaltyPoints.address,
+    couponName,
+    couponSymbol,
+    `ipfs://${couponMetadata}/`,
+    couponMintPrice,
+    couponCount,
+    Math.round(couponLaunchDate.valueOf() / 1000),
+    owner.address,
+  );
+
+  console.log(
+    `npx hardhat verify --network PolygonMumbai "${ed3Coupon.address}" ${
+      ed3LoyaltyPoints.address
+    } ${couponName} ${couponSymbol} ipfs://${couponMetadata}/ ${pointsPerTicket} ${couponCount} ${Math.round(
+      couponLaunchDate.valueOf() / 1000,
+    )} ${owner.address}`,
+  );
+}
+
+// We recommend this pattern to be able to use async/await everywhere
+// and properly handle errors.
+main().catch((error) => {
+  console.error(error);
+  process.exitCode = 1;
+});
+
+```

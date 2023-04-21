@@ -1,8 +1,8 @@
 {
-    "title": { "zh": "Ed3 Miles&More royalty program" },
+    "title": { "zh": "实战：Miles&More客户忠诚度计划" },
     "coverUrl": "/cover-lesson-2.png",
     "description": {
-      "zh": "Ed3 Miles&More客户忠诚度计划，通过这门课程你可以掌握ERC721合约开发、对接第三方合约、合约单元测试与前端开发技能。"
+      "zh": "通过这门课程你可以掌握ERC721合约开发、对接第三方合约、合约单元测试与前端开发技能。"
     },
     "discussionUrl": "https://github.com/orgs/Ed3Academy/discussions/13",
     "posterUrl": "https://live.staticflickr.com/65535/52743597517_4972209c83_h.jpg",
@@ -24,7 +24,7 @@
         "lessons": [
           {
             "title": { "zh": "合约开发" },
-            "file": "Lesson_2_Contract.md"
+            "file": "Lesson_1_Contract.md"
           }
         ]
       },
