@@ -52,9 +52,11 @@ Web3 技术可以促进不同平台之间的互操作性，让客户可以在不
 Lufthansa Miles & More 是德国汉莎航空旗下的忠诚度计划，旨在为经常乘坐汉莎航空及其合作伙伴航空公司的旅客提供奖励和特权。Miles & More 发行了代币，称为 Lufthansa 代币，可以在 Miles & More 计划内兑换奖励。持有 Lufthansa 代币的会员可以使用它们来兑换机票、升舱、酒店住宿、租车等，还可以在 Miles & More 商城中购买商品。
 
 本次课题实践是做一版简化的 Ed3 Miles & More，这是最终web界面：
+
 ![ed3_miles&more_flow_chart](https://live.staticflickr.com/65535/52831425485_e8b07d8b1e_b.jpg)
 
 案例流程：
+
 ![ed3_miles&more_flow_chart](https://live.staticflickr.com/65535/52831401433_c11d1cfd9b_b.jpg)
 
 1. 用户 User 通过 Ed3AirlineGate 服务窗口购买机票 Ed3AirTicketNFT；
