@@ -1,4 +1,3 @@
-
 # ⏯️案例流程
 
 ![ed3_miles&more_flow_chart](https://live.staticflickr.com/65535/52831401433_c11d1cfd9b_b.jpg)
@@ -9,7 +8,7 @@
 
 通过流程图可以看到，我们需要开发以下智能合约：Ed3AirlineGate、Ed3AirTicketNFT、Ed3LoyaltyPoints、Ed3Coupon（NFT）。
 
-合约部分的仓库可以从[这里](git@github.com:Ed3Academy/ed3-hardhat-template.git)找到。您需要复制.env.example 并改名为.env，填充.env 中账号信息。
+合约部分的仓库可以从[这里](https://github.com/Ed3Academy/ed3-hardhat-template)找到。您需要复制.env.example 并改名为.env，填充.env 中账号信息。
 
 账号信息需要填充以下内容
 
