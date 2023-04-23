@@ -88,7 +88,7 @@ const Home = () => {
   // ...
                   <Card
                     title="已购机票"
-                    loading={isLoadingUserTickets}
+                    loading={isLoadingBalanceTickets}
                     extra={
                       <span
                         className={styles.detail}
