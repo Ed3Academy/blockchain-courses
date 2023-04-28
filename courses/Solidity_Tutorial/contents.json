@@ -1,0 +1,26 @@
+{
+  "title": {
+    "zh": "Solidity 入门教程"
+  },
+  "coverUrl": "/cover-solidity.png",
+  "description": {
+    "zh": "Solidity 是一门面向对象、为实现智能合约而创建的高级编程语言。"
+  },
+  "discussionUrl": "",
+  "code": "Ly8gU1BEWC1MaWNlbnNlLUlkZW50aWZpZXI6IE1JVApwcmFnbWEgc29saWRpdHkgXjAuOC4xNzsKCmNvbnRyYWN0IENvdW50ZXIgewoKfQ==",
+  "sections": {
+    "Section_1": {
+      "title": {
+        "zh": "Solidity 入门"
+      },
+      "lessons": [
+        {
+          "title": {
+            "zh": "初识 Solidity"
+          },
+          "file": "Lesson_1_Hello_Solidity.md"
+        }
+      ]
+    }
+  }
+}
