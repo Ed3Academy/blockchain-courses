@@ -53,6 +53,7 @@ contract Counter {
   ```
 
   这个语法和 `package.json` 中的版本号规则是一致的，即 `^` 要求第一个非零的版本号保持一致，且后面的补丁版本号不能小于当前版本。
+
   同时 Solidity 语句以分号 `;` 结尾。
 * 接下来是用关键字 `contract` 声明一个智能合约 Counter。
 
