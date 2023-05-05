@@ -1,6 +1,6 @@
 # ⏯️案例流程
 
-![ed3_miles&more_flow_chart](https://live.staticflickr.com/65535/52831401433_c11d1cfd9b_b.jpg)
+![ed3_miles&more_flow_chart](https://i.postimg.cc/9fV5XZpP/ed3-miles-more-flow-chart.jpg)
 
 1. 用户 User 通过 Ed3AirlineGate 服务窗口购买机票 Ed3AirTicketNFT；
 2. Ed3AirlineGate 服务窗口将机票 Ed3AirTicketNFT 和积分 Ed3LoyaltyPoints 发放给 User；

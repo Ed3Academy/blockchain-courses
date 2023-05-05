@@ -110,4 +110,4 @@ describe("Ed3Coupon mint test", function () {
 
 如果看到下方截图，那么恭喜您，测试通过🉑~
 
-![test_result](https://live.staticflickr.com/65535/52833446366_b44b325618_b.jpg)
+![test_result](https://i.postimg.cc/BQVVbyTB/ed3-test-result.png)

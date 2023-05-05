@@ -6,7 +6,7 @@ Ed3Coupon是我们的优惠券合约，它基本和机票合约大同小异：Ed
 
 可以参见Ed3AirTicket部分是如何生成NFT元数据的，只是脚本中需要更改Ed3Coupon图片路径😝。这是我们选用的Coupon图片：
 
-![coupon](https://live.staticflickr.com/65535/52833694844_978c3904f9_b.jpg)
+![coupon](https://i.postimg.cc/zDkbFY38/coupon.jpg)
 
 ## 📒合约代码
 
