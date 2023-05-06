@@ -53,4 +53,4 @@ Lufthansa Miles & More 是德国汉莎航空旗下的忠诚度计划，旨在为
 
 本次课题实践是做一版简化的 Ed3 Miles & More，这是最终的web界面：
 
-![ed3_miles&more_flow_chart](https://live.staticflickr.com/65535/52831425485_e8b07d8b1e_b.jpg)
+![final-web.png](https://i.postimg.cc/8CvwSL5g/final-web.png)

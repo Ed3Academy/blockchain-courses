@@ -6,7 +6,7 @@
 
 选择一张您喜欢的图片作为NFT的image，这里我们选择的是机票，需要放在nfts/images/ticket路径下，或者配置到你您喜欢的路径😄，如果这么做，您也需要在代码中更改对应的路径。
 
-![airticket](https://live.staticflickr.com/65535/52839311613_90e63f474b_b.jpg)
+![airticket](https://i.postimg.cc/t47ckDg4/airticket.jpg)
 
 您可以从[这里](https://github.com/Ed3Academy/ed3-hardhat-template/blob/main/scripts/upload-nfts.js)找到这份生成NFT元数据脚本，执行 `npx hardhat run ./scripts/upload-nfts.js` 就可以生成NFT元数据了。脚本主要过程为：
 

@@ -64,12 +64,12 @@ async function main() {
 
 当成功部署合约之后，您应该看到以下截图输出😇：
 
-![deploy_result](https://live.staticflickr.com/65535/52833919323_ae561f629f_b.jpg)
+![deploy_result](https://i.postimg.cc/6Q0LPjhv/deploy-result.png)
 
 接下来我们可以对合约进行开源，这样所有人都可以在网络上看到合约的代码！我们复制对应verify语句在命令行执行后应该看到如下截图😚：
 
-![verify_result](https://live.staticflickr.com/65535/52832907237_a6a387f775_b.jpg)
+![verify_result](https://i.postimg.cc/Zqf8xfZK/verify-result.png)
 
 访问 [https://mumbai.polygonscan.com](https://mumbai.polygonscan.com/address/0x56676b6D007Acb62b59C19Fe53d7d94Ed9A23ae1#code) 可以看到，示例中的Ed3Coupon合约已经成功上链并完成开源😝！
 
-![verify_scan](https://live.staticflickr.com/65535/52833926068_9df57f7909_b.jpg)
+![verify_scan](https://i.postimg.cc/kqvhh748/ether-scan.png)
