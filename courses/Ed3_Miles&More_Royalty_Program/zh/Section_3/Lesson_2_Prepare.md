@@ -4,13 +4,17 @@
 
 就像我们在传统前端开发中，需要知道后端 API 的 url、参数等信息一样，我们与区块链交互也需要这样的信息！
 
-还记得我们的合约编译后生成的 `artifacts` 文件夹吗？它就蕴含着我们所需要的文件，这类文件也叫作 ABI。
+还记得我们的合约编译后生成的 `artifacts` 文件夹吗？它就蕴含着我们所需要的合约 ABI 文件。
 
 4个合约的 ABI 文件对应如下：
 
-![abi-structure.png](https://i.postimg.cc/Zqgk1N65/abi-structure.png)
+![abi-structure.png](https://i.postimg.cc/85DVvKQb/abi-structure.png)
 
-我们在前端项目根目录下新建一个 `abi` 文件夹，然后我们将合约项目中的4个 json 文件拷贝至 `abi` 文件夹中：
+json 文件中的 `abi` 数组正是我们需要的合约 ABI：
+
+![abi-array.png](https://i.postimg.cc/k5qhZxPy/abi-array.png)
+
+我们在前端项目根目录下新建一个 `abi` 文件夹，然后我们将合约项目中4个 json 文件的 `abi` 数组拷贝过来：
 
 ![abi.png](https://i.postimg.cc/BvdL9CsW/abi.png)
 
