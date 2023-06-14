@@ -12,7 +12,7 @@
 - 完成积分的兑换
 - 校验优惠券的数量为1
 
-您可以通过命令 `npx hardhat test ./test/testDeployLoyaltyProgram.js`完成测试，从[这里](https://github.com/Ed3Academy/ed3-hardhat-template/blob/main/test/testDeployLoyaltyProgram.js)找到这份测试脚本，关键代码如下：
+您可以通过命令 `npx hardhat test ./test/testEd3AirlineGate.js`完成测试，从[这里](https://github.com/Ed3Academy/ed3-hardhat-template/blob/main/test/testEd3AirlineGate.js)找到这份测试脚本，关键代码如下：
 
 ```javascript
 // npx hardhat test ./test/testDeployLoyaltyProgram.js

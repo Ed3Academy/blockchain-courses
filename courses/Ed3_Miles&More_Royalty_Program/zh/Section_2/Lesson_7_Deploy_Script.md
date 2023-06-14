@@ -2,11 +2,11 @@
 
 经过以上代码开发和集成测试，恭喜您到最后一步，我们可以发布上链了！部署脚本和集成测试脚本大同小异。关于机票，您可以使用自己部署的机票或者使用Ed3提供的机票，这在脚本中选择屏蔽即可😁！
 
-您可以通过命令 `npx hardhat node` 在本地起fork测试链，然后通过命令 `npx hardhat run ./scripts/deployLoyaltyProgram.js --network localhost` 在本地进行合约部署😊。
+您可以通过命令 `npx hardhat node` 在本地起fork测试链，然后通过命令 `npx hardhat run ./scripts/deployEd3AirlineGate.js --network localhost` 在本地进行合约部署😊。
 
-最终我们指定网络地址为PolygonMumbai，可通过 `npx hardhat run ./scripts/deployLoyaltyProgram.js --network PolygonMumbai`命令发布公共测试链😄！
+最终我们指定网络地址为PolygonMumbai，可通过 `npx hardhat run ./scripts/deployEd3AirlineGate.js --network PolygonMumbai`命令发布公共测试链😄！
 
-从[这里](https://github.com/Ed3Academy/ed3-hardhat-template/blob/main/scripts/deployLoyaltyProgram.js)找到这份集成部署脚本，关键代码如下：
+从[这里](https://github.com/Ed3Academy/ed3-hardhat-template/blob/main/scripts/deployEd3AirlineGate.js)找到这份集成部署脚本，关键代码如下：
 
 ```JavaScript
 // npx hardhat run ./scripts/deployLoyaltyProgram.js --network PolygonMumbai

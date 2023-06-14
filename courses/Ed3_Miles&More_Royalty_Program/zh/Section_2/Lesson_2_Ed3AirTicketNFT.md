@@ -100,7 +100,7 @@ ERC721是以太坊上用于实现非同质化代币（Non-Fungible Tokens，NFTs
 - 指定元数据信息完成部署动作；
 - 别忘记最后将合约开源
 
-您可以从[这里](https://github.com/Ed3Academy/ed3-hardhat-template/blob/main/scripts/deployTicket.js)找到这份脚本，关键代码如下：
+您可以从[这里](https://github.com/Ed3Academy/ed3-hardhat-template/blob/main/scripts/deployEd3AirTicket.js)找到这份脚本，关键代码如下：
 
 ```javascript
 // npx hardhat run ./scripts/deployTicket.js  --network PolygonMumbai
