@@ -61,9 +61,9 @@
           {
             "key": "remix",
             "label": "",
-            "link": "https://remix-project.org/",
+            "link": "https://remix.ethereum.org/",
             "logo": "/third_party_logos/remix.svg",
-            "description": "在线合约编辑器，入门便捷编辑时用"
+            "description": "一款强大的在线编辑器，开源、便捷，用于开发、部署、调试智能合约"
           }
         ]
       },
@@ -75,14 +75,14 @@
             "label": "Hardhat",
             "link": "https://hardhat.org/docs",
             "logo": "/third_party_logos/hardhat.png",
-            "description": "当前最主流的合约开发框架，更优秀点的，结合foundry使用"
+            "description": "最主流的合约开发框架，用于编译、调试和部署智能合约，插件丰富"
           },
           {
             "key": "foundry",
             "label": "Foundry",
             "link": "https://book.getfoundry.sh/",
             "logo": "/third_party_logos/foundry.png",
-            "description": "新出的快快快的合约开发框架，包括测试代码，全部用solidity编写"
+            "description": "Rust编写的合约开发框架，具有快速、可移植和模块化的特点"
           },
           {
             "key": "apeworx",
@@ -181,7 +181,7 @@
             "label": "wagmi",
             "link": "https://wagmi.sh/react/getting-started",
             "logo": "/third_party_logos/wagmi.png",
-            "description": "一个 React Hook 的集合,包含了你与以太坊交互所需的一切"
+            "description": "一个 React Hook 的集合，包含了与以太坊交互所需的一切"
           },
           {
             "key": "web3-react",
@@ -195,7 +195,7 @@
             "label": "react-moralis",
             "link": "https://github.com/MoralisWeb3/react-moralis",
             "logo": "",
-            "description": "在 React 应用程序中使用 基于 Moralis 的钩子和组件"
+            "description": "在 React 应用程序中使用基于 Moralis 的钩子和组件"
           }
         ]
       },
@@ -207,14 +207,14 @@
             "label": "Web3Modal",
             "link": "https://docs.walletconnect.com/2.0/web3modal/about",
             "logo": "/third_party_logos/walletconnect.png",
-            "description": "WallectConnect钱包厂商出品的一个多功能的库，可以非常轻松地将用户与您的 Dapp 连接起来并开始与区块链交互。"
+            "description": "WallectConnect 钱包厂商出品的一个多功能的库，可以轻松地将用户与 DApp 连接起来并与区块链交互。"
           },
           {
             "key": "rainbowkit",
             "label": "RainbowKit",
             "link": "https://www.rainbowkit.com/docs/introduction",
             "logo": "/third_party_logos/rainbowkit.svg",
-            "description": "Rainbow钱包厂商出品的一个 React 库，可以轻松地将钱包连接添加到你的 dapp。"
+            "description": "Rainbow 钱包厂商出品的一个 React 库，可以轻松地将钱包连接功能添加到 DApp。"
           }
         ]
       },
@@ -245,7 +245,7 @@
             "label": "Web3UIKit",
             "link": "https://github.com/web3ui/web3uikit",
             "logo": "/third_party_logos/web3uikit.svg",
-            "description": "适用于 dapps 开发人员的轻量级可重用 Web3 UI 组件。Web3UIKit 加速您的 dapp 开发并使您能够构建漂亮的 dapp。"
+            "description": "适用于 DApp 开发人员的轻量级 Web3 UI 组件。"
           }
         ]
       },
@@ -281,21 +281,21 @@
             "label": "Etherscan",
             "link": "https://etherscan.io/",
             "logo": "/third_party_logos/etherscan.png",
-            "description": "以太坊的最主要区块链浏览器"
+            "description": "以太坊最主要的区块链浏览器"
           },
           {
             "key": "polygonscan",
             "label": "polygonscan",
             "link": "https://polygonscan.com/",
             "logo": "/third_party_logos/polygon.svg",
-            "description": "Polygon链的最主要区块链浏览器"
+            "description": "Polygon链最主要的区块链浏览器"
           },
           {
             "key": "bscscan",
             "label": "BscScan",
             "link": "https://bscscan.com/",
             "logo": "/third_party_logos/bnb.svg",
-            "description": "币安链的最主要区块链浏览器"
+            "description": "币安链最主要的区块链浏览器"
           },
           {
             "key": "blockscout",
@@ -312,16 +312,16 @@
           {
             "key": "thirdweb",
             "label": "thirdweb",
-            "link": "https://portal.thirdweb.com/",
+            "link": "https://thirdweb.com/",
             "logo": "/third_party_logos/thirdweb.svg",
-            "description": "提供开发工具包,使其更容易让开发者建立和推出Web3产品"
+            "description": "提供开发工具包，更容易让开发者建立和推出 Web3 产品"
           },
           {
             "key": "moralis",
             "label": "Moralis",
-            "link": "https://docs.moralis.io/web3-data-api/moralis-sdk",
+            "link": "https://moralis.io/",
             "logo": "/third_party_logos/moralis.svg",
-            "description": "供完整的端到端区块链应用程序开发平台，支持去中心化应用程序（dApp）"
+            "description": "提供企业级的 API 和实时区块链数据，使 Web3 的开发像 Web2 一样简单。"
           },
           {
             "key": "tatum",
@@ -340,7 +340,7 @@
             "label": "The Graph",
             "link": "https://thegraph.com/docs/en/",
             "logo": "/third_party_logos/thegraph.png",
-            "description": "捕捉区块链事件并提供一个查询事件的GraphQL接口,让我们可以方便的跟踪数据的变化。"
+            "description": "捕捉区块链事件并提供一个查询事件的 GraphQL 接口，让我们可以方便的跟踪数据的变化。"
           }
         ]
       },
@@ -352,7 +352,7 @@
             "label": "Tenderly",
             "link": "https://docs.tenderly.co/",
             "logo": "/third_party_logos/tenderly.png",
-            "description": "超强的合约交易debug、模拟分析工具"
+            "description": "超强的合约交易 debug、模拟分析工具"
           }
         ]
       },
@@ -383,28 +383,28 @@
             "label": "Echidna",
             "link": "https://github.com/crytic/echidna",
             "logo": "/third_party_logos/echidna.png",
-            "description": ""
+            "description": "智能合约模糊器，旨在对以太坊智能合约进行模糊测试"
           },
           {
             "key": "manticore",
             "label": "Manticore",
             "link": "https://github.com/trailofbits/manticore",
             "logo": "/third_party_logos/manticore.png",
-            "description": ""
+            "description": "用于分析智能合约和二进制文件的符号执行工具"
           },
           {
             "key": "slither",
             "label": "Slither",
             "link": "https://github.com/crytic/slither",
             "logo": "/third_party_logos/slither.png",
-            "description": ""
+            "description": "用 Python3 编写的 Solidity 静态分析框架"
           },
           {
             "key": "mythril",
             "label": "Mythril",
             "link": "https://github.com/ConsenSys/mythril",
             "logo": "/third_party_logos/mythril.png",
-            "description": ""
+            "description": "针对 EVM 字节码的安全分析工具"
           }
         ]
       },
@@ -416,14 +416,14 @@
             "label": "code4rena",
             "link": "https://code4rena.com/",
             "logo": "/third_party_logos/code4rena.jpg",
-            "description": ""
+            "description": "由社区驱动的智能合约审计竞赛平台"
           },
           {
             "key": "immunefi",
             "label": "",
             "link": "https://immunefi.com/",
             "logo": "/third_party_logos/immunefi.svg",
-            "description": ""
+            "description": "Web3 领先的漏洞赏金平台，保护600亿美元用户资金"
           }
         ]
       },
@@ -435,7 +435,7 @@
             "label": "Dune Analytics",
             "link": "https://dune.com/browse/dashboards",
             "logo": "/third_party_logos/dune-analytics.png",
-            "description": ""
+            "description": "链上数据分析平台，用户可以自行编写 SQL 语句，从 Dune 解析的区块链数据库中筛选数据，生成对应的图表，组成仪表盘"
           }
         ]
       }
@@ -452,7 +452,7 @@
             "label": "ChainList",
             "link": "https://chainlist.org/",
             "logo": "/third_party_logos/chainlist.svg",
-            "description": ""
+            "description": "一个 EVM 网络列表，可以获取链 ID、RPC服务地址"
           }
         ]
       },
@@ -464,14 +464,14 @@
             "label": "Alchemy",
             "link": "https://alchemy.com",
             "logo": "/third_party_logos/alchemy.png",
-            "description": ""
+            "description": "强大的 Web3 开发平台，提供可靠的节点服务"
           },
           {
             "key": "infura",
             "label": "Infura",
             "link": "https://www.infura.io/zh",
             "logo": "/third_party_logos/infura.jpg",
-            "description": ""
+            "description": "强大的高可用性区块链 API 和开发者工具套件，同时提供 IPFS 服务"
           }
         ]
       },
@@ -483,21 +483,21 @@
             "label": "MetaMask",
             "link": "https://metamask.io/",
             "logo": "/third_party_logos/metamask.png",
-            "description": ""
+            "description": "小狐狸是最主流的钱包软件，拥有数千万用户"
           },
           {
             "key": "coinbase-wallet",
             "label": "Coinbase Wallet",
             "link": "https://www.coinbase.com/wallet",
             "logo": "/third_party_logos/coinbase-wallet.png",
-            "description": ""
+            "description": "Coinbase 推出的钱包应用，支持数十万种加密货币，方便购买NFT"
           },
           {
             "key": "walletconnect",
             "label": "WalletConnect",
             "link": "https://walletconnect.com/",
             "logo": "/third_party_logos/walletconnect.png",
-            "description": ""
+            "description": "连接钱包和应用的 Web3 通信协议"
           }
         ]
       },
@@ -507,16 +507,16 @@
           {
             "key": "ens",
             "label": "ENS",
-            "link": "https://ens.domains/",
+            "link": "https://ens.domains/cn/",
             "logo": "/third_party_logos/ens.svg",
-            "description": ""
+            "description": "为钱包、网站和其他内容提供去中心化的域名"
           },
           {
             "key": "spruce",
-            "label": "Spruce",
+            "label": "SpruceID",
             "link": "https://spruceid.com/",
             "logo": "/third_party_logos/spruce.png",
-            "description": ""
+            "description": "注重隐私、可信的数字身份"
           }
         ]
       },
@@ -528,14 +528,14 @@
             "label": "",
             "link": "https://nft.storage/",
             "logo": "/third_party_logos/nftstorage.svg",
-            "description": ""
+            "description": "免费的、基于 IPFS 和 Filecoin 的去中心化存储服务"
           },
           {
             "key": "web3-storage",
             "label": "web3.storage",
             "link": "https://web3.storage/",
             "logo": "/third_party_logos/web3storage.png",
-            "description": ""
+            "description": "易于上手的去中心化存储开发平台"
           }
         ]
       }
@@ -591,7 +591,7 @@
           },
           {
             "key": "sol-faucet",
-            "label": "💦Sol Faucet",
+            "label": "💦 Sol Faucet",
             "link": "https://solfaucet.com/",
             "logo": "",
             "description": "支持 Solana Testnet/Devnet网络，无需认证"
@@ -611,14 +611,7 @@
             "label": "DAppRadar",
             "link": "https://dappradar.com/",
             "logo": "/third_party_logos/dappradar.png",
-            "description": ""
-          },
-          {
-            "key": "dapp-com",
-            "label": "Dapp.com",
-            "link": "https://www.dapp.com/",
-            "logo": "/third_party_logos/dapp-com.png",
-            "description": ""
+            "description": "全球 DApp 商店"
           }
         ]
       }
@@ -642,7 +635,7 @@
             "label": "Learn Web3 DAO",
             "link": "https://learnweb3.io/",
             "logo": "/third_party_logos/learnweb3.png",
-            "description": "一个DAO组织，目标是让Web3 开发人员入职"
+            "description": "一个 DAO 组织，目标是让 Web3 开发人员入职"
           },
           {
             "key": "learnblockchain",
@@ -654,16 +647,16 @@
           {
             "key": "seedao",
             "label": "The See DAO",
-            "link": "https://seedao.xyz/home",
+            "link": "https://seedao.xyz/",
             "logo": "/third_party_logos/seedao.jpg",
-            "description": "中文DAO，目标是构建数字城邦，包含教程网站DeSchool"
+            "description": "中文DAO，目标是构建数字城邦，包含教程网站 DeSchool"
           },
           {
             "key": "alchemyUniversity",
             "label": "Alchemy University",
             "link": "https://university.alchemy.com/",
             "logo": "/third_party_logos/Alchemy_University.jpeg",
-            "description": "Alchemy出品的在线大学"
+            "description": "Alchemy 出品的在线大学"
           }
         ]
       },
@@ -689,14 +682,14 @@
             "label": "《Web3.0应用工程师培养计划2022年》- 火大开课吧",
             "link": "https://www.bilibili.com/video/BV1yD4y1C7we/",
             "logo": "/third_party_logos/bilibili.svg",
-            "description": "火大Web3.0应用实战课程"
+            "description": "火大 Web3.0 应用实战课程"
           },
           {
             "key": "chainlinkCourse",
             "label": "《区块链，智能合约 & 全栈 Web3 开发》- chainlink",
             "link": "https://www.bilibili.com/video/BV1Ca411n7ta/",
             "logo": "/third_party_logos/bilibili.svg",
-            "description": "Chainlink Web3.0应用实战课程"
+            "description": "Chainlink Web3.0 应用实战课程"
           }
         ]
       },
@@ -708,14 +701,14 @@
             "label": "《Web3 DApp 最佳编程实践指南》 - 郭宇",
             "link": "https://learnblockchain.cn/article/4072",
             "logo": "",
-            "description": "著名前字节员工 郭宇的WEB3应用最佳实践"
+            "description": "著名前字节员工 郭宇的 Web3 应用最佳实践"
           },
           {
             "key": "guoyuBestPractice",
             "label": "《智能合约开发最佳实践》",
             "link": "https://yos.io/2019/11/10/smart-contract-development-best-practices/",
             "logo": "",
-            "description": "Yos Riady出品经典，有中文翻译版本，但是时间较早，工具栈实际应该有更新"
+            "description": "Yos Riady 出品经典，有中文翻译版本，但是时间较早，工具栈实际应该有更新"
           }
         ]
       }
@@ -732,42 +725,42 @@
             "label": "",
             "link": "https://marsbit.co/",
             "logo": "/third_party_logos/marsbit.svg",
-            "description": ""
+            "description": "聚焦全球区块链科技前沿动态"
           },
           {
             "key": "8btc",
             "label": "巴比特",
             "link": "https://www.8btc.com/",
             "logo": "/third_party_logos/8btc.svg",
-            "description": ""
+            "description": "输出有价值的区块链思想"
           },
           {
             "key": "jinse",
             "label": "",
             "link": "https://www.jinse.com/",
             "logo": "/third_party_logos/jinse.png",
-            "description": ""
+            "description": "在这里，读懂区块链"
           },
           {
             "key": "foresightnews",
             "label": "Foresight News",
             "link": "https://foresightnews.pro/article",
             "logo": "/third_party_logos/foresightnews.png",
-            "description": ""
+            "description": "精选区块链新闻资讯"
           },
           {
             "key": "theblockbeats",
             "label": "BlockBeats",
-            "link": "https://foresightnews.pro/article",
+            "link": "https://www.theblockbeats.info/",
             "logo": "/third_party_logos/blockbeats.png",
-            "description": ""
+            "description": "专业的区块链研究机构与资讯平台"
           },
           {
             "key": "panewslab",
             "label": "",
             "link": "https://www.panewslab.com/",
             "logo": "/third_party_logos/panews.svg",
-            "description": ""
+            "description": "区块链智库型媒体"
           }
         ]
       },
@@ -779,7 +772,7 @@
             "label": "CoinDesk",
             "link": "https://www.coindesk.com/",
             "logo": "/third_party_logos/coindesk.svg",
-            "description": ""
+            "description": "Bitcoin, Ethereum, Crypto News and Price Data"
           }
         ]
       }
@@ -905,10 +898,10 @@
           },
           {
             "key": "web3-tools",
-            "label": "🧰web3-tools",
+            "label": "🧰 web3-tools",
             "link": "https://web3-tools.xyz/",
             "logo": "",
-            "description": ""
+            "description": "Web3 开发者工具资源集合"
           }
         ]
       },
@@ -920,7 +913,7 @@
             "label": "区块链工具 - foresightnews",
             "link": "https://foresightnews.pro/tools",
             "logo": "/third_party_logos/foresightnews.png",
-            "description": ""
+            "description": "Foresight News 提供的工具集"
           }
         ]
       }
