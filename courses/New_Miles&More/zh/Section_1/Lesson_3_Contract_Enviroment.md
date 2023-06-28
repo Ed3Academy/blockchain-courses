@@ -1,24 +1,20 @@
 # 本地合约环境搭建
 
-> # 教学目标
+## 教学目标
 
 | 1、了解DApp中的测试环境      |
 | :--------------------------- |
 | 2、了解Hardhat开发环境是什么 |
 | 3、掌握hardhat环境搭建和配置 |
 
----
-
-# 任务描述
+## 任务描述
 
 本地hardhat环境稳定、扩展性强，可用于自动化测试、部署和调试，适合作为项目的本地脚手架。“Miles&More星享计划”文件层级较多，需要使用自动化测试、部署和调试，因此选择hardhat作为本地IDE环境框架。
 本次任务要求：
 1、完成测试用原生币获取
 2、完成本地脚手架搭建、测试
 
----
-
-> # 相关知识
+## 相关知识
 
 ### 一、DApp运行环境
 
@@ -42,7 +38,7 @@
 
     要在公共测试网中部署智能合约或发送资金同样需要支付费用，这就需要测试网的代币来执行交易（无价值），那么你所做的就是打开水龙头获取一些交易代币。
 
-### 二、DApp运行环境
+### 二、Hardhat开发环境
 
 1、Hardhat介绍
 
@@ -54,7 +50,7 @@
 * Hardhat的设计理念是基于任务和插件，开发人员可以根据自己的需求选择合适的插件来扩展框架的功能。
 * Hardhat内置了Hardhat Network，可以用于模拟以太坊网络的行为和功能，便于开发和测试智能合约。
 
-> ## 操作步骤
+## 操作步骤
 
 **1、在Mumbai测试链水龙头领取测试用原生币Matic**
 
@@ -87,8 +83,12 @@ c）查看钱包是否已连接Mumbai
 
 ![final-web.png](https://i.postimg.cc/WzCGc27S/t3-03.png)
 
-    d）平台会弹出获取发放确认框，点击确认，弹出提示请求处理中。![final-web.png](https://i.postimg.cc/FRqd7TJH/t3-04.png)
+    d）平台会弹出获取发放确认框，点击确认，弹出提示请求处理中。
+
+![final-web.png](https://i.postimg.cc/FRqd7TJH/t3-04.png)
 
 ![final-web.png](https://i.postimg.cc/fRj24rVX/t3-05.png)
 
-    e） 打开钱包，查看原生币![final-web.png](https://i.postimg.cc/K8HKYZ3y/t3-12.png)
+    e） 打开钱包，查看原生币
+
+![final-web.png](https://i.postimg.cc/K8HKYZ3y/t3-12.png)
