@@ -15,71 +15,40 @@
       "title": { "zh": "搭建基础的前端项目" },
       "lessons": [
         {
+          "title": { "zh": "Miles&More星享计划介绍" },
+          "file": "Lesson_0_Get_Start.md"
+        },
+        {
           "title": { "zh": "搭建基础的前端项目" },
           "file": "Lesson_1_Front_End_Foundation.md"
-        }
-      ]
-    },
-    "Section_2": {
-      "title": { "zh": "搭建 UI 界面" },
-      "lessons": [
+        },
         {
           "title": { "zh": "搭建 UI 界面" },
-          "file": "Lesson_1_UI_Build.md"
-        }
-      ]
-    },
-    "Section_3": {
-      "title": { "zh": "本地合约环境搭建" },
-      "lessons": [
+          "file": "Lesson_2_UI_Build.md"
+        },
         {
           "title": { "zh": "本地合约环境搭建" },
-          "file": "Lesson_1_Contract_Enviroment.md"
-        }
-      ]
-    },
-    "Section_4": {
-      "title": { "zh": "创建积分合约" },
-      "lessons": [
+          "file": "Lesson_3_Contract_Enviroment.md"
+        },
         {
           "title": { "zh": "创建积分合约" },
-          "file": "Lesson_1_Contract_Point.md"
-        }
-      ]
-    },
-    "Section_5": {
-      "title": { "zh": "创建机票合约" },
-      "lessons": [
+          "file": "Lesson_4_Contract_Point.md"
+        },
         {
           "title": { "zh": "创建机票合约" },
-          "file": "Lesson_1_Contract_Ticket.md"
-        }
-      ]
-    },
-    "Section_6": {
-      "title": { "zh": "创建优惠券合约" },
-      "lessons": [
+          "file": "Lesson_5_Contract_Ticket.md"
+        },
         {
           "title": { "zh": "创建优惠券合约" },
-          "file": "Lesson_1_Contract_Coupon.md"
-        }
-      ]
-    },
-    "Section_7": {
-      "title": { "zh": "创建服务窗口合约" },
-      "lessons": [
+          "file": "Lesson_6_Contract_Coupon.md"
+        },
         {
           "title": { "zh": "创建服务窗口合约" },
-          "file": "Lesson_1_Contract_Gate.md"
-        }
-      ]
-    },
-    "Section_8": {
-      "title": { "zh": "实现机票购买和积分兑换优惠券" },
-      "lessons": [
+          "file": "Lesson_7_Contract_Gate.md"
+        },
         {
           "title": { "zh": "实现机票购买和积分兑换优惠券" },
-          "file": "Lesson_1_Redeem_Coupon.md"
+          "file": "Lesson_8_Redeem_Coupon.md"
         }
       ]
     }
