@@ -12,69 +12,74 @@
   },
   "sections": {
     "Section_1": {
-      "title": { "zh": "准备开始" },
+      "title": { "zh": "搭建基础的前端项目" },
       "lessons": [
         {
-          "title": { "zh": "准备开始" },
-          "file": "Lesson_1_Get_Started.md"
+          "title": { "zh": "搭建基础的前端项目" },
+          "file": "Lesson_1_Front_End_Foundation.md"
         }
       ]
     },
     "Section_2": {
-      "title": { "zh": "智能合约开发" },
+      "title": { "zh": "搭建 UI 界面" },
       "lessons": [
         {
-          "title": { "zh": "案例流程" },
-          "file": "Lesson_1_FlowChart.md"
-        },
-        {
-          "title": { "zh": "Ed3AirTicketNFT智能合约开发" },
-          "file": "Lesson_2_Ed3AirTicketNFT.md"
-        },
-        {
-          "title": { "zh": "Ed3LoyaltyPoints智能合约开发" },
-          "file": "Lesson_3_Ed3LoyaltyPoints.md"
-        },
-        {
-          "title": { "zh": "Ed3AirlineGate智能合约开发" },
-          "file": "Lesson_4_Ed3AirlineGate.md"
-        },
-        {
-          "title": { "zh": "Ed3Coupon智能合约开发" },
-          "file": "Lesson_5_Ed3Coupon.md"
-        },
-        {
-          "title": { "zh": "集成测试脚本" },
-          "file": "Lesson_6_Integrate_Test_Script.md"
-        },
-        {
-          "title": { "zh": "集成部署脚本" },
-          "file": "Lesson_7_Deploy_Script.md"
+          "title": { "zh": "搭建 UI 界面" },
+          "file": "Lesson_1_UI_Build.md"
         }
       ]
     },
     "Section_3": {
-      "title": { "zh": "前端项目开发" },
+      "title": { "zh": "本地合约环境搭建" },
       "lessons": [
         {
-          "title": { "zh": "搭建基础的前端项目" },
-          "file": "Lesson_1_Setup_Basic_Program.md"
-        },
+          "title": { "zh": "本地合约环境搭建" },
+          "file": "Lesson_1_Contract_Enviroment.md"
+        }
+      ]
+    },
+    "Section_4": {
+      "title": { "zh": "创建积分合约" },
+      "lessons": [
         {
-          "title": { "zh": "一些准备工作" },
-          "file": "Lesson_2_Prepare.md"
-        },
+          "title": { "zh": "创建积分合约" },
+          "file": "Lesson_1_Contract_Point.md"
+        }
+      ]
+    },
+    "Section_5": {
+      "title": { "zh": "创建机票合约" },
+      "lessons": [
         {
-          "title": { "zh": "从合约读取数据" },
-          "file": "Lesson_3_Read_Contract.md"
-        },
+          "title": { "zh": "创建机票合约" },
+          "file": "Lesson_1_Contract_Ticket.md"
+        }
+      ]
+    },
+    "Section_6": {
+      "title": { "zh": "创建优惠券合约" },
+      "lessons": [
         {
-          "title": { "zh": "向合约写入数据" },
-          "file": "Lesson_4_Write_Contract.md"
-        },
+          "title": { "zh": "创建优惠券合约" },
+          "file": "Lesson_1_Contract_Coupon.md"
+        }
+      ]
+    },
+    "Section_7": {
+      "title": { "zh": "创建服务窗口合约" },
+      "lessons": [
         {
-          "title": { "zh": "显示机票和优惠券" },
-          "file": "Lesson_5_Nft_Metadata.md"
+          "title": { "zh": "创建服务窗口合约" },
+          "file": "Lesson_1_Contract_Gate.md"
+        }
+      ]
+    },
+    "Section_8": {
+      "title": { "zh": "实现机票购买和积分兑换优惠券" },
+      "lessons": [
+        {
+          "title": { "zh": "实现机票购买和积分兑换优惠券" },
+          "file": "Lesson_1_Redeem_Coupon.md"
         }
       ]
     }
