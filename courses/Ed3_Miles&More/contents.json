@@ -1,0 +1,26 @@
+{
+  "title": {
+    "zh": "Solidity 入门教程"
+  },
+  "coverUrl": "/cover-miles-more.jpg",
+  "description": {
+    "zh": "Miles&More应用开发入门课程"
+  },
+  "discussionUrl": "",
+  "code": "Ly8gU1BEWC1MaWNlbnNlLUlkZW50aWZpZXI6IE1JVApwcmFnbWEgc29saWRpdHkgXjAuOC4xNzsKCmNvbnRyYWN0IENvdW50ZXIgewoKfQ==",
+  "sections": {
+    "Section_1": {
+      "title": {
+        "zh": "Solidity 入门"
+      },
+      "lessons": [
+        {
+          "title": {
+            "zh": "初识 Solidity"
+          },
+          "file": "Lesson_1_Hello_Solidity.md"
+        }
+      ]
+    }
+  }
+}
