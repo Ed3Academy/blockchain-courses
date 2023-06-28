@@ -1,6 +1,6 @@
 {
   "version": "2",
-  "title": { "zh": "实战：Miles&More星享计划" },
+  "title": { "zh": "区块链应用开发实战：Miles&More星享计划" },
   "coverUrl": "/cover-miles-more.jpg",
   "description": {
     "zh": "通过这门课程你可以掌握ERC721合约开发、对接第三方合约、合约单元测试与前端开发技能。"
