@@ -71,6 +71,7 @@ b）搜索Mumbai测试网，将其添加到钱包
 ![final-web.png](https://i.postimg.cc/KjBXtY4g/t3-10.png)
 
 c）查看钱包是否已连接Mumbai
+
 ![final-web.png](https://i.postimg.cc/tRxGKBDC/t3-11.png)
 
 （2）申请原生币
