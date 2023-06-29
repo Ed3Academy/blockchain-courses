@@ -39,10 +39,19 @@ b）安装依赖项(RainbowKit、ethers、wagmi)
 
 ![final-web.png](https://i.postimg.cc/nzVbqDvM/t1-02.png)
 
- c）导入wagmi和RainbowKit：下载链接文件并覆盖pages/_app.js文件：
+ c）导入wagmi和RainbowKit：用VSCode打开创建的前端项目，打开下方链接文件，复制文件代码并将其覆盖pages/_app.js文件：
  https://gitee.com/ed3-academy/miles-more-web/blob/main/pages/_app.js
 
+![final-web.png](https://i.postimg.cc/pX9MHSKd/t1-03.png)
 
+d）在项目首页中添加钱包连接按钮：打开下方链接文件，并将其覆盖pages/index.js文件：
+https://gitee.com/ed3-academy/miles-more-eb/blob/main/pages/index1.js
 
+![final-web.png](https://i.postimg.cc/263CMSwH/t1-04.png)
+
+e）修改首页样式，美化首页：打开下方链接文件，并将其覆盖pages/index.js文件：
+https://gitee.com/ed3-academy/miles-more-eb/blob/main/pages/index1.js
+
+![final-web.png](https://i.postimg.cc/WbV1bTb4/t1-05.png)
 
 3、完成钱包插件添加，钱包账号的申请及前端与钱包的连接。
