@@ -30,6 +30,7 @@
 
 ![final-web.png](https://i.postimg.cc/7LLF7bQP/t1-01.png) 
 
+
 b）安装依赖项(RainbowKit、ethers、wagmi)
    进行项目目录，执行命令npm install "@rainbow-me/
    rainbowkit@0.12.14" "ethers@5.7.2" "wagmi@0.12.13"
