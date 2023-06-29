@@ -22,10 +22,10 @@
 ## **✨ 任务操作步骤**
 
 1. 完成前端运行环境及开发环境的安装
-   a）安装Node.js:下载并安装最新LTS版本的Node.js，这里不提供操作演示，可以参看：
-   b）安装VS Code:下载并安装最新LTS版本的VS Code，这里不提供操作演示，可以参看：
+a）安装Node.js:下载并安装最新LTS版本的Node.js，这里不提供操作演示，可以参看：https://nodejs.cn/download/
+b）安装VS Code:下载并安装最新LTS版本的VS Code，这里不提供操作演示，可以参看：https://code.visualstudio.com/
 2. 完成 DApp 前端框架的搭建
-   a）安装Next.js.模板
+a）安装Next.js.模板
    启动VS Code，在控制台执行npx create-next-app@latest
 
 ![final-web.png](https://i.postimg.cc/7LLF7bQP/t1-01.png) 
