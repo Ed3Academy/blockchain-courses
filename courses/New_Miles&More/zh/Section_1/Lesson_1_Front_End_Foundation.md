@@ -31,6 +31,8 @@ b）安装VS Code:下载并安装最新LTS版本的VS Code，这里不提供操�
 a）安装Next.js.模板
 启动VS Code，在控制台执行npx create-next-app@latest
 
+备注：控制台如果找不到，在VSCode菜单项选择“View(视图)”，下拉选择“Terminal(终端)”
+
 ![final-web.png](https://i.postimg.cc/7LLF7bQP/t1-01.png)
 
 b）安装依赖项(RainbowKit、ethers、wagmi)
@@ -54,4 +56,24 @@ https://gitee.com/ed3-academy/miles-more-eb/blob/main/pages/index1.js
 
 ![final-web.png](https://i.postimg.cc/WbV1bTb4/t1-05.png)
 
-3、完成钱包插件添加，钱包账号的申请及前端与钱包的连接。
+f）浏览前端页面：在终端执行npm run dev，
+
+浏览前端页面：执行npm run dev，打开浏览器访问http://localhost:3000/查看效果
+
+![final-web.png](https://i.postimg.cc/0NL0zcQP/t1-06.png)
+
+3、前端与钱包连接
+
+a）添加钱包：在Edge浏览器上添加metamask钱包插件
+
+![final-web.png](https://i.postimg.cc/3JMDMCCp/t1-17.png)
+
+b）申请钱包账号：在metamask钱包中创建区块链账号
+
+![final-web.png](https://i.postimg.cc/RZZS2N8K/t1-18.png)
+
+c）完成钱包连接：在前端页面中点击Connect完成钱包连接
+
+![final-web.png](https://i.postimg.cc/SspwFPs3/t1-19.png)
+
+![final-web.png](https://i.postimg.cc/qq6ns1cB/t1-20.png)
