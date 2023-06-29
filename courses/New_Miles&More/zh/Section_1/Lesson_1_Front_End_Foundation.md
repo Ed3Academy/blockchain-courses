@@ -1,4 +1,4 @@
-# ✈️搭建基础的前端项目
+# 📊搭建基础的前端项目
 
 ## **🚧 教学目标**
 
@@ -27,8 +27,8 @@
 2. 完成 DApp 前端框架的搭建
    a）安装Next.js.模板
    启动VS Code，在控制台执行npx create-next-app@latest
-   
-   https://i.postimg.cc/7LLF7bQP/t1-01.png
+
+![final-web.png](https://i.postimg.cc/7LLF7bQP/t1-01.png)   
 
 b）安装依赖项(RainbowKit、ethers、wagmi)
    进行项目目录，执行命令npm install "@rainbow-me/
