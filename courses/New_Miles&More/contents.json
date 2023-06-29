@@ -1,0 +1,57 @@
+{
+  "version": "2",
+  "title": { "zh": "区块链应用开发实战：Miles&More星享计划" },
+  "coverUrl": "/cover-miles-more.jpg",
+  "description": {
+    "zh": "通过这门课程你可以掌握ERC721合约开发、对接第三方合约、合约单元测试与前端开发技能。"
+  },
+  "discussionUrl": "https://github.com/orgs/Ed3Academy/discussions/38",
+  "code": "Ly8gU1BEWC1MaWNlbnNlLUlkZW50aWZpZXI6IE1JVApwcmFnbWEgc29saWRpdHkgXjAuOC4xNzsKCmNvbnRyYWN0IENvdW50ZXIgewoKfQ==",
+  "posterUrl": "https://live.staticflickr.com/65535/52743597517_4972209c83_h.jpg",
+  "permission": {
+    "roles": [""]
+  },
+  "sections": {
+    "Section_1": {
+      "title": { "zh": "区块链应用开发实战：Miles&More星享计划" },
+      "lessons": [
+        {
+          "title": { "zh": "Miles&More星享计划介绍" },
+          "file": "Lesson_0_Get_Start.md"
+        },
+        {
+          "title": { "zh": "搭建基础的前端项目" },
+          "file": "Lesson_1_Front_End_Foundation.md"
+        },
+        {
+          "title": { "zh": "搭建 UI 界面" },
+          "file": "Lesson_2_UI_Build.md"
+        },
+        {
+          "title": { "zh": "本地合约环境搭建" },
+          "file": "Lesson_3_Contract_Enviroment.md"
+        },
+        {
+          "title": { "zh": "创建积分合约" },
+          "file": "Lesson_4_Contract_Point.md"
+        },
+        {
+          "title": { "zh": "创建机票合约" },
+          "file": "Lesson_5_Contract_Ticket.md"
+        },
+        {
+          "title": { "zh": "创建优惠券合约" },
+          "file": "Lesson_6_Contract_Coupon.md"
+        },
+        {
+          "title": { "zh": "创建服务窗口合约" },
+          "file": "Lesson_7_Contract_Gate.md"
+        },
+        {
+          "title": { "zh": "实现机票购买和积分兑换优惠券" },
+          "file": "Lesson_8_Redeem_Coupon.md"
+        }
+      ]
+    }
+  }
+}
