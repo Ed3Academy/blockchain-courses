@@ -70,7 +70,7 @@ a）添加钱包：在Edge浏览器上添加metamask钱包插件
 
 b）申请钱包账号：在metamask钱包中创建区块链账号
 
-![final-web.png](https://i.postimg.cc/RZZS2N8K/t1-18.png)
+![final-web.png](https://i.postimg.cc/0yf7YWKx/t1-21.png)
 
 c）完成钱包连接：在前端页面中点击Connect完成钱包连接
 
