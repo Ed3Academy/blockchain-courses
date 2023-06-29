@@ -42,7 +42,9 @@
 
 1、Hardhat介绍
 
-常用的主流框架：Remix，Truffle，Brownie，Hardhat，Foundry，其中Hardhat是目前最受开发者欢迎的开发框架。几种主流框架的对比详看下图：![final-web.png](https://i.postimg.cc/bY1mMVtT/t3-01.png)
+常用的主流框架：Remix，Truffle，Brownie，Hardhat，Foundry，其中Hardhat是目前最受开发者欢迎的开发框架。几种主流框架的对比详看下图：
+
+![final-web.png](https://i.postimg.cc/bY1mMVtT/t3-01.png)
 
 2、Hardhat开发环境特点
 
