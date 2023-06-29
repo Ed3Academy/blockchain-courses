@@ -37,7 +37,7 @@ b）安装依赖项(RainbowKit、ethers、wagmi)
    进行项目目录，执行命令npm install "@rainbow-me/
    rainbowkit@0.12.14" "ethers@5.7.2" "wagmi@0.12.13"
 
-![final-web.png](https://i.postimg.cc/pLZrY2Kc/t1-02.png)
+![final-web.png](https://i.postimg.cc/nzVbqDvM/t1-02.png)
 
    c）导入wagmi和RainbowKit：下载链接文件并覆盖pages/_app.js文件：
    https://gitee.com/ed3-academy/miles-more-web/blob/main/pages/_app.js
