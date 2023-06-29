@@ -34,6 +34,9 @@
 b）安装依赖项(RainbowKit、ethers、wagmi)
    进行项目目录，执行命令npm install "@rainbow-me/
    rainbowkit@0.12.14" "ethers@5.7.2" "wagmi@0.12.13"
+
+![final-web.png](https://i.postimg.cc/pLZrY2Kc/t1-02.png) 
+
    c）导入wagmi和RainbowKit：下载链接文件并覆盖pages/_app.js文件：
    https://gitee.com/ed3-academy/miles-more-web/blob/main/pages/_app.js
 4. 完成钱包插件添加，钱包账号的申请及前端与钱包的连接。
