@@ -17,7 +17,7 @@
 
 ## **⚡ 相关知识**
 
- 后面替换为AI课件，可以先参看AI脚本：https://docs.qq.com/sheet/DUUhnakNjSkZWWkt0?tab=xib91a&_t=1683512609544
+ 后面替换为AI课件，可以先参看AI脚本：[https://docs.qq.com/sheet/DUUhnakNjSkZWWkt0?tab=xib91a&amp;_t=1683512609544](https://docs.qq.com/sheet/DUUhnakNjSkZWWkt0?tab=xib91a)
 
 ## **✨ 任务操作步骤**
 
@@ -30,44 +30,47 @@ b）安装VS Code:下载并安装最新LTS版本的VS Code，这里不提供操�
 2、完成 DApp 前端框架的搭建
 
 a）安装Next.js.模板
-启动VS Code，在控制台执行命令行：npx create-next-app@latest
+启动VS Code，在控制台执行命令行：`npx create-next-app@latest`
 
 备注：控制台如果找不到，在VSCode菜单项选择“View(视图)”，下拉选择“Terminal(终端)”
 
 ![final-web.png](https://i.postimg.cc/7LLF7bQP/t1-01.png)
 
 b）安装依赖项(RainbowKit、ethers、wagmi)
-   进入项目目录，执行命令行：npm install "@rainbow-me/
-   rainbowkit@0.12.14" "ethers@5.7.2" "wagmi@0.12.13"
+   进入项目目录，执行命令行：
+
+```
+npm install "@rainbow-me/rainbowkit@0.12.14" "ethers@5.7.2" "wagmi@0.12.13"
+```
 
 ![final-web.png](https://i.postimg.cc/nzVbqDvM/t1-02.png)
 
  c）导入wagmi和RainbowKit
 
-    用VSCode打开创建的前端项目，打开下方链接文件，复制文件代码并将其覆盖pages/_app.js文件：
+用VSCode打开创建的前端项目，打开下方链接文件，复制文件代码并将其覆盖pages/_app.js文件：
  https://gitee.com/ed3-academy/miles-more-web/blob/main/pages/_app.js
 
 ![final-web.png](https://i.postimg.cc/pX9MHSKd/t1-03.png)
 
 d）在项目首页中添加钱包连接按钮
 
-    打开下方链接文件，并将其覆盖pages/index.js文件：
+   打开下方链接文件，并将其覆盖pages/index.js文件：
 https://gitee.com/ed3-academy/miles-more-eb/blob/main/pages/index1.js
 
 ![final-web.png](https://i.postimg.cc/263CMSwH/t1-04.png)
 
 e）修改首页样式，美化首页
 
-    打开下方链接文件，并将其覆盖pages/index.js文件：
+   打开下方链接文件，并将其覆盖pages/index.js文件：
 https://gitee.com/ed3-academy/miles-more-eb/blob/main/pages/index1.js
 
 ![final-web.png](https://i.postimg.cc/WbV1bTb4/t1-05.png)
 
 f）浏览前端页面
 
-    （1）控制台执行命令行：npm run dev
+   1）控制台执行命令行：`npm run dev`
 
-    （2）打开浏览器访问http://localhost:3000
+   2）打开浏览器访问http://localhost:3000
 
 ![final-web.png](https://i.postimg.cc/0NL0zcQP/t1-06.png)
 
@@ -81,13 +84,13 @@ a）添加钱包
 
 b）申请钱包账号
 
-    在metamask钱包中创建区块链账号。
+在metamask钱包中创建区块链账号。
 
 ![final-web.png](https://i.postimg.cc/0yf7YWKx/t1-21.png)
 
 c）完成钱包连接
 
-    在前端页面中点击钱包连接按钮根据步骤提示完成钱包连接。
+在前端页面中点击钱包连接按钮根据步骤提示完成钱包连接。
 
 ![final-web.png](https://i.postimg.cc/SspwFPs3/t1-19.png)
 
