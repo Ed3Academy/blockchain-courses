@@ -17,7 +17,7 @@
 
 ## **⚡ 相关知识**
 
- 后面替换为AI课件，可以先参看AI脚本：<a href="链接" target="_blank">https://docs.qq.com/sheet/DUUhnakNjSkZWWkt0?tab=xib91a&amp;_t=1683512609544</a>
+ 后面替换为AI课件，可以先参看AI脚本：<a href="https://docs.qq.com/sheet/DUUhnakNjSkZWWkt0?tab=ji2ydj" target="_blank">AI课件</a>
 
 ## **✨ 任务操作步骤**
 
