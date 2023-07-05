@@ -6,6 +6,8 @@
   "description": {
     "zh": "Node.js是一个开源的、跨平台的JavaScript运行时环境。"
   },
+  "types": ["Build"],
+  "tags": [],
   "discussionUrl": "https://github.com/orgs/Ed3Academy/discussions/32",
   "sections": {
     "Section_1": {

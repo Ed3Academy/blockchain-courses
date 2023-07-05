@@ -9,6 +9,7 @@
   "permission": {
     "roles": ["User"]
   },
+  "types": ["Build"],
   "tags": ["NFT"],
   "sections": {
     "Section_1": {

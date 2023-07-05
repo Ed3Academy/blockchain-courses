@@ -4,6 +4,8 @@
   "description": {
     "zh": "进入区块链或者Web3.0世界的第一步，你需要一个钱包。"
   },
+  "types": ["Build"],
+  "tags": [],
   "discussionUrl": "https://github.com/orgs/Ed3Academy/discussions/12",
   "sections": {
     "Section_1": {
