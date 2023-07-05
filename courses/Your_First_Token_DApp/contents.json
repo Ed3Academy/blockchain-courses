@@ -9,6 +9,7 @@
   "permission": {
     "roles": ["User"]
   },
+  "tags": ["NFT"],
   "sections": {
     "Section_1": {
       "title": { "zh": "准备开始" },

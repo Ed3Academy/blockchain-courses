@@ -11,6 +11,7 @@
   "permission": {
     "roles": [""]
   },
+  "types": ["Coding"],
   "sections": {
     "Section_1": {
       "title": { "zh": "区块链应用开发实战：Miles&More星享计划" },
