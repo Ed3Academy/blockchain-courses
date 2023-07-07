@@ -1,0 +1,52 @@
+{
+  "version": "2",
+  "title": { "zh": "区块链Solidity开发实战：BidMaster盲拍系统" },
+  "coverUrl": "/cover-solidity.png",
+  "description": {
+    "zh": "通过这门课程你可以掌握基础的Solidity语法与RemixIDE的使用"
+  },
+  "discussionUrl": "https://github.com/orgs/Ed3Academy/discussions/38",
+  "code": "Ly8gU1BEWC1MaWNlbnNlLUlkZW50aWZpZXI6IE1JVApwcmFnbWEgc29saWRpdHkgXjAuOC4xNzsKCmNvbnRyYWN0IENvdW50ZXIgewoKfQ==",
+  "posterUrl": "https://live.staticflickr.com/65535/52743597517_4972209c83_h.jpg",
+  "permission": {
+    "roles": [""]
+  },
+  
+  "types": ["Coding"],
+  "tags": [],
+  "sections": {
+    "Section_1": {
+      "title": { "zh": "区块链Solidity开发实战：BidMaster盲拍系统" },
+      "lessons": [
+        {
+          "title": { "zh": "BidMaster盲拍系统介绍" },
+          "file": "Lesson_0_Get_Start.md"
+        },
+        {
+          "title": { "zh": "创建拍卖合约" },
+          "file": "Lesson_1_Bid_Contract.md"
+        },
+        {
+          "title": { "zh": "完善拍卖出价方法" },
+          "file": "Lesson_2_Bid_Method.md"
+        },
+        {
+          "title": { "zh": "撤回出价过高的竞标" },
+          "file": "Lesson_3_Withdraw_Method.md"
+        },
+        {
+          "title": { "zh": "结束拍卖" },
+          "file": "Lesson_4_End_Bid.md"
+        },
+        {
+          "title": { "zh": "盲拍出价" },
+          "file": "Lesson_5_Blind_Bid.md"
+        },
+        {
+          "title": { "zh": "披露盲拍出价" },
+          "file": "Lesson_6_Reveal_Bid.md"
+        }
+      ]
+    }
+  }
+}
