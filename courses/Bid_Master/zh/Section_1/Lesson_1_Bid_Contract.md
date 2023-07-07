@@ -39,17 +39,16 @@
 
 2、合约代码实现
 
-    将下方代码，
+    将下方代码，复制到右侧的合约文件中，根据提示步骤，填充begin..end之间的代码。
 
 ```solidity
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.8.17;
-contract BlindAuction_1 {
-    // 拍卖的当前状态。
+contract BlindAuction_1 {   
 
     /****************  begin *****************/
-    //步骤1：声明两个变量分别用于保存最高竞拍者的地址和最高竞拍价格，
-    //分别命名    为highestBidder，highestBid（提示：正确使用数据类型）
+    //步骤1：声明两个变量分别用于保存最高竞拍者的地址和最高竞拍价格，分别命
+    //名为highestBidder，highestBid（提示：正确使用数据类型、设置可见性）
    
 
      //步骤2：设置竞拍的方法可见性为外部，同时该函数可以接受原生币  
