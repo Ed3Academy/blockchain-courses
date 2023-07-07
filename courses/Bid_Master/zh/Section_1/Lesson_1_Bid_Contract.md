@@ -32,77 +32,37 @@
 
 1、关键步骤说明
 
-* 创建一个竞拍方法
-* 接收用户传递进来的拍卖原生币；
+* 声明两个变量分别用于保存最高拍卖者的地址和最高竞拍价格
+* 创建一个竞拍方法，允许接收用户的拍卖原生币
 * 记录拍卖最高价与出价人
 * 使用remix测试
 
 2、合约代码实现
 
-a）安装Node.js：下载并安装最新LTS版本的Node.js，这里不提供操作演示。
+    将下方代码，
 
-软件下载链接：[https://nodejs.cn/download/](https://nodejs.cn/download/)
+// SPDX-License-Identifier: GPL-3.0
 
-b）安装VS Code:下载并安装最新LTS版本的VS Code，这里不提供操作演示。
+pragmasolidity^0.8.17;
 
-软件下载连接：[https://code.visualstudio.com/](https://code.visualstudio.com/)
+contract BlindAuction_1 {
 
-2、完成 DApp 前端框架的搭建a）安装Next.js.模板
+    // 拍卖的当前状态。
 
-启动VS Code，在控制台执行命令行：`npx create-next-app@latest`
+    /****************  begin *****************/
 
-备注：控制台如果找不到，在VSCode菜单项选择“View(视图)”，下拉选择“Terminal(终端)”
+    //步骤1：声明两个变量分别用于保存最高竞拍者的地址和最高竞拍价格，分别命名为highestBidder，highestBid（提示：正确使用数据类型）
 
-![final-web.png](https://i.postimg.cc/7LLF7bQP/t1-01.png)
+    //步骤2：设置竞拍的方法可见性为外部，同时该函数可以接受原生币
 
-b）安装依赖项(RainbowKit、ethers、wagmi)
-   进入项目目录，执行命令行：
+    function bid(){
 
-```
-npm install "@rainbow-me/rainbowkit@0.12.14" "ethers@5.7.2" "wagmi@0.12.13"
-```
+    //步骤3：记录竞拍最高价的地址为当前交易的地址，竞拍最高金额为当前接收的原生币数值（提示：使用全局变量）
 
-![final-web.png](https://i.postimg.cc/nzVbqDvM/t1-02.png)
+    }
 
- c）导入wagmi和RainbowKit
+    /****************  end *****************/
 
-用VSCode打开创建的前端项目，打开下方链接文件，复制文件代码并将其覆盖pages/_app.js文件：
- [https://gitee.com/ed3-academy/miles-more-web/blob/main/pages/_app.js](https://gitee.com/ed3-academy/miles-more-web/blob/main/pages/_app.js)
+}
 
-![final-web.png](https://i.postimg.cc/pX9MHSKd/t1-03.png)
-
-d）在项目首页中添加钱包连接按钮
-
-   打开下方链接文件，并将其覆盖pages/index.js文件：
-[https://gitee.com/ed3-academy/miles-more-eb/blob/main/pages/index1.js](https://gitee.com/ed3-academy/miles-more-eb/blob/main/pages/index1.js)
-
-![final-web.png](https://i.postimg.cc/263CMSwH/t1-04.png)
-
-e）修改首页样式，美化首页
-
-   打开下方链接文件，并将其覆盖pages/index.js文件：
-[https://gitee.com/ed3-academy/miles-more-eb/blob/main/pages/index1.js](https://gitee.com/ed3-academy/miles-more-eb/blob/main/pages/index1.js)
-
-![final-web.png](https://i.postimg.cc/WbV1bTb4/t1-05.png)
-
-f）浏览前端页面
-
-   1）控制台执行命令行：`npm run dev`
-
-   2）打开浏览器访问http://localhost:3000
-
-3、前端与钱包连接
-
-a）添加钱包：在Edge浏览器上添加metamask钱包插件，搜索钱包扩展，并进行安装。
-
-![final-web.png](https://i.postimg.cc/5NPnXwHj/t1-22.png)
-
-b）申请钱包账号：在metamask钱包中创建区块链账号。
-
-![final-web.png](https://i.postimg.cc/L2zJYP3C/t1-18.png)
-
-c）完成钱包连接：在前端页面中点击钱包连接按钮根据步骤提示完成钱包连接。
-
-![final-web.png](https://i.postimg.cc/SspwFPs3/t1-19.png)
-
-![final-web.png](https://i.postimg.cc/qq6ns1cB/t1-20.png)
+3、合约测试
