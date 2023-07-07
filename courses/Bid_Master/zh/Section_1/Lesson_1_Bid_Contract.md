@@ -36,7 +36,7 @@
 
 2. 合约代码实现
 
-    将下方代码，复制到右侧的合约文件中，根据提示步骤，填充begin..end之间的代码，完善合约。
+   将下方代码，复制到右侧的合约文件中，根据提示步骤，填充begin..end之间的代码，完善合约。
 
 ```solidity
 // SPDX-License-Identifier: GPL-3.0
@@ -79,4 +79,4 @@ a、选择一个区块链账户
 
 b、设置竞拍价格、测试竞拍方法、查看相应的状态变量
 
-![final-web.png](https://i.postimg.cc/4Np6xw3L/4.png)
+![final-web.png](https://i.postimg.cc/8PfPLPfs/4.png)
