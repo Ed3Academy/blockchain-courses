@@ -7,7 +7,7 @@
 3. 了解和掌握变量的声明，变量的类型及变量可见性
 4. 了解和掌握函数的声明及函数修饰符payable
 5. 了解以太单位
-6. 了解开发环境Remix如何开发，编译和部署合约
+6. 了解Remix IDE如何开发，编译和部署合约
 
 ## **💚 任务描述**
 
@@ -65,7 +65,7 @@ contract BlindAuction_1 {
 
 1）编译合约
 
-![final-web.png](https://i.postimg.cc/g0n4jmRm/1.png)
+![final-web.png](https://i.postimg.cc/QxzD4kDb/1.png)
 
 2）发布合约
 
