@@ -66,3 +66,21 @@ contract BlindAuction_1 {
 ```
 
 3、合约测试
+
+1）编译合约
+
+![final-web.png](https://i.postimg.cc/g0n4jmRm/1.png)
+
+2）发布合约
+
+![final-web.png](https://i.postimg.cc/TYb6LvVj/2.png)
+
+3）调试合约
+
+a、选择一个区块链账户
+
+![final-web.png](https://i.postimg.cc/8C6KwTCw/3.png)
+
+b、设置竞拍价格、测试竞拍方法、查看相应的状态变量
+
+![final-web.png](https://i.postimg.cc/4Np6xw3L/4.png)
