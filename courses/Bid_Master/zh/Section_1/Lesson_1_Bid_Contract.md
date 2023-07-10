@@ -7,7 +7,7 @@
 3. 了解和掌握变量的声明、变量的类型及变量可见性
 4. 了解和掌握函数的声明及函数修饰符payable
 5. 了解以太单位
-6. 了解开发环境Remix如何开发，编译和部署合约
+6. 了解Remix IDE如何开发，编译和部署合约
 
 ## **💚 任务描述**
 
@@ -36,7 +36,7 @@
 
 2. 合约代码实现
 
-    将下方代码，复制到右侧的合约文件中，根据提示步骤，填充begin..end之间的代码。
+    将下方代码，复制到右侧的合约文件中，根据提示步骤，填充begin..end之间的代码，完善合约。
 
 ```solidity
 // SPDX-License-Identifier: GPL-3.0
@@ -44,8 +44,8 @@ pragma solidity ^0.8.17;
 contract BlindAuction_1 {   
 
     /****************  begin *****************/
-    //步骤1：声明两个变量分别用于保存最高竞拍者的地址和最高竞拍价格，分别命
-    //名为highestBidder，highestBid（提示：正确使用数据类型、设置可见性）
+    //步骤1：声明两个变量用于存放最高竞拍者的地址和最高竞拍价格，命名为
+    //highestBidder，highestBid（提示：正确使用数据类型、设置可见性）
    
 
      //步骤2：设置竞拍的方法可见性为外部，同时该函数可以接受原生币  
@@ -65,7 +65,7 @@ contract BlindAuction_1 {
 
 1）编译合约
 
-![final-web.png](https://i.postimg.cc/g0n4jmRm/1.png)
+![final-web.png](https://i.postimg.cc/QxzD4kDb/1.png)
 
 2）发布合约
 
