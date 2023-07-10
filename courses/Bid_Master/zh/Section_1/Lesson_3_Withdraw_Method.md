@@ -1,7 +1,2 @@
 # 撤回出价过高的竞标
-
-# 教学目标
-
-## 任务描述
-
-## 相关知识
+![建设中.png](https://i.postimg.cc/PfzTZ5L5/image.jpg)
