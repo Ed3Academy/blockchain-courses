@@ -89,3 +89,5 @@
    ![final-web.png](https://i.postimg.cc/8PfPLPfs/4.png)
 
 其中，address显示的是最高竞拍者的地址，通过Remix完成合约的部署和合约方法的测试。
+
+## **✨ 知识测试**
