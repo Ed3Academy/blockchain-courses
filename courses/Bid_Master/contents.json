@@ -1,6 +1,6 @@
 {
   "version": "2",
-  "title": { "zh": "区块链Solidity开发实战：BidMaster盲拍系统" },
+  "title": { "zh": "Solidity初级：BidMaster盲拍系统" },
   "coverUrl": "/cover-bidmaster.jpg",
   "description": {
     "zh": "通过这门课程你可以掌握基础的Solidity语法与RemixIDE的使用"
@@ -14,7 +14,7 @@
   "tags": [],
   "sections": {
     "Section_1": {
-      "title": { "zh": "区块链Solidity开发实战：BidMaster盲拍系统" },
+      "title": { "zh": "Solidity初级：BidMaster盲拍系统" },
       "lessons": [
         {
           "title": { "zh": "BidMaster盲拍系统介绍" },
