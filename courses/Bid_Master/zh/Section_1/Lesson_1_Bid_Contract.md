@@ -45,6 +45,6 @@
 ![final-web.png](https://i.postimg.cc/TYb6LvVj/2.png)  
     c. 调试合约  
 选择一个区块链账户  
-![final-web.png](https://i.postimg.cc/8C6KwTCw/3.png)
+![final-web.png](https://i.postimg.cc/8C6KwTCw/3.png)  
     d. 设置竞拍价格、测试竞拍方法、查看相应的状态变量  
-![final-web.png](https://i.postimg.cc/8PfPLPfs/4.png)
+![final-web.png](https://i.postimg.cc/8PfPLPfs/4.png)  
