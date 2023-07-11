@@ -41,12 +41,12 @@
 
 4. **函数的声明**  
 
-    ```solidity
-    function myFunction(uint256 myParam) public payable returns (uint256) {
+    ```solidity  
+    function myFun(uint256 myParam) public payable returns(uint256) {
         // 函数逻辑
            return  myParam * 2;      
     }
-    ``` 
+    ```   
     其中：  
     a. function:函数关键字   
     b. myFunction：函数名   
