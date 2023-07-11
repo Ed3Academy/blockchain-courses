@@ -58,4 +58,4 @@
 3. 拍卖结束，将所得转给受益人
 4. 让用户主动赎回拍卖资金
 
-![flowchart.png](https://i.postimg.cc/VNCsZFRL/flowchart.jpg)
+![flowchart.png](https://ed3academy.xyz/github/courses/Bid_Master/flowchart.jpg)

@@ -1,4 +1,4 @@
 # ⏯️完善拍卖出价方法
 
 
-![建设中.png](https://i.postimg.cc/qqpp5zbQ/image.png)
+![building.png](https://ed3academy.xyz/github/courses/Bid_Master/building.png)
