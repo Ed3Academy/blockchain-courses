@@ -52,7 +52,7 @@
     b. myFunction：函数名   
     c. uint256 myParam：函数参数    
     d. public：函数公开性
-    e. **payable: 声明该函数允许接收原生币和转账**  
+    e. <span style="color: red;">**payable: 声明该函数允许接收原生币和转账**</span>
     e. returns (uint256)：返回值类型声明  
     f. return  myParam * 2:  函数体    
     g. 函数说明：返回myParam*2  
