@@ -38,6 +38,16 @@
     | public | 公开的变量可以被合约内外的所有人访问和调用  |
     | internal  | 合约内部及派生合约可访问，外部合约不可访问 |
     | private  | 只有合约自身可访问  |  
+
+4. **函数的声明**      
+    '''
+    function myFunction(uint256 myParam) public returns (uint256) {
+        // 函数逻辑
+           return  myParam * 2;      
+    }
+    '''
+其中：
+ 
      
 后面替换为AI课件，可以先参看AI脚本：
 
