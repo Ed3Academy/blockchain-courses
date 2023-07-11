@@ -34,10 +34,12 @@
    ![final-web.png](https://i.postimg.cc/QxzD4kDb/1.png)
 
    b. 选择部署选项卡，确认合约是否为待部署的合约，点击Deploy按钮，发布合约
-   ![final-web.png](https://i.postimg.cc/PqD6WGsx/2.png)
+
+   ![final-web.png](https://i.postimg.cc/sgPpJ3Hv/deploy.png)
 
    c. 调试合约
    下拉列表为Remix提供的区块链上虚拟用户，选择一个区块链账户
+
    ![final-web.png](https://i.postimg.cc/8C6KwTCw/3.png)
 
    d. 设置竞拍价格、测试竞拍方法、查看相应的状态变量
