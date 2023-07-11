@@ -43,7 +43,7 @@
      
 ![final-web.png](https://i.postimg.cc/QxzD4kDb/1.png)  
 
-    b. 发布合约
+    a. 编译合约
      
 ![final-web.png](https://i.postimg.cc/TYb6LvVj/2.png)  
 
