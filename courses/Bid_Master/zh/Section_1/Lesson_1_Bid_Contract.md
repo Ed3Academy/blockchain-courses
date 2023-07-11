@@ -24,15 +24,10 @@
     在以太坊中，以太单位用于衡量货币数量、交易费用和合约中的数值。以下是一些常见的以太单位：  
 
     |  单位  | 说明 |
-    | --- | :---: |
+    | --- | --- |
     | Ether | Ether是以太币的基本单位，通常用于表示较大的货币值和交易金额  |
     | Wei  | Wei是以太币的最小单位，1 Ether等于10^18 Wei |
-    | Gwei  | Gwei是以太币的下一级单位，1 Gwei等于10^9 Wei  |  
-
-    | Command | Description |
-    | --- | --- |
-    | git status | List all new or modified files |
-    | git diff | Show file differences that haven't been staged |
+    | Gwei  | Gwei是以太币的下一级单位，1 Gwei等于10^9 Wei  |     
     
 后面替换为AI课件，可以先参看AI脚本：
 
