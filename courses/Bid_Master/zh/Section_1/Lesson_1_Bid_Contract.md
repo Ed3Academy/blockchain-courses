@@ -25,7 +25,6 @@
 
 [AI课件](https://docs.qq.com/sheet/DSmdHWWNoT25LTENl?tab=BB08J2)
 
-<a href="https://docs.qq.com/sheet/DSmdHWWNoT25LTENl?tab=BB08J2" target="_blank">ai</a>
 
 ## **✨ 任务实现**
 
