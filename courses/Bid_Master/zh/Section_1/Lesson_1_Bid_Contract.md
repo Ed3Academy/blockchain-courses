@@ -51,11 +51,11 @@
     a. function:函数关键字   
     b. myFunction：函数名   
     c. uint256 myParam：函数参数    
-    d. public：函数公开性
-    e. <span style="color: red;">**payable: 声明该函数允许接收原生币和转账**</span>
-    e. returns (uint256)：返回值类型声明  
-    f. return  myParam * 2:  函数体    
-    g. 函数说明：返回myParam*2  
+    d. public：函数公开性  
+    e. <span style="color: red;">**payable: 声明该函数允许接收原生币和转账**</span>  
+    f. returns (uint256)：返回值类型声明  
+    g. return  myParam * 2:  函数体    
+    h. 函数说明：返回myParam*2  
  
      
 后面替换为AI课件，可以先参看AI脚本：
