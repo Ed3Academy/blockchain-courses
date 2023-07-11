@@ -52,4 +52,4 @@
     d. 设置竞拍价格、测试竞拍方法、查看相应的状态变量    
 ![final-web.png](https://i.postimg.cc/8PfPLPfs/4.png)
 
-其中，address显示的是最高竞拍者的地址。
+其中，address显示的是最高竞拍者的地址，通过Remix完成合约的部署和合约方法的测试。
