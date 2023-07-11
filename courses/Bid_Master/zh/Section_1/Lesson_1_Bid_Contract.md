@@ -25,6 +25,8 @@
 
 [AI课件](https://docs.qq.com/sheet/DSmdHWWNoT25LTENl?tab=BB08J2)
 
+<a href="https://docs.qq.com/sheet/DSmdHWWNoT25LTENl?tab=BB08J2" target="_blank">ai</a>
+
 ## **✨ 任务实现**
 
 1、关键步骤说明
@@ -37,32 +39,10 @@
 
 4）使用remix测试
 
-2、合约代码实现
+2、完善合约
 
-将下方代码，复制到右侧的合约文件中，根据提示步骤，填充begin..end之间的代码，完善合约。
+根据步骤提示，完善右侧合约文件中begin...end之间的代码。
 
-```solidity
-// SPDX-License-Identifier: GPL-3.0
-pragma solidity ^0.8.17;
-contract BlindAuction_1 {   
-
-    /****************  begin *****************/
-    //步骤1：声明两个变量用于存放最高竞拍者的地址和最高竞拍价格，命名为
-    //highestBidder，highestBid（提示：正确使用数据类型、设置可见性）
-   
-
-     //步骤2：设置竞拍的方法可见性为外部，同时该函数可以接受原生币  
-    function bid() {
-
-     //步骤3：记录竞拍最高价的地址为当前交易的地址，竞拍最高金额为当前
-     //接收的原生币数值（提示：使用全局变量）
-
-
-    }
-
-    /****************  end *****************/
-} 
-```
 
 3、合约测试
 
