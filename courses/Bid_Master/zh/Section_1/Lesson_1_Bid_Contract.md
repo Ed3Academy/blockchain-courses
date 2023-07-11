@@ -31,6 +31,7 @@
 2. 完善合约根据步骤提示，完善右侧合约文件中begin...end之间的代码。
 3. 合约测试
    a. 编译合约
+   
    ![final-web.png](https://i.postimg.cc/QxzD4kDb/1.png)
 
    b. 选择部署选项卡，确认合约是否为待部署的合约，点击Deploy按钮，发布合约
