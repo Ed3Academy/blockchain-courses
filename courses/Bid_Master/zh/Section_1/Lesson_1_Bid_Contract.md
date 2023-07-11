@@ -47,14 +47,14 @@
            return  myParam * 2;      
     }
     ``` 
-    其中：
-    a. function:函数关键字 
-    b. myFunction：函数名 
-    c. uint256 myParam：函数参数  
-    d. public：函数公开性
-    e. returns (uint256)：返回值类型声明
-    f. return  myParam * 2; 函数体
-    g. 函数说明：返回myParam*2
+    其中：  
+    a. function:函数关键字   
+    b. myFunction：函数名   
+    c. uint256 myParam：函数参数    
+    d. public：函数公开性  
+    e. returns (uint256)：返回值类型声明  
+    f. return  myParam * 2:  函数体    
+    g. 函数说明：返回myParam*2  
  
      
 后面替换为AI课件，可以先参看AI脚本：
