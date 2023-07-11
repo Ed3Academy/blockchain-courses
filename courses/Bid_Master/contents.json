@@ -24,48 +24,48 @@
           "title": { "zh": "创建拍卖合约" },
           "file": "Lesson_1_Bid_Contract.md",
           "gist": {
-            "id": "22e0c0b638f1882b320622fbcd9b79af",
-            "entry": "BlindAuction_1.sol"
+            "id": "5dab05987a5087ff84a3004b031eebef",
+            "entry": "BlindAuction_1_Exam.sol"
           }
         },
         {
           "title": { "zh": "完善拍卖出价方法" },
           "file": "Lesson_2_Bid_Method.md",
           "gist": {
-            "id": "22e0c0b638f1882b320622fbcd9b79af",
-            "entry": "BlindAuction_1.sol"
+            "id": "5dab05987a5087ff84a3004b031eebef",
+            "entry": "BlindAuction_1_Exam.sol"
           }
         },
         {
           "title": { "zh": "撤回出价过高的竞标" },
           "file": "Lesson_3_Withdraw_Method.md",
           "gist": {
-            "id": "22e0c0b638f1882b320622fbcd9b79af",
-            "entry": "BlindAuction_1.sol"
+            "id": "5dab05987a5087ff84a3004b031eebef",
+            "entry": "BlindAuction_1_Exam.sol"
           }
         },
         {
           "title": { "zh": "结束拍卖" },
           "file": "Lesson_4_End_Bid.md",
           "gist": {
-            "id": "22e0c0b638f1882b320622fbcd9b79af",
-            "entry": "BlindAuction_1.sol"
+            "id": "5dab05987a5087ff84a3004b031eebef",
+            "entry": "BlindAuction_1_Exam.sol"
           }
         },
         {
           "title": { "zh": "盲拍出价" },
           "file": "Lesson_5_Blind_Bid.md",
           "gist": {
-            "id": "22e0c0b638f1882b320622fbcd9b79af",
-            "entry": "BlindAuction_1.sol"
+            "id": "5dab05987a5087ff84a3004b031eebef",
+            "entry": "BlindAuction_1_Exam.sol"
           }
         },
         {
           "title": { "zh": "披露盲拍出价" },
           "file": "Lesson_6_Reveal_Bid.md",
           "gist": {
-            "id": "22e0c0b638f1882b320622fbcd9b79af",
-            "entry": "BlindAuction_1.sol"
+            "id": "5dab05987a5087ff84a3004b031eebef",
+            "entry": "BlindAuction_1_Exam.sol"
           }
         }
       ]
