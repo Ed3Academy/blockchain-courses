@@ -28,6 +28,10 @@
     | Ether | Ether是以太币的基本单位，通常用于表示较大的货币值和交易金额  |
     | Wei  | Wei是以太币的最小单位，1 Ether等于10^18 Wei |
     | Gwei  | Gwei是以太币的下一级单位，1 Gwei等于10^9 Wei  |
+    | Command | Description |
+| --- | --- |
+| git status | List all new or modified files |
+| git diff | Show file differences that haven't been staged |
     
 后面替换为AI课件，可以先参看AI脚本：
 
