@@ -1,6 +1,6 @@
 # 概述
 
-    本项目适合零基础的小白快速入门区块链应用DApp开发，提供最新、最佳的学习路径。（目前主要还是小范围内的共识推荐，仅区块链应用开发，非区块链系统开发，所以不会深入区块链底层知识）
+  本项目适合零基础的小白快速入门区块链应用DApp开发，提供最新、最佳的学习路径。（目前主要还是小范围内的共识推荐，仅区块链应用开发，非区块链系统开发，所以不会深入区块链底层知识）
 
 > 各子教程中的表格里优先度数字越小越优先，推荐指数越高越推荐。
 
@@ -8,7 +8,7 @@
 
 ## 区块链应用开发入门 roadmap
 
-初学者要进行区块链应用开发，建议按如下数字顺序进行学习：  
+初学者要进行区块链应用开发，建议按如下数字顺序进行学习：
 
 1. 区块链基础：不管是区块链系统、中间件、应用开发，都要了解区块链的基本概念和核心技术，但是如果只是做应用开发，可暂时不需要特别深入，待到业务需要时，再深入学习。
 2. 以太坊基础：以太坊作为目前区块链中的公链头牌，智能合约的创始链，官方开发者文档已经相当完善，建议通过它的测试链，安装metamask钱包，创建您的首个测试账户，通过区块链etherscan浏览器开始初步体验了解区块链应用交互。
@@ -26,15 +26,15 @@
 
 > 可以了解区块链圈子的最新资讯，有的还包含很多优秀的技术文章、课程。
 
-| 平台 | 链接 | slogan / 简介 |
-| --- | --- | --- |
-| 登链社区 | <https://learnblockchain.cn/> | 登链社区是一个开放的社区，社区成员一起贡献、相互分享并引以为傲。 |
-| 巴比特 | <https://www.8btc.com/> | 服务于区块链创新者 |
-| 金色财经 | <https://www.jinse.com/> | 在这里，读懂区块链 |
-| 律动 | <https://www.theblockbeats.info/> | 专业的区块链研究机构与资讯平台 |
-| foresight news | <https://foresightnews.pro/> | 一起「遇见」未来 |
-| panews | <https://www.panewslab.com/> | 区块链智库媒体-区块链新闻资讯-区块链技术应用 |
-| messari | <https://messari.io/> | Crypto Research, Data, and Tools |
-| odaily | <https://www.odaily.news/> | 专业的区块链新闻资讯平台_区块链技术应用_元宇宙_web3 |
-| 区块客 | <https://blockcast.it/> | 全球中文区块链加密币资讯网站 |
-| 链捕手 | <https://www.chaincatcher.com/> | 专业的区块链技术研究与资讯平台 |
+| 平台           | 链接                                                            | slogan / 简介                                                    |
+| -------------- | --------------------------------------------------------------- | ---------------------------------------------------------------- |
+| 登链社区       | [https://learnblockchain.cn/](https://learnblockchain.cn/)         | 登链社区是一个开放的社区，社区成员一起贡献、相互分享并引以为傲。 |
+| 巴比特         | [https://www.8btc.com/](https://www.8btc.com/)                     | 服务于区块链创新者                                               |
+| 金色财经       | [https://www.jinse.com/](https://www.jinse.com/)                   | 在这里，读懂区块链                                               |
+| 律动           | [https://www.theblockbeats.info/](https://www.theblockbeats.info/) | 专业的区块链研究机构与资讯平台                                   |
+| foresight news | [https://foresightnews.pro/](https://foresightnews.pro/)           | 一起「遇见」未来                                                 |
+| panews         | [https://www.panewslab.com/](https://www.panewslab.com/)           | 区块链智库媒体-区块链新闻资讯-区块链技术应用                     |
+| messari        | [https://messari.io/](https://messari.io/)                         | Crypto Research, Data, and Tools                                 |
+| odaily         | [https://www.odaily.news/](https://www.odaily.news/)               | 专业的区块链新闻资讯平台_区块链技术应用_元宇宙_web3              |
+| 区块客         | [https://blockcast.it/](https://blockcast.it/)                     | 全球中文区块链加密币资讯网站                                     |
+| 链捕手         | [https://www.chaincatcher.com/](https://www.chaincatcher.com/)     | 专业的区块链技术研究与资讯平台                                   |
