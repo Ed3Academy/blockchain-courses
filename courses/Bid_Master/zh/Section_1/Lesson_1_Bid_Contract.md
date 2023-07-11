@@ -41,8 +41,8 @@
 
 4. **函数的声明**  
 
-    ```
-    function myFunction(uint256 myParam) public returns (uint256) {
+    ```solidity
+    function myFunction(uint256 myParam) public payable returns (uint256) {
         // 函数逻辑
            return  myParam * 2;      
     }
@@ -51,7 +51,8 @@
     a. function:函数关键字   
     b. myFunction：函数名   
     c. uint256 myParam：函数参数    
-    d. public：函数公开性  
+    d. public：函数公开性
+    e. **payable: 声明该函数允许接收原生币和转账**  
     e. returns (uint256)：返回值类型声明  
     f. return  myParam * 2:  函数体    
     g. 函数说明：返回myParam*2  
