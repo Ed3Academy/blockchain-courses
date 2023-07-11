@@ -20,11 +20,44 @@
 3. 测试合约
 
 ## **⚡ 相关知识**  
-1. 了解以太单位  
-    -在以太坊中，以太单位用于衡量货币数量、交易费用和合约中的数值。以下是一些常见的以太单位：  
-    a. Wei（最小单位）：Wei是以太币的最小单位，1 Ether等于10^18 Wei。  
-    b. Gwei（也称为Shannon）：Gwei是以太币的下一级单位，1 Gwei等于10^9 Wei，即1 Ether等于10^9 Gwei。  
-    c. Ether：Ether是以太币的基本单位，通常用于表示较大的货币值和交易金额。  
+1. **以太单位**    
+    在以太坊中，以太单位用于衡量货币数量、交易费用和合约中的数值。以下是一些常见的以太单位：  
+
+    |  单位  | 说明 |
+    | --- | --- |
+    | Ether | Ether是以太币的基本单位，通常用于表示较大的货币值和交易金额  |
+    | Wei  | Wei是以太币的最小单位，1 Ether等于10^18 Wei |
+    | Gwei  | Gwei是以太币的下一级单位，1 Gwei等于10^9 Wei  |   
+
+2. **变量的声明语法**       
+    <数据类型> <可见性修饰符> <变量名>;
+
+3. **变量的可见性**        
+    |  可见性  | 说明 |
+    | --- | --- |
+    | public | 公开的变量可以被合约内外的所有人访问和调用  |
+    | internal  | 合约内部及派生合约可访问，外部合约不可访问 |
+    | private  | 只有合约自身可访问  |  
+
+4. **函数的声明**  
+
+    ```solidity  
+    function myFun(uint256 myParam) public payable returns(uint256) {
+        // 函数逻辑
+           return  myParam * 2;      
+    }
+    ```   
+    其中：  
+    a. function:函数关键字   
+    b. myFunction：函数名   
+    c. uint256 myParam：函数参数    
+    d. public：函数公开性  
+    e. <span style="color: red;">**payable: 声明该函数允许接收原生币和转账**</span>  
+    f. returns (uint256)：返回值类型声明  
+    g. return  myParam * 2:  函数体    
+    h. 函数说明：返回myParam*2  
+ 
+     
 后面替换为AI课件，可以先参看AI脚本：
 
 [AI课件](https://docs.qq.com/sheet/DSmdHWWNoT25LTENl?tab=BB08J2)
@@ -56,3 +89,5 @@
    ![final-web.png](https://i.postimg.cc/8PfPLPfs/4.png)
 
 其中，address显示的是最高竞拍者的地址，通过Remix完成合约的部署和合约方法的测试。
+
+## **🌸 知识测试**
