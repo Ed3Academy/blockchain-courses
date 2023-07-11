@@ -23,7 +23,11 @@
 
  后面替换为AI课件，可以先参看AI脚本：
 
+<<<<<<< HEAD
 [AI课件](https://docs.qq.com/sheet/DSmdHWWNoT25LTENl?tab=BB08J2)
+=======
+[AI课件](https://docs.qq.com/sheet/DUUhnakNjSkZWWkt0?tab=ji2ydj)
+>>>>>>> e8b251f8a1005de927a6c3bbb8b057a20fe7cad8
 
 ## **✨ 任务实现**
 
