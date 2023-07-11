@@ -20,7 +20,7 @@
 3. 测试合约
 
 ## **⚡ 相关知识**  
-    后面替换为AI课件，可以先参看AI脚本：
+后面替换为AI课件，可以先参看AI脚本：
 
 [AI课件](https://docs.qq.com/sheet/DSmdHWWNoT25LTENl?tab=BB08J2)
 
