@@ -9,7 +9,7 @@
 
 ## **💚 任务描述**
 
-在盲拍系统中，允许多个用户参与竞拍，当然一个用户也可以多次参与竞拍，而竞拍系统要判断和记录最高竞拍者信息，需要针对以下情况进行处理：
+ 在任务1完成了当次竞拍信息的记录，然而在盲拍系统中，存在多个用户参与竞拍，当然一个用户也可以多次参与竞拍，因此竞拍系统要判断和记录最高竞拍者信息，需要针对以下情况进行处理：
     
 1. 当本次竞拍价低于最高竞拍记录，触发异常回滚交易，将钱退回   
 2. 当本次竞拍价高于最高竞拍记录，需保存被替代的最高竞拍记录（映射被替代的最高竞拍记录者的账户以及对应竞拍价），以备竞拍结束将钱款退回
@@ -37,18 +37,22 @@
 
    ![compile_contract.png](https://ed3academy.xyz/github/courses/Bid_Master/compile_contract.png)
 
-   b. 部署合约：选择部署选项卡，确认合约是否为待部署的合约，点击Deploy按钮，发布合约
+   b. 部署合约并展开已部署的合约：选择部署选项卡，确认合约是否为待部署的合约，点击Deploy按钮，发布合约
 
-   ![deploy.png](https://ed3academy.xyz/github/courses/Bid_Master/deploy.png)
+   ![deploy.png](https://i.postimg.cc/bNkcRvZs/2.png)
 
-   c. 选择测试账户：下拉列表为Remix提供的区块链上虚拟用户，选择一个区块链账户
+   c. 第一次竞拍，选择测试账户：下拉列表为Remix提供的区块链上虚拟用户，选择一个区块链账户，当前账户进行竞拍出价
 
-   ![test_account.png](https://ed3academy.xyz/github/courses/Bid_Master/test_account.png)
+   ![test_account.png](https://i.postimg.cc/vBtbXHqr/5.png)
 
-   d. 设置竞拍价格、测试竞拍方法、查看相应的状态变量
+   d. 执行竞拍方法，查看最高竞拍者信息以及追加钱款退回信息
+   ![call_function.png](https://i.postimg.cc/m2BkMKDf/12.png)
 
-   ![call_function.png](https://ed3academy.xyz/github/courses/Bid_Master/call_function.png)
+   e. 第二次竞拍，下拉选择一个新账户，进行竞拍出价，执行竞拍方法，查看最高竞拍信息和追加钱款退回信息
+   ![call_function.png](https://i.postimg.cc/SN1XhDyB/13.png)  
 
-其中，address显示的是最高竞拍者的地址，通过Remix完成合约的部署和合约方法的测试。
+    e. 异常测试，下拉选择一个新账户，进行竞拍出价，出价低于最高竞拍价，查看合约是否正确抛出异常。
+   ![call_function.png](https://i.postimg.cc/jS57nCqJ/16.png)   
 
+至此，完成了任务2合约的调试，部署和测试。
 ## **🌸 知识测试**  
