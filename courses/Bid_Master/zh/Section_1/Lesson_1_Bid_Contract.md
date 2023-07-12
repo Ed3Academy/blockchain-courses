@@ -81,19 +81,19 @@
 3. **合约测试**  
    a. 编译合约：点击编译按钮
 
-   ![final-web.png](https://i.postimg.cc/QxzD4kDb/1.png)
+   ![compile_contract.png](https://ed3academy.xyz/github/courses/Bid_Master/compile_contract.png)
 
    b. 部署合约：选择部署选项卡，确认合约是否为待部署的合约，点击Deploy按钮，发布合约
 
-   ![final-web.png](https://i.postimg.cc/sgPpJ3Hv/deploy.png)
+   ![deploy.png](https://ed3academy.xyz/github/courses/Bid_Master/deploy.png)
 
    c. 选择测试账户：下拉列表为Remix提供的区块链上虚拟用户，选择一个区块链账户
 
-   ![final-web.png](https://i.postimg.cc/8C6KwTCw/3.png)
+   ![test_account.png](https://ed3academy.xyz/github/courses/Bid_Master/test_account.png)
 
    d. 设置竞拍价格、测试竞拍方法、查看相应的状态变量
 
-   ![final-web.png](https://i.postimg.cc/8PfPLPfs/4.png)
+   ![call_function.png](https://ed3academy.xyz/github/courses/Bid_Master/call_function.png)
 
 其中，address显示的是最高竞拍者的地址，通过Remix完成合约的部署和合约方法的测试。
 
