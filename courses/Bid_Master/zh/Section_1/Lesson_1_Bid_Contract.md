@@ -49,14 +49,14 @@
     |  变量名  | 作用 |
     | --- | --- |
     | msg.sender | 获取当前交易的发送者地址  |
-    | msg.value  | 获取当前交易中发送的原声币的数量 |  
+    | msg.value  | 获取当前交易中发送的原生币的数量 |  
        
 5. **函数的声明**  
 
     ```solidity  
     function myFun(uint256 myParam) public payable returns(uint256) {
         // 函数逻辑
-           return  myParam * 2;      
+        return  myParam * 2;      
     }
     ```   
     其中：  
