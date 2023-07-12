@@ -46,13 +46,16 @@
    ![test_account.png](https://i.postimg.cc/vBtbXHqr/5.png)
 
    d. 执行竞拍方法，查看最高竞拍者信息以及追加钱款退回信息
+
    ![call_function.png](https://i.postimg.cc/m2BkMKDf/12.png)
 
    e. 第二次竞拍，下拉选择一个新账户，进行竞拍出价，执行竞拍方法，查看最高竞拍信息和追加钱款退回信息
+
    ![call_function.png](https://i.postimg.cc/SN1XhDyB/13.png)  
 
     e. 异常测试，下拉选择一个新账户，进行竞拍出价，出价低于最高竞拍价，查看合约是否正确抛出异常。
-   ![call_function.png](https://i.postimg.cc/jS57nCqJ/16.png)   
+
+   ![call_function.png](https://i.postimg.cc/DZrzW3tN/18.png)   
 
 至此，完成了任务2合约的调试，部署和测试。
 ## **🌸 知识测试**  
