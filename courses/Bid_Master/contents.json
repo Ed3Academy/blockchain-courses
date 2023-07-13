@@ -32,8 +32,8 @@
           "title": { "zh": "完善拍卖出价方法" },
           "file": "Lesson_2_Bid_Method.md",
           "gist": {
-            "id": "5dab05987a5087ff84a3004b031eebef",
-            "entry": "BlindAuction_1_Exam.sol"
+            "id": "15d3f65d2429208d981b87e1c20abd97",
+            "entry": "basic_exam-BlindAuction_2_Exam.sol"
           }
         },
         {
