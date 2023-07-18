@@ -1,3 +1,81 @@
-# 撤回出价过高的竞标
+# 📊撤回出价过高的竞标
 
-![building.png](https://ed3academy.xyz/github/courses/Bid_Master/building.png)
+## **🚧 教学目标**
+
+1. 了解和掌握以太坊账户
+2. 了解和掌握智能合约的特殊函数
+3. 了解和掌握payable变量修饰符
+4. 了解和掌握转账方法
+
+## **💚 任务描述**
+
+BidMaster竞拍系统，前一轮用户竞拍后保存最高竞拍者及其竞拍价，当下一轮出价高于当前最高竞拍值，此时上一轮竞拍记录者可以赎回之前的竞拍资金。 具体实现逻辑如下：     
+1. 用户A投标 1 wei   
+2. 用户B投标 2 wei
+3. 用户A赎回资金，用户A钱包资产增加1 wei、合约总资产减少1wei 
+本次任务的目标是编写一个合约方法让上一轮竞拍者主动赎回竞拍资金。  
+
+## **⚡ 相关知识**
+知识点简述，（后续会替换AI课件，可以先参看AI脚本：）  
+[AI课件](https://docs.qq.com/sheet/DSmdHWWNoT25LTENl?tab=zlpfgb)  
+   
+
+## **✨ 任务关键步骤分析**
+2. 声明一个合约方法，让参与竞拍的用户主动赎回以太币
+3. 在赎回前先判断竞拍者的退款账户金额是否大于0
+4. 先将赎回账户清零
+5. 将相应账户的以太币转账给赎回账户
+
+## **✨ 任务疑难点分析**
+1. 为什么不在出价方法中，把以太币直接退给上一轮的竞拍者？  
+```Solidity
+function bid() external payable{
+        // 如果出价低于最高竞拍价，以太币全数退回        
+       //revert语句将回滚交易，将以太币退回到竞拍账户。 
+        if (msg.value <= highestBid)
+            revert BidNotHighEnough(highestBid);
+        if (highestBid != 0) {
+            <span color=red>pendingReturns[highestBidder] += highestBid;</span>
+        }
+        highestBidder = msg.sender;
+        highestBid = msg.value;
+    }
+
+```
+解析：因为退回账户的地址可能是一个不信任的合约地址，如果把钱转账给合约地址时，用户可以在特殊函数中嵌入恶意消耗gas的内容或者执行故意失败的代码，这样会导致这笔竞拍失败，使得任何人都
+无法继续参与竞拍，而当前用户可以以最低代价竞拍成功或者让合约无法继续提供服务。因此让接收方自己取钱总是比较安全的。 
+
+2. 为什么在赎回账户余额时，需要先将赎回账户清零，再执行转账操作？  
+解析：为了避免重入攻击的风险，赎回账户清零是非常重要的。重入攻击是一种安全漏洞，其中恶意合约利用合约之间的调用关系，在一个外部调用还未完成时重新调用目标合约。如果赎回账户不先被清零，那么在转账操作执行期间，恶意合约可能会再次调用赎回函数，从而再次执行转账操作，导致重复转账。预先将赎回账户清零是一种防范措施，确保只有一次有效的转账操作，从而避免重复转账或资金泄露的风险。
+
+3. 区块链历史上著名的黑客攻击和安全事件"THE DAO"，大家可以打开视频链接观看。
+[The DAO 事件](https://www.bilibili.com/video/BV1BR4y1x7AK/?spm_id_from=333.999.0.0&vd_source=50f82b34fe1761acb5f2ec3a1580603e)  
+ 
+## **✨ 任务实现**
+1. **完善合约**  
+    根据步骤提示，完善右侧合约文件中begin...end之间的代码。
+3. **合约测试**  
+   a. 编译和部署合约   
+
+   b. 合约测试
+
+   ![deploy.png](https://i.postimg.cc/bNkcRvZs/2.png)
+
+   c. 第一次竞拍，选择测试账户：下拉列表为Remix提供的区块链上虚拟用户，选择一个区块链账户，当前账户进行竞拍出价
+
+   ![test_account.png](https://i.postimg.cc/vBtbXHqr/5.png)
+
+   d. 执行竞拍方法，查看最高竞拍者信息以及追加钱款退回信息
+
+   ![call_function.png](https://i.postimg.cc/m2BkMKDf/12.png)
+
+   e. 第二次竞拍，下拉选择一个新账户，进行竞拍出价，执行竞拍方法，查看最高竞拍信息和追加钱款退回信息
+
+   ![call_function.png](https://i.postimg.cc/SN1XhDyB/13.png)  
+
+    e. 异常测试，下拉选择一个新账户，进行竞拍出价，出价低于最高竞拍价，查看合约是否正确抛出异常。
+
+   ![call_function.png](https://i.postimg.cc/DZrzW3tN/18.png)   
+
+至此，完成了任务2合约的调试，部署和测试。
+## **🌸 知识测试**  
