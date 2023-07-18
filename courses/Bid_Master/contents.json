@@ -40,8 +40,8 @@
           "title": { "zh": "撤回出价过高的竞标" },
           "file": "Lesson_3_Withdraw_Method.md",
           "gist": {
-            "id": "5dab05987a5087ff84a3004b031eebef",
-            "entry": "BlindAuction_1_Exam.sol"
+            "id": "e071ae7bfef23010bd8af84113c5cc8c",
+            "entry": "BlindAuction_3_Exam.sol"
           }
         },
         {
