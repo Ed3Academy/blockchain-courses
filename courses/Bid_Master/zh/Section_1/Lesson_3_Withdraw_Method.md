@@ -52,28 +52,17 @@ function bid() external payable{
 ## **✨ 任务实现**
 1. **完善合约**  
     根据步骤提示，完善右侧合约文件中begin...end之间的代码。
+
 3. **合约测试**  
-   a. 编译和部署合约   
+   a. 用户A竞拍者出价10wei，执行bid出价方法
+   
 
-   b. 合约测试
+   b. 用户B竞拍者出价20wei,执行bid出价方法，查看pendingReturns[用户A]的账户余额为10
 
-   ![deploy.png](https://i.postimg.cc/bNkcRvZs/2.png)
 
-   c. 第一次竞拍，选择测试账户：下拉列表为Remix提供的区块链上虚拟用户，选择一个区块链账户，当前账户进行竞拍出价
+   c. 切换为用户A，主动赎回账户余额，执行withdraw赎回方法，再去查看pendingReturns[用户A]的账户余额，观察此刻账户的余额是否清零。
 
-   ![test_account.png](https://i.postimg.cc/vBtbXHqr/5.png)
-
-   d. 执行竞拍方法，查看最高竞拍者信息以及追加钱款退回信息
-
-   ![call_function.png](https://i.postimg.cc/m2BkMKDf/12.png)
-
-   e. 第二次竞拍，下拉选择一个新账户，进行竞拍出价，执行竞拍方法，查看最高竞拍信息和追加钱款退回信息
-
-   ![call_function.png](https://i.postimg.cc/SN1XhDyB/13.png)  
-
-    e. 异常测试，下拉选择一个新账户，进行竞拍出价，出价低于最高竞拍价，查看合约是否正确抛出异常。
-
-   ![call_function.png](https://i.postimg.cc/DZrzW3tN/18.png)   
+   
 
 至此，完成了任务2合约的调试，部署和测试。
 ## **🌸 知识测试**  
