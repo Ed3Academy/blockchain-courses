@@ -35,7 +35,7 @@ function bid() external payable{
     if (msg.value <= highestBid)
          revert BidNotHighEnough(highestBid);
     if (highestBid != 0) {
-        <span style="color: red;">pendingReturns[highestBidder] += highestBid;</span>
+        pendingReturns[highestBidder] += highestBid;
     }
     highestBidder = msg.sender;
     highestBid = msg.value;
