@@ -1,4 +1,82 @@
 {
+  "news": {
+    "label": "📰 新闻资讯",
+    "categories": [
+      {
+        "label": "中文",
+        "websites": [
+          {
+            "key": "jinse",
+            "label": "",
+            "link": "https://www.jinse.cn/",
+            "logo": "/third_party_logos/jinse.png",
+            "description": "在这里，读懂区块链"
+          },
+          {
+            "key": "odaily",
+            "label": "",
+            "link": "https://www.odaily.news/",
+            "logo": "/third_party_logos/odaily.webp",
+            "description": "专业的区块链新闻资讯平台"
+          },
+          {
+            "key": "panewslab",
+            "label": "",
+            "link": "https://www.panewslab.com/",
+            "logo": "/third_party_logos/panews.svg",
+            "description": "区块链智库型媒体"
+          },
+          {
+            "key": "chainfeeds",
+            "label": "Substack ChainFeeds",
+            "link": "https://substack.chainfeeds.xyz/",
+            "logo": "/third_party_logos/chain_feeds.png",
+            "description": ""
+          },
+          {
+            "key": "marsbit",
+            "label": "",
+            "link": "https://marsbit.co/",
+            "logo": "/third_party_logos/marsbit.svg",
+            "description": "聚焦全球区块链科技前沿动态"
+          },
+          {
+            "key": "foresightnews",
+            "label": "Foresight News",
+            "link": "https://foresightnews.pro/article",
+            "logo": "/third_party_logos/foresightnews.png",
+            "description": "精选区块链新闻资讯"
+          },
+          {
+            "key": "theblockbeats",
+            "label": "BlockBeats",
+            "link": "https://www.theblockbeats.info/",
+            "logo": "/third_party_logos/blockbeats.png",
+            "description": "专业的区块链研究机构与资讯平台"
+          },
+          {
+            "key": "8btc",
+            "label": "巴比特",
+            "link": "https://www.8btc.com/",
+            "logo": "/third_party_logos/8btc.svg",
+            "description": "输出有价值的区块链思想"
+          }
+        ]
+      },
+      {
+        "label": "英文",
+        "websites": [
+          {
+            "key": "coindesk",
+            "label": "CoinDesk",
+            "link": "https://www.coindesk.com/",
+            "logo": "/third_party_logos/coindesk.svg",
+            "description": "Bitcoin, Ethereum, Crypto News and Price Data"
+          }
+        ]
+      }
+    ]
+  },
   "smartContractLanguages": {
     "label": "🚀 智能合约",
     "categories": [
@@ -714,70 +792,6 @@
       }
     ]
   },
-  "news": {
-    "label": "📰 新闻资讯",
-    "categories": [
-      {
-        "label": "中文",
-        "websites": [
-          {
-            "key": "marsbit",
-            "label": "",
-            "link": "https://marsbit.co/",
-            "logo": "/third_party_logos/marsbit.svg",
-            "description": "聚焦全球区块链科技前沿动态"
-          },
-          {
-            "key": "8btc",
-            "label": "巴比特",
-            "link": "https://www.8btc.com/",
-            "logo": "/third_party_logos/8btc.svg",
-            "description": "输出有价值的区块链思想"
-          },
-          {
-            "key": "jinse",
-            "label": "",
-            "link": "https://www.jinse.cn/",
-            "logo": "/third_party_logos/jinse.png",
-            "description": "在这里，读懂区块链"
-          },
-          {
-            "key": "foresightnews",
-            "label": "Foresight News",
-            "link": "https://foresightnews.pro/article",
-            "logo": "/third_party_logos/foresightnews.png",
-            "description": "精选区块链新闻资讯"
-          },
-          {
-            "key": "theblockbeats",
-            "label": "BlockBeats",
-            "link": "https://www.theblockbeats.info/",
-            "logo": "/third_party_logos/blockbeats.png",
-            "description": "专业的区块链研究机构与资讯平台"
-          },
-          {
-            "key": "panewslab",
-            "label": "",
-            "link": "https://www.panewslab.com/",
-            "logo": "/third_party_logos/panews.svg",
-            "description": "区块链智库型媒体"
-          }
-        ]
-      },
-      {
-        "label": "英文",
-        "websites": [
-          {
-            "key": "coindesk",
-            "label": "CoinDesk",
-            "link": "https://www.coindesk.com/",
-            "logo": "/third_party_logos/coindesk.svg",
-            "description": "Bitcoin, Ethereum, Crypto News and Price Data"
-          }
-        ]
-      }
-    ]
-  },
   "books": {
     "label": "📚 推荐书籍",
     "categories": [
@@ -874,7 +888,7 @@
           },
           {
             "key": "nomadlist",
-            "label": "Go nomad" ,
+            "label": "Go nomad",
             "link": "https://nomadlist.com/",
             "logo": "/third_party_logos/gonomad.svg",
             "description": "加入由在世界各地生活和旅行的远程工作者组成的全球社区"
