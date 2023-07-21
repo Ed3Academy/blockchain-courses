@@ -40,7 +40,8 @@
 解析：访问https://playground.ethers.org/，这是一个在线的Ethereum Playground，提供了一个交互式的环境，让用户可以在浏览器中直接运行和测试以太坊智能合约和Ethers.js代码。
 ```JavaScript
     ethers.utils.keccak256(
-    ethers.utils.defaultAbiCoder.encode(["uint256", "bool", "string"], [1, true, "abc"]),
+    ethers.utils.defaultAbiCoder.encode(["uint256", "bool", "string"],
+    [1, true, "abc"]),
   );
 ```   
 示例中，通过调用ethers.js中defaultAbiCoder对象方法encode将出价信息转换为ABI编码，再通过keccak256将ABI编码通过哈希计算生成哈希值。  
