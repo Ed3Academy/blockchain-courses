@@ -62,7 +62,8 @@ c. 随意值，数据类型自定义，示例中为字符串类型
 ```  
 其中持有人，余额和账户类型均是该账户的相关信息，因此定义一个结构体类型来声明该数据结构。定义好结构体后，在函数体中如何访问？
 ```Solidity
-accounts[msg.sender] = Account({owner: msg.sender, balance: 0, accountType: accountType});
+accounts[msg.sender] = Account({owner: msg.sender, balance: 0,
+accountType: accountType});
 ```  
 
 3、如何让一个映射类型，实施账户和多次出价信息的映射
