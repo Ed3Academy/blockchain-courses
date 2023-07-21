@@ -37,7 +37,7 @@
 
 ## **✨ 任务疑难点分析**
 1. 如何进行出价哈希  
-解析：访问https://playground.ethers.org/，这是一个在线的Ethereum Playground，提供了一个交互式的环境，让用户可以在浏览器中直接运行和测试以太坊智能合约和Ethers.js代码。
+解析：访问https://playground.ethers.org/， 这是一个在线的Ethereum Playground，提供了一个交互式的环境，让用户可以在浏览器中直接运行和测试以太坊智能合约和Ethers.js代码。
 ```JavaScript
     ethers.utils.keccak256(
     ethers.utils.defaultAbiCoder.encode(["uint256", "bool", "string"],
