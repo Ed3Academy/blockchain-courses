@@ -50,26 +50,31 @@
 ```Solidity
     keccak256(abi.code(value,fake,secte)); 
 ```   
-示例中，通过调用keccak256函数， 
-其中三个参数分别为：
-a. 竞拍出价
-b. 是否是伪出价，true：伪出价，false：真实出价
-c. 随意值，数据类型自定义，示例中为字符串类型
+示例中，通过调用keccak256函数，其中三个参数分别为：  
+a. 竞拍出价  
+b. 是否为无效出价，true：无效出价，false：真实出价  
+c. 密码字符串   
 
 2. 如何将历史竞拍数据和盲拍信息进行一一比较  
-解析：分别定义三个数组，一个用于存储历史出价value[]，一个用于存储是否伪拍fake[]，一个用于存储密钥secret[]
-而竞拍数据在映射类型bids[msg.sender]数据中,  其中每个竞拍者对应的竞拍信息是一个结构体，结构体成员为竞拍价和预存订金
+解析：分别定义三个数组，一个用于存储历史出价values[]，一个用于存储是否伪拍fakes[]，一个用于存储密钥secrets[]
+而竞拍数据在映射变量bids[msg.sender]数据中,  其中每个竞拍者对应的竞拍信息是一个结构体，结构体成员为竞拍价blindedBid和预存订金deposit，将历史出价信息进行哈希计算，将得出的哈希值和盲拍的竞拍哈希值进行比较。
 ```Solidity
 //示例：将用户传入的历史竞拍数据和他的盲拍数据进行验证。
    bidHash =  keccak256(abi.code(value[i],fake[i],secret[i]));
-   bidHash == bids[msg.sender][i].blindedBid
-   if(bidHash  == keccak256(abi.code(value[i],fake[i],secte[i]));)  //如果验证成功，披露成功
+   bidHash == bids[msg.sender][i].blindedBid；
+    //如果验证成功，披露成功
+   if(bidHash == keccak256(abi.code(value[i],fake[i],secte[i]));)
+   {
+      ...
+   } 
 ```  
 3. 如何向区块链发出通知有用户进行了披露操作  
 解析：如果要将相关信息传递给区块链上的监听器，可以先声明event，再通过emit触发事件，发出通知。
 ```Solidity
-event AutionEnded( )  // 声明一个竞拍结束时间
-emit  AutionEnded()   // 当竞拍结束合约方法执行完后，触发事件，向区块链发出通知竞拍已经结束。
+// 声明一个竞拍结束时间  
+event AutionEnded( )    
+触发事件  
+emit  AutionEnded()      
 ```  
 ## **✨ 任务实现**
 1. **完善合约**  
