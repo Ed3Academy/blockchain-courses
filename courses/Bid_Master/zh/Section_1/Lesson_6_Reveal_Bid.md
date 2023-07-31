@@ -75,7 +75,16 @@ c. 密码字符串
 event AutionEnded( )    
 触发事件  
 emit  AutionEnded()      
-```  
+```
+4. 将外部传入的出价哈希值转换为以太币单位  
+解析：如果要将相关信息传递给区块链上的监听器，可以先声明event，再通过emit触发事件，发出通知。
+```JavaScript
+    ethers.utils.keccak256(
+    ethers.utils.defaultAbiCoder.encode(["uint256", "bool", "string"],
+     [ethers.utils.parseEther("4.0").toString(), false, "101"]),
+  );
+``` 
+
 ## **✨ 任务实现**
 1. **完善合约**  
     根据步骤提示，完善右侧合约文件中begin...end之间的代码。  
@@ -87,23 +96,17 @@ emit  AutionEnded()
 
 
    b. 选择账户A出价了3次分别为(1eth,true,abc) 订金1eth,(2eth,true,efg) 订金3the,(3eth,true,123) 订金4eth,通过哈希值生成链接，执行哈希方法生成相应的哈希值，在调用盲拍函数时传入。执行盲拍方法，进行三次盲拍。<span color="red">（注意：切换用户A，预先把所有的出价哈希生成完毕）</span>  
-  ```JavaScript
-    ethers.utils.keccak256(
-    ethers.utils.defaultAbiCoder.encode(["uint256", "bool", "string"], 
-    [ethers.utils.parseEther("1.0").toString(), true, "abc"]),
-  )
-  );
-```  
-    ![call_function.png](https://i.postimg.cc/q76ycT4t/3.png)  
-
-   c. 假设用户B出价了2次分别为(2eth,true,751) 订金2th,(4eth,false,101) 订金5eth。同样通过哈希值生成链接，执行哈希方法生成相应的哈希值，在调用盲拍函数时传入。执行盲拍方法，进行二次盲拍 <span color="red">（注意：切换用户A，预先把所有的出价哈希生成完毕）</span>  
-
-   d. 用户A披露出价[1000000000000000000,2000000000000000000,3000000000000000000]，[true,true,false]，["abc","efg","123"]。<span color="red">（注意：切换用户A）</span>
-    将相应的参数值分别传入给出价数组，是否无效出价数组，密码串数组  
+   ![call_function.png](https://i.postimg.cc/q76ycT4t/3.png)  
     
-     ![call_function.png](https://i.postimg.cc/MZMCvWHC/4.png)  
+
+    c. 假设用户B出价了2次分别为(2eth,true,751) 订金2th,(4eth,false,101) 订金5eth。同样通过哈希值生成链接，执行哈希方法生成相应的哈希值，在调用盲拍函数时传入。执行盲拍方法，进行二次盲拍 <span color="red">（注意：切换用户A，预先把所有的出价哈希生成完毕）</span>  
+
+   d. 用户A披露出价[1000000000000000000,2000000000000000000,3000000000000000000]，[true,true,false]，["abc","efg","123"]。（注意：切换用户A），将相应的参数值分别传入给出价数组，是否无效出价数组，密码串数组
+   
+    ![call_function.png](https://i.postimg.cc/MZMCvWHC/4.png) 
+     
     当披露方法调用成功，将在调试终点显示出设置的调试信息，如下图所示  
-      ![call_function.png](https://i.postimg.cc/KzvgJqkT/5.png)  
+    ![call_function.png](https://i.postimg.cc/KzvgJqkT/5.png)  
 
    e. 用户B披露出价[2000000000000000000,4000000000000000000],[true,false],["751","101"]。<span color="red">（注意：切换用户B）</span>，操作方式与上面步骤一致。
 
