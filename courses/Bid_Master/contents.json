@@ -17,11 +17,11 @@
       "title": { "zh": "Solidity初级：BidMaster盲拍系统" },
       "lessons": [
         {
-          "title": { "zh": "BidMaster盲拍系统介绍" },
+          "title": { "zh": "区块链知识" },
           "file": "Lesson_0_blockchain.md"
         },
         {
-          "title": { "zh": "BidMaster盲拍系统介绍" },
+          "title": { "zh": "以太坊知识" },
           "file": "Lesson_0_ether.md"
         },
         {
