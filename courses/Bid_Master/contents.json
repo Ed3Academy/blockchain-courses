@@ -18,6 +18,14 @@
       "lessons": [
         {
           "title": { "zh": "BidMaster盲拍系统介绍" },
+          "file": "Lesson_0_blockchain.md"
+        },
+        {
+          "title": { "zh": "BidMaster盲拍系统介绍" },
+          "file": "Lesson_0_ether.md"
+        },
+        {
+          "title": { "zh": "BidMaster盲拍系统介绍" },
           "file": "Lesson_0_Get_Start.md"
         },
         {
