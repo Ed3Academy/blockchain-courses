@@ -81,27 +81,47 @@ emit  AutionEnded()
     根据步骤提示，完善右侧合约文件中begin...end之间的代码。  
 
 3. **合约测试**  
-   a. 编译和部署合约     
+   a. 编译和部署任务6合约，设置盲拍时长为120s，设置披露时长为120s，选择一个受益人 ，点击transact执行部署（时长可以根据情况自行选择）  
 
-   b. 用户A出价100000Wei，伪出价为真(假拍 标记为true),密钥为‘testabc’为其生成哈希值  
-   ![call_function.png](https://i.postimg.cc/PxVyRKdF/1.png)
-   
-   c. 将生成的哈希值传递给bid的参数，选择用户A，预存金额200000Wei，执行盲拍方法  
-   ![call_function.png](https://i.postimg.cc/bwvQKkF7/2.png)
+     ![call_function.png](https://i.postimg.cc/jSvFVsrD/2.png)
 
-   d. 查看映射变量bids，是否完成账户和盲拍信息的映射。复制用户A地址，粘贴到bids的参数中，指定索引为0，意味查看用户A，第0个索引的数组值
 
-   ![call_function.png](https://i.postimg.cc/MG9ZgfNF/3.png)
+   b. 选择账户A出价了3次分别为(1eth,true,abc) 订金1eth,(2eth,true,efg) 订金3the,(3eth,true,123) 订金4eth,通过哈希值生成链接，执行哈希方法生成相应的哈希值，在调用盲拍函数时传入。执行盲拍方法，进行三次盲拍。<span color="red">（注意：切换用户A，预先把所有的出价哈希生成完毕）</span>  
+  ```JavaScript
+    ethers.utils.keccak256(
+    ethers.utils.defaultAbiCoder.encode(["uint256", "bool", "string"], 
+    [ethers.utils.parseEther("1.0").toString(), true, "abc"]),
+  )
+  );
+```  
+    ![call_function.png](https://i.postimg.cc/q76ycT4t/3.png)  
 
-   e.  用户A出价200000Wei，伪出价为真(假拍 标记为true),密钥为‘ying123’为其生成哈希值 
+   c. 假设用户B出价了2次分别为(2eth,true,751) 订金2th,(4eth,false,101) 订金5eth。同样通过哈希值生成链接，执行哈希方法生成相应的哈希值，在调用盲拍函数时传入。执行盲拍方法，进行二次盲拍 <span color="red">（注意：切换用户A，预先把所有的出价哈希生成完毕）</span>  
 
-   f. 将生成的哈希值传递给bid的参数，选择用户A，预存金额300000Wei，执行盲拍方法 
+   d. 用户A披露出价[1000000000000000000,2000000000000000000,3000000000000000000]，[true,true,false]，["abc","efg","123"]。<span color="red">（注意：切换用户A）</span>
+    将相应的参数值分别传入给出价数组，是否无效出价数组，密码串数组  
+    
+     ![call_function.png](https://i.postimg.cc/MZMCvWHC/4.png)  
+    当披露方法调用成功，将在调试终点显示出设置的调试信息，如下图所示  
+      ![call_function.png](https://i.postimg.cc/KzvgJqkT/5.png)  
 
-   g.  用户A出价300000Wei，真拍出价(标记为false),密钥为‘link456’为其生成哈希值 
+   e. 用户B披露出价[2000000000000000000,4000000000000000000],[true,false],["751","101"]。<span color="red">（注意：切换用户B）</span>，操作方式与上面步骤一致。
 
-   h. 将生成的哈希值传递给bid的参数，选择用户A，预存金额300000Wei，执行盲拍方法 
+      当披露方法调用成功，将在调试终点显示出设置的调试信息，如下图所示  
+      ![call_function.png](https://i.postimg.cc/8kb6fr53/6.png) 
 
-   i. 查看映射变量bids，用户A对应索引1 和 2的值
+   f. 查看最高竞拍者  
+   ![call_function.png](https://i.postimg.cc/9MV6Dk8v/7.png) 
+
+   g. 结束竞拍，查看受益人账户是否发生改变  
+
+     ![call_function.png](https://i.postimg.cc/R0GknRkh/8.png) 
+
+
+   h. 用户A主动赎回竞拍出价，查看用户A账户是否发生改变  
+
+     ![call_function.png](https://i.postimg.cc/FKZYdMFS/9.png)  
+ 
    
 
 至此，完成了任务43合约的调试，部署和测试。
