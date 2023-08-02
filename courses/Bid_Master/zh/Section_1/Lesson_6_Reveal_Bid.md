@@ -29,14 +29,14 @@
 ## **✨ 任务关键步骤分析**  
 各个合约方法调用时间节点参看下图：  
 
-   ![call_function.png](https://i.postimg.cc/jSvFVsrD/2.png)
+   ![call_function.png](https://i.postimg.cc/zXMP0t08/12.png)
 
 判断是否最高竞拍出价流程参看下图：  
-![call_function.png](https://i.postimg.cc/jSvFVsrD/2.png)
+![call_function.png](https://i.postimg.cc/wxnGk4WH/14.png)
 
 披露盲拍的流程图参看下图：  
 
-   ![call_function.png](https://i.postimg.cc/jSvFVsrD/2.png)   
+   ![call_function.png](https://i.postimg.cc/1zYH342P/13.png)   
 
 1. 构造函数，新增披露时长，披露时间戳等于竞拍结束时间加披露时长  
 2. 新增披露函数，披露函数在盲拍结束时间之后，披露结束时间之前执行 
