@@ -84,7 +84,8 @@ emit  AutionEnded()
 解析：如果要将相关信息传递给区块链上的监听器，可以先声明event，再通过emit触发事件，发出通知。
 ```JavaScript
     ethers.utils.keccak256(
-    ethers.utils.defaultAbiCoder.encode(["uint256", "bool", "string"],
+    ethers.utils.defaultAbiCoder.
+    encode(["uint256", "bool", "string"],
      [ethers.utils.parseEther("4.0").toString(), false, "101"]),
   );
 ``` 
