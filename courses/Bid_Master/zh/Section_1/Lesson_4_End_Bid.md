@@ -60,18 +60,17 @@
 
    ![call_function.png](https://i.postimg.cc/ZnjJWzH4/2-4.png)  
 
-   d. 用户A在拍卖截止时间前结束拍卖，抛出异常，中断结束拍卖； 
+   d. 用户A在拍卖截止时间前结束拍卖，抛出异常，中断结束拍卖；  
 
- ![call_function.png](https://i.postimg.cc/ZnjJWzH4/2-4.png)  
+    ![call_function.png](https://i.postimg.cc/ZnjJWzH4/2-4.png)
 
+   e. 拍卖截止用户A投标 2 Ether，抛出异常，交易回滚，查看用户A账户余额有没有减少；  
 
-   e. 拍卖截止用户A投标 2 Ether，抛出异常，交易回滚，查看用户A账户余额有没有减少； 
-
-    ![call_function.png](https://i.postimg.cc/zBKctwHQ/2-5.png)  
+   ![call_function.png](https://i.postimg.cc/zBKctwHQ/2-5.png)  
 
    f. 拍卖截止用户A结束拍卖，交易成功，收益人B余额增加1 Ether ，查看受益人B的账户。
-
-    ![call_function.png](https://i.postimg.cc/zDsJf5rw/4-2.png) 
-
+     
+   ![call_function.png](https://i.postimg.cc/zDsJf5rw/4-2.png)
+   
 至此，完成了任务4合约的调试，部署和测试。
 ## **🌸 知识测试**  
