@@ -14,7 +14,7 @@
 
  ![call_function.png](https://i.postimg.cc/m2qrbhdV/11.png)
 
-具体说明如下：
+具体说明如下：  
 s1. 用户A出了3次盲拍，分别为(1eth,true,abc) 订金1eth,(2eth,true,abc) 订金3the,(3eth,true,abc) 订金4eth     
 s2. 用户传入所有的历史竞拍数据  
 s3. 取一组历史竞拍数据计算哈希与用户当次的盲拍的出价哈希进行比较(第一组历史数据比对第一次盲拍，第二组比对第二次，以此类推)    
