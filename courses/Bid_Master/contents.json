@@ -20,10 +20,10 @@
           "title": { "zh": "区块链知识" },
           "file": "Lesson_0_blockchain.md"
         },
-        {
-          "title": { "zh": "以太坊知识" },
-          "file": "Lesson_0_ether.md"
-        },
+        // {
+        //   "title": { "zh": "以太坊知识" },
+        //   "file": "Lesson_0_ether.md"
+        // },
         {
           "title": { "zh": "BidMaster盲拍系统介绍" },
           "file": "Lesson_0_Get_Start.md"
