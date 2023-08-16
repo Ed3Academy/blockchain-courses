@@ -10,9 +10,9 @@
 ## **💚 任务描述**
 
 BidMaster竞拍系统，前一轮用户竞拍后保存最高竞拍者及其竞拍价，当下一轮出价高于当前最高竞拍值，此时上一轮竞拍记录者可以赎回之前的竞拍资金。 具体实现逻辑如下：     
-1. 用户A投标 1 wei   
-2. 用户B投标 2 wei
-3. 用户A赎回资金，用户A钱包资产增加1 wei、合约总资产减少1wei   
+1. 用户A投标 1 Ether   
+2. 用户B投标 2 Ether
+3. 用户A赎回资金，用户A钱包资产增加1 Ether、合约总资产减少1Ether  
 
 本次任务的目标是编写一个合约方法让上一轮竞拍者主动赎回竞拍资金。  
 
@@ -58,14 +58,17 @@ function bid() external payable{
     根据步骤提示，完善右侧合约文件中begin...end之间的代码。
 
 3. **合约测试**  
-   a. 用户A竞拍者出价10wei，执行bid出价方法
-   
+   a. 用户A竞拍者出价1Ether，执行bid出价方法. 查看用户A的账户余额是否有改变
+   ![call_function.png](https://i.postimg.cc/MK1ssr7b/3-1new.png)  
+ 
 
-   b. 用户B竞拍者出价20wei,执行bid出价方法，查看pendingReturns[用户A]的账户余额为10
+   b. 用户B竞拍者出价2Ether,执行bid出价方法，查看pendingReturns[用户A]的账户余额为1Ether
 
+   ![call_function.png](https://i.postimg.cc/KvL0js43/3-2new.png)  
 
    c. 切换为用户A，主动赎回账户余额，执行withdraw赎回方法，再去查看pendingReturns[用户A]的账户余额，观察此刻账户的余额是否清零。
 
+   ![call_function.png](https://i.postimg.cc/PrtpkxL7/3-3new.png)  
    
 
 至此，完成了任务3合约的调试，部署和测试。
