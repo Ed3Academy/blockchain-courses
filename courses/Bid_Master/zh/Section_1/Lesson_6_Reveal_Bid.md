@@ -156,5 +156,5 @@ emit  AutionEnded()
      ![call_function.png](https://i.postimg.cc/FKZYdMFS/9.png)  
  
    
-至此，完成了任务43合约的调试，部署和测试。
+至此，完成了任务6合约的调试，部署和测试。
 ## **🌸 知识测试**  
