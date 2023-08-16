@@ -1,4 +1,4 @@
-# 📊撤回出价过高的竞标
+# 📊赎回竞拍资金
 
 ## **🚧 教学目标**
 
@@ -58,7 +58,8 @@ function bid() external payable{
     根据步骤提示，完善右侧合约文件中begin...end之间的代码。
 
 3. **合约测试**  
-   a. 用户A竞拍者出价1Ether，执行bid出价方法. 查看用户A的账户余额是否有改变
+   a. 用户A竞拍者出价1Ether，执行bid出价方法. 查看用户A的账户余额是否有改变  
+   
    ![call_function.png](https://i.postimg.cc/MK1ssr7b/3-1new.png)  
  
 
