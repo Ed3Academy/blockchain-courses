@@ -14,6 +14,16 @@
 
  ![call_function.png](https://i.postimg.cc/m2qrbhdV/11.png)
 
+具体说明如下：
+s1. 用户A出了3次盲拍，分别为(1eth,true,abc) 订金1eth,(2eth,true,abc) 订金3the,(3eth,true,abc) 订金4eth     
+s2. 用户传入所有的历史竞拍数据  
+s3. 取一组历史竞拍数据计算哈希与用户当次的盲拍的出价哈希进行比较(第一组历史数据比对第一次盲拍，第二组比对第二次，以此类推)    
+s4. 如果比对成功，执行s5，如果不对成功，回到s3，取下一组数据。    
+s5. 将该次盲拍的预存金额累加到返回资金    
+s6. 判断该次竞拍是否真拍且是否是最高竞拍出价，如果符合，执行S7，如果不符合执行S8    
+s7. 从返回资金中扣除该次竞拍出价    
+s8. 将该次的盲拍出价哈希设置为0，避免再次认领     
+
 本任务目标：
 1. 竞拍者一一披露自己的竞拍
 2. 判断竞拍者披露的竞拍价与之前的出价是否一致
@@ -29,7 +39,7 @@
 ## **✨ 任务关键步骤分析**  
 各个合约方法调用时间节点参看下图：  
 
-   ![call_function.png](https://i.postimg.cc/zXMP0t08/12.png)
+![call_function.png](https://i.postimg.cc/zXMP0t08/12.png)
 
 判断是否最高竞拍出价流程参看下图：  
 ![call_function.png](https://i.postimg.cc/wxnGk4WH/14.png)
