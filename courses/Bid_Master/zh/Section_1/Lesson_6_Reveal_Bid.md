@@ -129,29 +129,29 @@ emit  AutionEnded()
    ![call_function.png](https://i.postimg.cc/q76ycT4t/3.png)  
     
 
-    c. 选择账户B出价2次，将2次生成的哈希值，在调用盲拍函数时传入。执行盲拍方法，进行两次盲拍。</span>  
+   f. 选择账户B出价2次，将2次生成的哈希值，在调用盲拍函数时传入。执行盲拍方法，进行两次盲拍。</span>  
 
-   d. 用户A披露出价[1000000000000000000,2000000000000000000,3000000000000000000]，[true,true,false]，["abc","abc","abc"]。（注意：切换用户A），将相应的参数值分别传入给出价数组，是否无效出价数组，密码串数组
+   g. 用户A披露出价[1000000000000000000,2000000000000000000,3000000000000000000]，[true,true,false]，["abc","abc","abc"]。（注意：切换用户A），将相应的参数值分别传入给出价数组，是否无效出价数组，密码串数组
    
     ![call_function.png](https://i.postimg.cc/MZMCvWHC/4.png) 
      
     当披露方法调用成功，将在调试终点显示出设置的调试信息，如下图所示  
     ![call_function.png](https://i.postimg.cc/KzvgJqkT/5.png)  
 
-   e. 用户B披露出价[2000000000000000000,4000000000000000000],[true,false],["cde","cde"]。<span color="red">（注意：切换用户B）</span>，操作方式与上面步骤一致。
+   h. 用户B披露出价[2000000000000000000,4000000000000000000],[true,false],["cde","cde"]。<span color="red">（注意：切换用户B）</span>，操作方式与上面步骤一致。
 
       当披露方法调用成功，将在调试终点显示出设置的调试信息，如下图所示  
       ![call_function.png](https://i.postimg.cc/8kb6fr53/6.png) 
 
-   f. 查看最高竞拍者  
+   i. 查看最高竞拍者  
    ![call_function.png](https://i.postimg.cc/9MV6Dk8v/7.png) 
 
-   g. 结束竞拍，查看受益人账户是否发生改变  
+   j. 结束竞拍，查看受益人账户是否发生改变  
 
      ![call_function.png](https://i.postimg.cc/R0GknRkh/8.png) 
 
 
-   h. 用户A主动赎回竞拍出价，查看用户A账户是否发生改变  
+   k. 用户A主动赎回竞拍出价，查看用户A账户是否发生改变  
 
      ![call_function.png](https://i.postimg.cc/FKZYdMFS/9.png)  
  
