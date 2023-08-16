@@ -45,7 +45,7 @@
           }
         },
         {
-          "title": { "zh": "撤回出价过高的竞标" },
+          "title": { "zh": "赎回竞拍资金" },
           "file": "Lesson_3_Withdraw_Method.md",
           "gist": {
             "id": "e071ae7bfef23010bd8af84113c5cc8c",
