@@ -1,0 +1,25 @@
+{
+  "title": {
+    "zh": "NFT Toolbox 使用说明"
+  },
+  "coverUrl": "/cover-nft-toolbox.png",
+  "description": {
+    "zh": "通过手册的学习，可以轻松创建属于你的NFT。"
+  },
+  "discussionUrl": "",
+  "sections": {
+    "Section_1": {
+      "title": {
+        "zh": "使用说明"
+      },
+      "lessons": [
+        {
+          "title": {
+            "zh": "使用说明"
+          },
+          "file": "Lesson_1_Guide.md"
+        }
+      ]
+    }
+  }
+}
