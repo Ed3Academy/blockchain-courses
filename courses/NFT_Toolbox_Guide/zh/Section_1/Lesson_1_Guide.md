@@ -17,17 +17,17 @@ NFT 基于区块链技术运行，NFT Toolbox 当前使用的区块链为 Polygo
 
 ## 第一步：完成 NFT 信息填写
 
-在 NFT 创建页面，依次输入各字段内容：
+在 NFT 创建页面，依次输入各字段内容：（带*为必填项）
 
-1. 上传图片：选择符合规范的图片作为你的 NFT 展示图
+1. 上传图片*：选择符合规范的图片作为你的 NFT 展示图
 2. 设置名称：
-   1. 名称：输入你的 NFT 的名字，它是 NFT 的展示名称（如：无聊猿的名称为“BoredApeYachtClub”）
-   2. 缩写：输入你的 NFT 的缩写，它是 NFT 的标识（如：无聊猿的缩写为“BAYC”）
+   1. 名称*：输入你的 NFT 的名字，它是 NFT 的展示名称（如：无聊猿的名称为“BoredApeYachtClub”）
+   2. 缩写*：输入你的 NFT 的缩写，它是 NFT 的标识（如：无聊猿的缩写为“BAYC”）
 3. 设置参数： 
-   1. 最大供应量：输入你要创建的 NFT 最大发行（可赠送）数量 
+   1. 最大供应量*：输入你要创建的 NFT 最大发行（可赠送）数量 
    2. 描述：输入你的 NFT 的描述
 
-![create_nft.png](http://gcdncs.101.com/v0.1/download?dentryId=3e161ab4-bacd-4a81-a07e-ac78964ccb40)
+![create_nft.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/upload.png)
 
 ## 第二步：“创建”NFT
 
