@@ -1,25 +1,30 @@
-# 没有翻墙VPN怎么办？
+# Q1:没有翻墙VPN怎么办？
 
 没有翻墙VPN则使用Edge浏览器或者Firefox浏览器 ，请参照以下步骤进行钱包安装和使用
 
 **步骤一：进入对应浏览器的扩展页**
 
 【Edge浏览器】
+
 ![Edge1.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/Edge%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%A9%E5%B1%95%E5%85%A5%E5%8F%A3.png)
 ![Edge2.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/Edge%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%A9%E5%B1%95%E7%AE%A1%E7%90%86.png)
 
 【Firefox 浏览器】
+
 ![Firefox1.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/Firefox%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%A9%E5%B1%95%E5%85%A5%E5%8F%A3.png)
 
 **步骤二：搜索 Metamask 扩展**
 
 【Edge浏览器】
+
 ![Edge3.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/Edge%E6%B5%8F%E8%A7%88%E5%99%A8%E6%90%9C%E7%B4%A2%E5%B0%8F%E7%8B%90%E7%8B%B8.png)
 
 【Firefox 浏览器】
+
 ![Firefox2.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/Firefox%E6%B5%8F%E8%A7%88%E5%99%A8%E6%90%9C%E7%B4%A2%E5%B0%8F%E7%8B%90%E7%8B%B8.png)
 
 **步骤三：添加扩展**
+
 ![Edge4.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E6%B7%BB%E5%8A%A0%E6%89%A9%E5%B1%95.png)
 ![Edge5.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E6%B7%BB%E5%8A%A0%E6%89%A9%E5%B1%951.png)
 
@@ -52,6 +57,7 @@
 **步骤五：进行钱包创建**
 
 参考 “前置准备” 章节的视频教程
+
 ![create_wallet.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E5%88%9B%E5%BB%BA%E9%92%B1%E5%8C%85.png)
 
 **步骤六：钱包创建成功**
@@ -68,7 +74,7 @@
 
 回到 NFT Toolbox首页，点击 “MetaMask” 进行授权登录，登录成功就可以开始体验 NFT Toolbox 啦 ~
 
-# 为什么点击按钮后没有反应
+# Q2:为什么点击按钮后没有反应
 
 首先检查一下小狐狸 MetaMask 是不是有未处理交易角标
 
@@ -87,7 +93,7 @@
 3. 填完 赠送者的钱包地址，点击“赠送NFT”，此时要提交链上交易
 
 
-# 我的钱包地址在哪里获取
+# Q3:我的钱包地址在哪里获取
 
 当要进行NFT赠送时，则需要输入接收者的钱包地址，有两个方式获取自己的钱包地址
 
