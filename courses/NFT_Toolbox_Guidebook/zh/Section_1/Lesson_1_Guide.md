@@ -11,5 +11,5 @@ MetaMask小狐狸钱包是一款由 ConsenSys 推出的加密货币钱包，是�
 2. 看完视频记得回到 NFT Toolbox 进行 MetaMask 的安装和创建钱包噢~
 3. 小狐狸钱包插件安装后强烈建议固定在浏览器工具栏，否则可能会错过交易确认哟~
 
-
+<iframe src="http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/metamask.mp4" border="0" framespacing="0" allowFullScreen/>
 
