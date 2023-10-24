@@ -7,6 +7,7 @@
 【Edge浏览器】
 
 ![Edge1.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/Edge%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%A9%E5%B1%95%E5%85%A5%E5%8F%A3.png)
+
 ![Edge2.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/Edge%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%A9%E5%B1%95%E7%AE%A1%E7%90%86.png)
 
 【Firefox 浏览器】
@@ -26,6 +27,7 @@
 **步骤三：添加扩展**
 
 ![Edge4.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E6%B7%BB%E5%8A%A0%E6%89%A9%E5%B1%95.png)
+
 ![Edge5.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E6%B7%BB%E5%8A%A0%E6%89%A9%E5%B1%951.png)
 
 **步骤四：MetaMask下载并安装完成，手动切换网络继续进行钱包创建**
@@ -40,7 +42,7 @@
 
 ![add_network.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%BB%9C.png)
 
-3. 输入 Polygon 主网信息并保存
+3. 手动输入网络信息并保存（建议连接 Polygon Mumbai 测试网）
 
 网络名称：Polygon Mainnet 
 
@@ -53,6 +55,18 @@
 区块链浏览器URL（可选）：https://polygonscan.com
 
 ![add_polygon.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E6%B7%BB%E5%8A%A0Polygon%E7%BD%91%E7%BB%9C.png)
+
+连接 Polygon Mumbai 测试网，方式同上
+
+网络名称：Mumbai
+
+新的RPC URL：https://rpc-mumbai.maticvigil.com
+
+链ID：80001
+
+货币符号：MATIC
+
+区块链浏览器URL（可选）：https://mumbai.polygonscan.com
 
 **步骤五：进行钱包创建**
 
@@ -73,6 +87,16 @@
 ![change_polygon_net.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E5%88%87%E6%8D%A2Polygon%E7%BD%91%E7%BB%9C.png)
 
 回到 NFT Toolbox首页，点击 “MetaMask” 进行授权登录，登录成功就可以开始体验 NFT Toolbox 啦 ~
+
+
+
+# Q2:小狐狸MeteMask插件安装后报错
+
+![change_polygon_net.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/MetaMask%E6%8A%A5%E9%94%99.png)
+
+在安装完浏览器插件后，偶发MetaMask会弹出报错信息，此时点击“重新启动MetaMask”，然后在浏览器扩展中找到“MetaMask”并将其固定到工具栏
+
+此时可点击MetaMask图标打开页面，继续完成钱包创建步骤~
 
 # Q2:为什么点击按钮后没有反应
 
