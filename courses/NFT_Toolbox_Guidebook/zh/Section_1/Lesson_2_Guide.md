@@ -31,13 +31,17 @@ tips：如果你没有翻墙VPN，则无法进入测试币充值页面完成测�
 
 2. 点击【MetaMask】按钮
 
-3. 小狐狸弹出 登录请求窗口中，点击【登录】
+3. 小狐狸弹出增加网络请求窗口，在弹窗中点击【批准】
 
-![login.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E8%BF%9E%E6%8E%A5%E9%92%B1%E5%8C%85.png)
+![ratify.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%BB%9C%E6%89%B9%E5%87%86.png)
 
-小狐狸弹出二次确认窗口，勾选并点击【确认】
+网络添加请求通过后，小狐狸弹出切换网络请求窗口，点击【切换网络】
 
-![confirm.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E7%99%BB%E5%BD%95.png)
+![switch_network.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E5%88%87%E6%8D%A2%E7%BD%91%E7%BB%9C_1698117329512.png)
+
+切换网络请求通过后，小狐狸弹出登录请求窗口，点击【登录】
+
+![login.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E6%8E%88%E6%9D%83%E7%99%BB%E5%BD%95.png)
 
 登录成功后，右上角展示您的钱包地址，以及测试网充值的入口
 
