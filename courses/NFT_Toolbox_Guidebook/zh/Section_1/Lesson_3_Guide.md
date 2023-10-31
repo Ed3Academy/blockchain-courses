@@ -128,3 +128,36 @@
 **方式二：小狐狸MetaMask钱包中复制**
 
 ![copy1.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E9%92%B1%E5%8C%85%E5%A4%8D%E5%88%B6%E5%9C%B0%E5%9D%80.png)
+
+# Q4：小狐狸添加网络失败怎么办
+1.当你在进行添加测试网络的操作时，提示【连接到自定义网络时出错。】
+
+2.当你在切换到测试网络时，小狐狸一直在loading状态，并且提示【我们无法连接到 Mumbai Testnet】
+
+当你出现以上问题，就说明测试链的RPC地址失效了，这个时候你需要手动添加新的测试网络
+![error1.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E8%BF%9E%E6%8E%A5%E9%94%99%E8%AF%AF.png)
+![error2.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E4%B8%80%E7%9B%B4loading.png)
+
+
+**步骤：添加可用的RPC地址**
+1.访问https://chainlist.org/chain/80001
+
+这个地址提供了Polygon Mumbai所有的PRC节点，以及节点的网络状态
+![rpcpage.png](https://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E8%8E%B7%E5%8F%96RPC%E8%8A%82%E7%82%B9%E5%9C%B0%E5%9D%80.png)
+
+2.在Mumbai RPC URL List列表中，选择Score和Privacy均为绿色打钩状态的RPC Server Address
+![selectrpc.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E9%80%89%E6%8B%A9%E5%8F%AF%E7%94%A8RPC%E5%9C%B0%E5%9D%80.png)
+
+3.点击地址后面的【Add to Metamask】按钮
+![addrpc.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E7%82%B9%E5%87%BB%E6%B7%BB%E5%8A%A0%E5%9C%B0%E5%9D%80.png)
+
+4.此时小狐狸会弹出的网络添加请求，在请求弹窗中，点击【批准】
+![comfirmaddrpc.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%BB%9C%E8%AF%B7%E6%B1%82%E7%AA%97%E5%8F%A3.png)
+
+5.网络添加成功后，小狐狸弹出切换网络请求窗口，点击【切换网络】
+![switchrpc.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E5%88%87%E6%8D%A2%E7%BD%91%E7%BB%9C%E8%AF%B7%E6%B1%82%E7%AA%97%E5%8F%A3.png)
+
+6.点击浏览器的小狐狸图标，小狐狸可正常显示账户余额，即表示切换网络成功
+
+注意：若切换rpc后小狐狸依然连接不上测试网，则需要再重新选择一个可用的RPC地址
+![success.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E6%AD%A3%E5%B8%B8%E7%8A%B6%E6%80%81.png?serviceName=nft_toolbox_service&attachment=true)
