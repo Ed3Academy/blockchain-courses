@@ -27,29 +27,30 @@ tips：如果你没有翻墙VPN，则无法进入测试币充值页面完成测�
 
 ## 第二步：进入 NFT Toolbox 平台
 
-1. 勾选【我已掌握使用MetaMask钱包】
+1 在连接钱包的弹窗中，点击【MetaMask】按钮
 
-2. 点击【MetaMask】按钮
+2.小狐狸弹出连接请求窗口，在弹窗中点击【下一步】
+![ratify0.png](https://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E7%99%BB%E5%BD%95%E9%A1%B5%E9%9D%A2.png)
 
-3. 小狐狸弹出增加网络请求窗口，在弹窗中点击【批准】
+钱包连接请求通过后，小狐狸继续弹出连接账户请求窗口，点击【连接】
 
-![ratify.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%BB%9C%E6%89%B9%E5%87%86.png)
+![ratify.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E9%92%B1%E5%8C%85%E8%BF%9E%E6%8E%A51031.png)
+
+小狐狸弹出添加网络请求窗口，在弹窗中点击【批准】
+
+![switch_network.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%BB%9C%E6%89%B9%E5%87%861031.png)
 
 网络添加请求通过后，小狐狸弹出切换网络请求窗口，点击【切换网络】
 
-![switch_network.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E5%88%87%E6%8D%A2%E7%BD%91%E7%BB%9C_1698117329512.png)
+![login.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E5%88%87%E6%8D%A2%E7%BD%91%E7%BB%9C1031.png)
 
-切换网络请求通过后，小狐狸弹出登录请求窗口，点击【登录】
+登录成功后，右上角展示您的钱包地址以及MATIC余额，测试网充值的入口以及当前连接的网络
 
-![login.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E6%8E%88%E6%9D%83%E7%99%BB%E5%BD%95.png)
-
-登录成功后，右上角展示您的钱包地址，以及测试网充值的入口
-
-![Recharge_Entry.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E5%85%85%E5%80%BC%E5%85%A5%E5%8F%A3.png)
+![Recharge_Entry.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E7%99%BB%E5%BD%95%E5%90%8E%E9%A1%B5%E9%9D%A2%E5%B1%95%E7%A4%BA.png)
 
 ## 第三步：点击测试网充值，选择任意一个充值地址
 
-![Jump0.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E5%85%85%E5%80%BC%E6%B8%A0%E9%81%93.png?)
+![Jump0.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E5%85%85%E5%80%BC%E5%85%A5%E5%8F%A3%E5%9B%BE%E7%89%871031.png)
 
 选择充值地址1跳转的页面：
 
