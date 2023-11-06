@@ -2,35 +2,19 @@
 
 没有翻墙VPN则使用Edge浏览器或者Firefox浏览器 ，请参照以下步骤进行钱包安装和使用
 
-**步骤一：进入对应浏览器的扩展页**
+**步骤一：使用对应浏览器获取MetaMask钱包插件**
 
-【Edge浏览器】
+![get_wallet.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E8%8E%B7%E5%8F%96%E9%92%B1%E5%8C%85.png)
 
-![Edge1.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/Edge%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%A9%E5%B1%95%E5%85%A5%E5%8F%A3.png)
+![get_wallet2.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E8%8E%B7%E5%8F%96%E9%92%B1%E5%8C%852.png)
 
-![Edge2.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/Edge%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%A9%E5%B1%95%E7%AE%A1%E7%90%86.png)
+**步骤二：添加MetaMask插件**
 
-【Firefox 浏览器】
+![Edge4.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/Edge%E6%B7%BB%E5%8A%A0%E6%8F%92%E4%BB%B6.png)
 
-![Firefox1.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/Firefox%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%A9%E5%B1%95%E5%85%A5%E5%8F%A3.png)
+![Edge5.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/Firefox%E6%B7%BB%E5%8A%A0%E6%8F%92%E4%BB%B6.png)
 
-**步骤二：搜索 Metamask 扩展**
-
-【Edge浏览器】
-
-![Edge3.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/Edge%E6%B5%8F%E8%A7%88%E5%99%A8%E6%90%9C%E7%B4%A2%E5%B0%8F%E7%8B%90%E7%8B%B8.png)
-
-【Firefox 浏览器】
-
-![Firefox2.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/Firefox%E6%B5%8F%E8%A7%88%E5%99%A8%E6%90%9C%E7%B4%A2%E5%B0%8F%E7%8B%90%E7%8B%B8.png)
-
-**步骤三：添加扩展**
-
-![Edge4.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E6%B7%BB%E5%8A%A0%E6%89%A9%E5%B1%95.png)
-
-![Edge5.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E6%B7%BB%E5%8A%A0%E6%89%A9%E5%B1%951.png)
-
-**步骤四：MetaMask下载并安装完成，手动切换网络继续进行钱包创建**
+**步骤三：MetaMask下载并安装完成，手动切换网络继续进行钱包创建**
 
 扩展下载完成后，会默认连接 Ethereum 主网，因VPN限制可能存在连接超时，当Ethereum 主网连接超时弹出 无法连接的弹窗时，进行以下操作：
 
@@ -42,22 +26,8 @@
 
 ![add_network.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%BB%9C.png)
 
-3. 手动输入网络信息并保存（建议连接 Polygon Mumbai 测试网）
-
-网络名称：Polygon Mainnet 
-
-新的RPC URL：https://polygon.llamarpc.com
-
-链ID：137
-
-货币符号：MATIC
-
-区块链浏览器URL（可选）：https://polygonscan.com
-
-![add_polygon.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E6%B7%BB%E5%8A%A0Polygon%E7%BD%91%E7%BB%9C.png)
-
-连接 Polygon Mumbai 测试网，方式同上
-
+3. 手动输入网络信息并保存
+   
 网络名称：Mumbai
 
 新的RPC URL：https://rpc-mumbai.maticvigil.com
@@ -68,26 +38,29 @@
 
 区块链浏览器URL（可选）：https://mumbai.polygonscan.com
 
-**步骤五：进行钱包创建**
+![add_mumbai.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E5%88%87%E6%8D%A2%E7%BD%91%E7%BB%9C%E5%B9%B6%E4%BF%9D%E5%AD%98.png)
+
+**步骤四：进行钱包创建**
 
 参考 “前置准备” 章节的视频教程
 
 ![create_wallet.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E5%88%9B%E5%BB%BA%E9%92%B1%E5%8C%85.png)
 
-**步骤六：钱包创建成功**
+**步骤五：钱包创建成功**
 
-请将小狐狸固定到工具栏！！
+1.请将小狐狸固定到工具栏！！
 
 ![Edge6.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E5%9B%BA%E5%AE%9A%E5%B7%A5%E5%85%B7%E6%A0%8F.png)
 
 ![Firefox3.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/Firefox%E5%9B%BA%E5%AE%9A%E5%B7%A5%E5%85%B7%E6%A0%8F.png)
 
-跟随 MetaMask 提示 切换至 Polygon Mainnet
+2.跟随 MetaMask 提示 点击“切换至 Mumbai 网络”
 
-![change_polygon_net.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E5%88%87%E6%8D%A2Polygon%E7%BD%91%E7%BB%9C.png)
+![change_mumbai_net.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E5%88%87%E6%8D%A2%E5%88%B0Mumbai.png)
 
-回到 NFT Toolbox首页，点击 “MetaMask” 进行授权登录，登录成功就可以开始体验 NFT Toolbox 啦 ~
+3.回到 NFT Toolbox首页，点击刷新，点击左侧栏的“MetaMask”进行钱包连接，在小狐狸弹出框中点击确认，登录成功就可以开始体验 NFT Toolbox 啦 ~
 
+![login_MM.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E8%BF%9E%E6%8E%A5MetaMask.png)
 
 
 # Q2:小狐狸MeteMask插件安装后报错
