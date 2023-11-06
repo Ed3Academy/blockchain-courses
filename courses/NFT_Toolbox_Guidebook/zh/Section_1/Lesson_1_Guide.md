@@ -8,8 +8,19 @@ MetaMask小狐狸钱包是一款由 ConsenSys 推出的加密货币钱包，是�
 
 小贴士：
 1. 在安装小狐狸钱包前，请打开你的翻墙VPN，如果你没有翻墙VPN，那么请参看FAQ章节的“没有翻墙VPN怎么办”；
-2. 看完视频记得回到 NFT Toolbox 进行 MetaMask 的安装和创建钱包噢~
-3. 小狐狸钱包插件安装后强烈建议固定在浏览器工具栏，否则可能会错过交易确认哟~
+2. 小狐狸钱包插件安装后强烈建议固定在浏览器工具栏，否则可能会错过交易确认哟~
+3. 根据步骤创建完钱包记得回到 NFT Toolbox 首页，刷新页面后进行 MetaMask 的登录噢~
+
+
+# 获取MetaMask钱包插件并安装
+
+![get_wallet.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E8%8E%B7%E5%8F%96%E9%92%B1%E5%8C%85.png)
+
+![get_wallet2.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E8%8E%B7%E5%8F%96%E9%92%B1%E5%8C%852.png)
+
+![get_wallet3.png](http://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/%E8%8E%B7%E5%8F%96%E9%92%B1%E5%8C%853.png)
+
+# MetaMask钱包创建
 
 <iframe src="https://gcdncs.101.com/v0.1/static/nft_toolbox_service/tutorial/metamask.mp4" border="0" framespacing="0" frameborder="0" allowfullscreen width="100%" height="500px"></iframe>
 
