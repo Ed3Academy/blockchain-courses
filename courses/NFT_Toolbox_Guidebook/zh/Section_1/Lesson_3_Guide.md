@@ -1,3 +1,7 @@
+# 问题反馈入口
+
+https://docs.qq.com/sheet/DTEZrRU5FY1ZVaVdR?tab=BB08J2
+
 # Q1:没有翻墙VPN怎么办？
 
 没有翻墙VPN则使用Edge浏览器或者Firefox浏览器 ，请参照以下步骤进行钱包安装和使用
